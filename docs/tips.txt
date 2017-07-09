@@ -1,0 +1,299 @@
+chrome://net-internals/#dns
+
+配置相关:
+vim .bashrc
+alias jps='jps -mlvV'
+source .bashrc
+
+Mac快捷键整理:
+1.显示Finder:Option+command+空格;
+2.Mac 系统下浏览器的刷新快捷键 command+R, 强制刷新快捷键为 command+shift+R.
+3.ctrl+UP:command+tab(等效,切换应用).
+4.Alt 键代替 Option 键;Windows 标志键代替 Command 键.
+5.command + U iTerm2切换是否透明.
+6.  Home键=Fn+左方向
+    End键=Fn+右方向
+    PageUP=Fn+上方向
+    PageDOWN=Fn+下方向
+    向前Delete=Fn+delete键
+
+IDEA快捷键整理:
+查看注释：Win: Ctrl+Q, Mac: Control+J
+生成单元测试:shift+command+T.
+BasicCompletion:control+;(DIY)
+Structure popup:Cmd+F12
+Super Method:Cmd+U
+
+Linux快捷键整理:
+ctrl+shift+t 打开一个新的终端标签.
+firefox &    #后台执行
+ctrl alt f1  #到达第一个工作台 ctrl alt f7 #回到图形化工作台
+Super+1：打开主文件夹
+在长段的命令中,使用 Ctrl + ← 和 Ctrl + → 可快速将光标定位到命令中单词的首字母或末尾,实现在各单词之间的快速跳动定位.
+使用Ctrl+K快捷键可以将当前光标位置之后的所有部分快速清除,Ctrl + W 可以清除当前光标位置之前的一个单词,而Ctrl+U则可以直接刚整行命令直接清除.
+ubuntu:ctrl+; 最近复制的内容
+Ubuntu  sudo apt-get install ***之后,包的临时储存路径是/var/cache/apt/archives
+
+IDEA破解:
+https://www.iteblog.com/archives/1542(http://idea.iteblog.com/key.php)
+
+============================Start==============================
+** 1.Maven **
+<includeBaseDirectory></includeBaseDirectory>,设置为true的话,会把指定打包的内容外在嵌套一个文件夹.
+<fileSets></fileSets>用来设置所要打包的文件夹
+<appendAssemblyId></appendAssemblyId>来设置打出的包是否带有AssemblyId(也就是assembly.xml中设置的id)
+三套生命周期:
+mvn versions:set -DnewVersion=2.4.0.6-SNAPSHOT
+mvn clean deploy -Dmaven.test.skip=true
+
+①  clean:pre-clean/clean/post-clean
+②  default:validate/initialize/generate-sources/process-sources/generate-resources/process-resources/compile/process-classes/generate-test-sources/process-test-sources/generate-test-resources/process-test-resources/test-compile/process-test-classes/test/prepare-package/package/pre-integration-test/integration-test/post-integration-test/verify/install/deploy
+③  site:pre-site/site/post-site/site-deploy
+
+列出这个plugin所有的goal
+mvn help:describe -Dplugin=assembly
+mvn help:describe -Dplugin=archetype  -Ddetail
+mvn assembly:help -Ddetail=true -Dgoal=single
+
+To use the Assembly Plugin in Maven, you simply need to:
+①  choose or write the assembly descriptor to use,
+②  configure the Assembly Plugin in your project's pom.xml, and
+③  run "mvn assembly:single" on your project.
+
+** 2.DB **
+DML:data manipulation language,SELECT,UPDATE,INSERT,DELETE等
+DDL:data definition language,CREATE,ALTER,DROP等
+DCL:Data Control Language,grant,deny,revoke等
+
+** 3.Java **
+DO(Data Object):与数据库表结构一一对应,通过DAO层向上传输数据源对象.Model.
+DTO(Data Transfer Object):数据传输对象,Service和Manager向外传输的对象.
+BO(Business Object):业务对象,可以由Service层输出的封装业务逻辑的对象.
+QUERY,数据查询对象,各层接收上层的查询请求。
+VO(View Object):显示各层对象,通常是web向模板渲染引擎层传输的对象.
+
+1.线程处于Sleep或者Blocked状态时,即程序不执行,没有分配CPU时间.
+2.吞吐量=运行用户代码的时间/(运行用户代码的时间+垃圾收集时间)
+3.HotSpot并不区分虚拟机栈和本地方法栈.
+4.栈容量只由-Xss参数设定.
+5.https://visualvm.github.io/plugins.html  插件
+6.打印GC日志:-XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:./gc.log
+
+ForkJoinPool 的每个工作线程都维护着一个工作队列(WorkQueue),这是一个双端队列(Deque),里面存放的对象是任务(ForkJoinTask).
+ForkJoinTask是一个抽象类，代表一个可以fork与join的任务.它还有2个抽象子类:RecursiveAcion和RecursiveTask.其中RecursiveTask代表有泛型返回值的任务.而RecursiveAction代表没有返回值.
+
+应用中不可直接使用日志系统(Log4j,Logback)中的 API,而应依赖使用日志框架
+SLF4J 中的 API,使用门面模式的日志框架,有利于维护和各个类的日志处理方式统一.
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+private static final Logger LOG = LoggerFactory.getLogger(Abc.class);
+1.slf4j-api-1.7.25
+2.slf4j-log4j12-1.7.25.jar
+3.log4j-1.2.17.jar
+<!--log start-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+<!--log end-->
+
+在Java集合框架中,对于参数值是未知类型的容器类,只能读取其中元素,不能向其中添加元素,
+因为,其类型是未知,所以编译器无法识别添加元素的类型和容器的类型是否兼容,唯一的例外是NULL.
+
+javac -X
+
+** 4.Linux **
+1.sz命令发送文件到本地;rz命令本地上传文件到服务器.
+2.netstat -n | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'
+3. $0当前Shell程序的文件名
+   dirname $0，获取当前Shell程序的路径
+   cd `dirname $0`，进入当前Shell程序的目录
+
+
+============================END==============================
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+sudo  -E /usr/java/activemq-5.12.1/bin/activemq start && sudo -E /usr/java/zookeeper-3.4.6/bin/zkServer.sh start
+
+tail -300f shopbase.log #倒数300行并进入实时监听文件写入模式
+
+In Git 1.7.0 and later, you can checkout a new branch:git checkout -b <branch>
+Edit files, add and commit.
+Then push with the -u option:[-u | --set-upstream] [--push-option=<string>]
+git push -u origin <branch>
+Git will set up the tracking information during the push.
+git branch -d [branch-name] # 删除分支
+git push origin --delete [branch-name] # 删除远程分支
+
+mvn dependency:tree 打印整个依赖树
+mvn dependency:resolve 打印出已解决依赖的列表
+mvn install -X 想要查看完整的依赖踪迹，包含那些因为冲突或者其它原因而被拒绝引入的构件，打开 Maven 的调试标记运行
+mvn
+ -D,--define <arg>              Define a system property
+ -U,--update-snapshots          Forces a check for missing
+                                releases and updated snapshots on
+                                remote repositories
+
+MySQL:
+连接池通常实现在Client端,是指应用(客户端)创建预先创建一定的连接
+线程池实现在server端,通过创建一定数量的线程服务DB请求
+
+实现RejectedExecutionHandler的java.util.concurrent 中的类:
+ThreadPoolExecutor.AbortPolicy:          用于被拒绝任务的处理程序,它将抛出RejectedExecutionException.
+ThreadPoolExecutor.CallerRunsPolicy:     用于被拒绝任务的处理程序,它直接在 execute 方法的调用线程中运行被拒绝的任务；如果执行程序已关闭，则会丢弃该任务。
+ThreadPoolExecutor.DiscardOldestPolicy:  用于被拒绝任务的处理程序,它放弃最旧的未处理请求，然后重试 execute；如果执行程序已关闭，则会丢弃该任务。
+ThreadPoolExecutor.DiscardPolicy:        用于被拒绝任务的处理程序,默认情况下它将丢弃被拒绝的任务。
+
+~ vim .zshrc
+source ~/.bash_profile解决Mac Maven命令找不到的问题.
+
+字节,字符,比特位.
+字符:"abc"
+字节：
+97
+98
+99
+比特位:01100001
+字节是用来保存的,比特位是用来传输的.
+UTF-8 是变长编码,一个汉字占3个字节 一个数字或者字母占1个字节
+
+在server.xml中配置了四个监听端口,分别是：
+1)Server Port:该端口用于监听关闭tomcat的shutdown命令,默认为8005
+2)Connector Port:该端口用于监听HTTP的请求,默认为8080
+3)AJP Port:该端口用于监听AJP(Apache JServ Protocol)协议上的请求,通常用于整合Apache Server等其他HTTP服务器,默认为8009
+4)Redirect Port:重定向端口,出现在Connector配置中,如果该Connector仅支持非SSL的普通http请求,那么该端口会把https的请求转发到这个Redirect Port指定的端口,默认为8443．
+可见,如果不是使用AJP协议连接tomcat,只需要保证多实例中的Server Port和Connect Port不同即可.
+
+JVM主要包括3各方面:
+1)内存划分.
+2)class加载机制.
+3)GC策略.
+
+JVM 内存设置为多大好?
+这个没有一个固定值的。需要根据具体的业务来确定。
+内存不是越大越好,也不是越小越好。
+JVM的默认值已经适应大多数情况。
+如果你的业务生成的对象很多会进入老年代,生命周期非常长,建议内存稍大一点，同时将Full GC频率适当调小一点。这样可以节约频繁的GC的开销,这个性能提升还是很大的。
+如果你的业务生成的对象很多都是朝生夕灭,生命周期短暂,建议新生代和老年代内存比例可以适当调整,老年代小一点。Min GC会相对来说稍微频繁一点。但是尽量避免Full GC。因为这个对JVM性能影响比Min GC大很多。
+如果你们的业务对内存很敏感,上线前一半要做很多实验和测试来确定合适的内存大小。
+
+jvm参数配置：
+堆的最小值:Xms
+堆的最大值:Xmx
+新生代大小:Xmn
+永久代大小:XX:PermSize
+永久代最大大小:XX:MaxPermSize：
+栈大小:-Xss或-XX:ThreadStackSize
+
+具体用哪些二进制数字表示哪个符号 当然每个人都可以约定自己的一套（这就叫编码）
+char--->byte编码,或byte--->char 解码,使用的字符集不一致导致乱码.
+
+classpath*:的出现是为了从多个jar文件中加载相同的文件.
+classpath:只能加载找到的第一个文件.
+classpath*:的使用是为了多个component(最终发布成不同的jar包)并行开发,各自的bean定义文件按照一定的规则:package+filename,
+而使用这些component的调用者可以把这些文件都加载进来.
+
+--------------------------------------------------
+
+ab -n1000 -c10 http://localhost:8080/test_springmvc/user-module/getAllUsers.html/
+
+主机记录就是域名前缀，常见用法有：
+www：解析后的域名为 www.wchb7.com
+@：直接解析主域名 wchb7.com
+*：泛解析，匹配其他所有域名 *.wchb7.com
+
+A记录：地址记录，用来指定域名的IPv4地址（如：8.8.8.8），如果需要将域名指向一个IP地址，就需要添加A记录。
+AAAA：用来指定主机名（或域名）对应的IPv6地址（例如：ff06:0:0:0:0:0:0:c3）记录。
+CNAME： 如果需要将域名指向另一个域名，再由另一个域名提供ip地址，就需要添加CNAME记录。
+NS：域名服务器记录，如果需要把子域名交给其他DNS服务商解析，就需要添加NS记录。
+TXT：在这里可以填写任何东西，长度限制255。绝大多数的TXT记录是用来做SPF记录（反垃圾邮件）。
+MX：如果需要设置邮箱，让邮箱能收到邮件，就需要添加MX记录。
+显性URL：从一个地址301重定向到另一个地址的时候，就需要添加显性URL记录（注：DNSPod目前只支持301重定向）。
+隐性URL：类似于显性URL，区别在于隐性URL不会改变地址栏中的域名。
+SRV：记录了哪台计算机提供了哪个服务。格式为：服务的名字、点、协议的类型，例如：_xmpp-server._tcp。
+
+There are three main stages to setting up a custom domain for your GitHub Pages site:
+①  choosing your custom domain and registering it with a DNS provider,
+②  setting up your pages site repository,
+③  and configuring your domain with your DNS provider.
+
+同步就是:如果有多个任务或者事件要发生,这些任务或者事件必须逐个地进行,一个事件或者任务的执行会导致整个流程的暂时等待,这些事件没有办法并发地执行;
+异步就是:如果有多个任务或者事件发生,这些事件可以并发地执行,一个事件或者任务的执行不会导致整个流程的暂时等待.
+不要将多线程和异步画上等号,异步只是宏观上的一个模式,采用多线程来实现异步只是一种手段,并且通过多进程的方式也可以实现异步.
+阻塞和非阻塞是从CPU的消耗上来说的,阻塞就是CPU停下来等待一个慢的操作完成以后,CPU才接着完成其他的工作.
+非阻塞就是在这个慢的操作执行时,CPU去做其它的工作,等这个慢的操作完成时,CPU再接着完成后续的操作.
+阻塞就是:当某个事件或者任务在执行过程中,它发出一个请求操作,但是由于该请求操作需要的条件不满足,那么就会一直在那等待,直至条件满足;
+非阻塞就是:当某个事件或者任务在执行过程中,它发出一个请求操作,如果该请求操作需要的条件不满足,会立即返回一个标志信息告知条件不满足,不会一直在那等待.
+阻塞和非阻塞的区别关键在于当发出请求一个操作时,如果条件不满足,是会一直等待还是返回一个标志信息.
+同步和异步着重点在于多个任务的执行过程中,一个任务的执行是否会导致整个流程的暂时等待;
+而阻塞和非阻塞着重点在于发出一个请求操作时,如果进行操作的条件不满足是否会返会一个标志信息告知条件不满足.
+通常来说,IO操作包括:对硬盘的读写,对socket的读写以及外设的读写.
+阻塞IO:blocking IO,非阻塞:non-blocking IO,synchronous I/O,asynchronous I/O.
+A synchronous I/O operation causes the requesting process to be blocked until that I/O operation completes.
+An asynchronous I/O operation does not cause the requesting process to be blocked.
+
+在Java中,提供了四种访问权限控制:默认访问权限(包访问权限),public,private以及protected.
+只有默认访问权限和public能够用来修饰类.修饰类的变量和方法四种权限都可以.(本处所说的类针对的是外部类,不包括内部类)
+1.修饰类.默认访问权限(包访问权限):用来修饰类的话,表示该类只对同一个包中的其他类可见.public:用来修饰类的话,表示该类对其他所有的类都可见.
+2.修饰类的方法和变量.
+默认访问权限(包访问权限):如果一个类的方法或变量被包访问权限修饰,也就意味着只能在同一个包中的其他类中显示地调用该类的方法或者变量,在不同包中的类中不能显示地调用该类的方法或变量.
+private:如果一个类的方法或者变量被private修饰,那么这个类的方法或者变量只能在该类本身中被访问,在类外以及其他类中都不能显示地进行访问.
+protected:如果一个类的方法或者变量被protected修饰,对于同一个包的类,这个类的方法或变量是可以被访问的.
+对于不同包的类,只有继承于该类的类才可以访问到该类的方法或者变量.
+public:被public修饰的方法或者变量,在任何地方都是可见的.
+Java中,被final修饰的类是不允许被继承的.
+
+不要搞混 css 和 js 标签
+<link href="/css/screen.css" rel="stylesheet">
+<script src="/js/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+
+所谓线程安全无非是要控制多个线程对某个资源的有序访问或修改.
+认识java线程安全,必须了解两个主要的点:java的内存模型,java的线程同步机制.
+总结java的内存模型,要解决两个主要的问题:可见性和有序性.
+何谓可见性?多个线程之间是不能互相传递数据通信的,它们之间的沟通只能通过共享变量来进行.
+
+------------------------------------------------------------------------------------------------------------------
+
+重载和重写的关键点:
+重载的目的是使得我们能够用用一个统一的接口名称来调用一系列方法.这些方法的目的也许是一样的,但是它们的实现方式会根据传入的参数不同而不同.
+重载是在编译期就已经确定了的,并不需要等到运行时才能确定.这也是为什么说它不是多态的一个原因.
+重写涉及到继承这个概念中的问题.子类继承了父类的方法,但是它可能需要有不同的操作行为,这时候就需要在子类中重写这个父类方法.
+private: 一个私有的java方法是不能被重写的,因为它对子类压根就不可见
+final:重载一个final的方法是可以的,但是不能重写它,因此父类如果将方法声明为final的就可保证所有子类的调用此方法时调用的都是父类的方法.
+final:如果两个方法有同样的参数列表,而其中一个的参数被声明为final的这种情况下这两个方法完全一样,因此不可重载.编译都通不过,因为这两个方法被视为.
+static:可以重载一个静态的Java方法但是不能重写静态的Java方法,因为静态方法在方法区中只有一个.
+static:重载是关于对象(实例）和继承而言的.一个声明为静态的方法属于整个类(对于这个的所有对象都是一样的).因此重写它没有任何意义.
+static:对于重载,两个静态方法的重载没有什么特别的,只不过是修饰符多了个static修饰符.参数列表依然必须不同.
+
+static作用于成员变量用来表示只保存一份副本,而final的作用是用来保证变量不可变。
+------------------------------------------------------------------------------------------------------------------
+Socket是某种类型文件的抽象.Socket就是一种特殊的文件.它是一个连接了两个用户的文件,任何一个用户向Socket里写数据,
+另一个用户都能看得到,不管这两个用户分布在世界上相距多么遥远的角落,感觉就像坐在一起传纸条一样.怎么理解这句话呢？
+想象一下,假设你要开发一个网络应用,需要在两个客户端之间发消息.整个过程可能包含以下步骤:
+1.客户端组装数据
+2.客户端之间约定好数据格式
+3.客户端向指定地址发送请求
+4.DNS服务器解析请求地址
+5.DNS没有找到地址,然后跳转到另一个DNS,一直到找到为止
+6.返回客户端真实的IP
+7.客户端向对应IP建立连接请求（三次握手）
+8.开始发送数据,窗口以2的k次幂大小滑动
+所以有了Socket的概念之后,我们在两个客户端之间发送消息可能就是这样的：
+1.指定对方的地址
+2.打开一个和对方连接的Socket
+3.把Socket当成普通的文件,往里写数据
+4.要是发现Socket里有数据,就读出来,那必然是对方发过来的
+------------------------------------------------------------------------------------------------------------------

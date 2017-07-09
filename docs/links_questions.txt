@@ -1,0 +1,163 @@
+https://mp.weixin.qq.com/s?__biz=MzI0NzI1NzU5NA%3D%3D&mid=2247483740&idx=1&sn=ed505ededdbb970a9094b34c829f25d5&scene=45#wechat_redirect
+http://blog.jobbole.com/110165/
+http://www.importnew.com/23195.html  netty
+http://www.importnew.com/23348.html
+http://blog.jobbole.com/109347/  	 tomcat多实例单应用配置.
+http://www.importnew.com/23450.html
+http://www.importnew.com/22637.html  面试问题
+
+http://blog.jobbole.com/107224/          BAT
+http://www.importnew.com/22173.html      OutOfMemoryError
+http://www.importnew.com/22078.html      CAS乐观锁
+http://www.jianshu.com/p/5681a1f0aad6    ALI interview
+http://www.importnew.com/22039.html      threadlocal
+http://www.importnew.com/21492.html      垃圾回收
+http://www.importnew.com/21470.html      Jvm类加载
+http://www.rowkey.me/blog/2016/05/07/javamm/   Java 内存管理
+https://my.oschina.net/hosee/blog/597934     高并发Java
+http://www.importnew.com/21396.html      HashMap 线程安全
+http://www.importnew.com/21441.html      Jvm 监控和调优
+http://www.importnew.com/22217.html      Java 虚拟机学习
+
+http://www.zuoxiaolong.com/html/article_37.html  bookList
+
+http://idea.iteblog.com/key.php
+http://www.allthingsdistributed.com/  亚马逊CTOBlog
+----------------------------0-Question------------------------------------------
+Guauva缓存
+http://www.importnew.com/24896.html
+maven depency type=pom
+pkg-config
+brew link bison --force
+./configure, make,sudo make install
+RequestMappingHandlerMapping注解映射器
+RequestMappingHandlerAdapter注解适配器
+用泛型和用Object的区别.
+.app .dmg区别
+brew 和apt 区别
+tcp和tcp6区别
+301 302 threadlocal
+sublime 预览
+npm命令　
+--save
+bower
+cheerio
+select 标签提交数据
+spring 监控
+https  配置
+ubuntu 开机启动项
+curl http://hq.sinajs.cn/list=P1701
+
+----------------------------1-LA------------------------------------------
+http://cn.nytimes.com/
+https://en.wikipedia.org/wiki/Main_Page
+http://startupclass.club/         					 yc startup video
+http://www.lynda.com/           					 VideoTutorials
+https://www.thenewboston.com/  				         VideoTutorials
+https://github.com/rg3/youtube-dl/blob/master/README.md#readme  YouTubeDownLoad
+
+----------------------------2-Java&Blog------------------------------------------
+http://macshuo.com/								池建强Blog
+http://blog.csdn.net/cywosp                     综合Blog
+http://www.leixuesong.cn/                       综合Blog
+http://www.cnblogs.com/cyfonly/								JavaBlog
+http://blog.csdn.net/u013970991?viewmode=contents           JavaBlog
+http://www.jianshu.com/users/90ab66c248e6/latest_articles   JavaBlog
+http://blog.tingyun.com/web/article/list/author/91275       JavaBlog
+http://blog.csdn.net/u013256816?viewmode=contents JavaBlog
+http://www.cnblogs.com/xrq730/                    JavaBlog
+https://www.iflym.com/						      JavaBlog
+http://blog.csdn.net/bingduanlbd      			  JavaBlog
+http://blog.csdn.net/wang379275614　　　           JavaBlog
+http://ifeve.com/							      JavaBlog
+http://shiyanjun.cn/                              JavaBlog
+http://emacsist.github.io                         JavaBlog
+http://www.cnblogs.com/chenssy/       			  JavaBlog
+http://my.oschina.net/xianggao/blog   			  JavaBlog
+http://tengj.top/                     			  JavaBlog
+http://javatar.iteye.com/　　　　　　　　　　        JavaBlog
+http://calvin1978.blogcn.com/                     JavaBlog
+http://www.cnblogs.com/chenssy/					  JavaBlog
+http://blog.csdn.net/flowingflying?viewmode=contents   JavaBlog
+http://toutiao.io/subjects/132961     				   java后端
+http://www.cnblogs.com/Creator/ 			           关注互联网后端技术
+http://www.chongh.wiki/archives/                       偏C
+http://www.importnew.com/21024.html                    java msquestionString
+http://www.importnew.com/16791.html                    java msquestion
+http://blog.jobbole.com/98487/                         ms3year
+http://www.cnblogs.com/dolphin0520/p/3932934.html      java多线程
+http://www.importnew.com/20327.html                    轻量级分布式RPC框架
+http://www.importnew.com/20804.html   				   通用并发对象池实现
+http://www.importnew.com/17093.html  				   classLoader
+http://www.importnew.com/17115.html  				   java 热部署
+http://www.importnew.com/16610.html    				   aop  todo
+http://www.importnew.com/12408.html    				   maven&JAVAEE
+http://www.importnew.com/18320.html    				   lock&synchronized
+http://www.importnew.com/18242.html    		           jvm
+http://www.importnew.com/18126.html　　　　　　　　　　　　volatile
+http://weibo.com/ttarticle/p/show?id=2309403952864992042896   EarnMoney
+http://www.importnew.com/18390.html  						  DesignPattern1
+http://www.importnew.com/18429.html  					      DesignPattern2
+http://www.importnew.com/18528.html  						  DesignPattern3
+http://www.importnew.com/18242.html　　                       JVM
+http://www.jianshu.com/p/7605b157f7db	                     Spring+Velocity+Mybatis整合笔记
+http://www.jianshu.com/p/40d4c7aebd66						 Java多线程总结
+http://www.importnew.com/21229.html                          Java高并发
+----------------------------3-FrontEnd--------------------------------------
+https://hexo.io/zh-cn/docs/index.html
+https://hexo.io/docs/configuration.html
+http://fontawesome.io/
+https://necolas.github.io/normalize.css/3.0.2/normalize.css
+http://luopq.com/                      										  前端Blog
+http://yanhaijing.com/                                      			      前端Blog
+https://github.com/qiu-deqing/FE-learning   							      前端入门方法
+https://li-xinyang.gitbooks.io/frontend-notebook/content/   				  前端开发笔记本
+http://www.pchou.info/ssgithubPage/2013-01-03-build-github-blog-page-01.html  github建站
+http://wiki.nginx.org/Pitfalls
+http://wiki.nginx.org/QuickStart
+http://wiki.nginx.org/Configuration
+https://nodejs.org
+https://www.npmjs.com/
+chrome://net-internals/#dns
+
+http://www.awesomes.cn/source/10      					git_pages
+https://pages.github.com/   							git_pages
+http://sunwhut.com/2015/10/30/buildBlog/    			git_pages
+http://gold.xitu.io/entry/56657fe160b202595a6f8ef6　　　 personal website
+http://www.imooc.com/article/3675   				    jquery selector
+http://web.jobbole.com/84092/       				    css盒子模型
+https://developer.yahoo.com/performance/rules.html      yahoo rules
+http://nqdeng.github.io/7-days-nodejs/#1.5.5   		    7天nodeJS
+https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-%E9%AB%98%E9%98%B6%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C   MarkDown语法
+https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown
+
+----------------------------4-ProjectManagement--------------------------------
+http://maven.apache.org/pom.html#What_is_the_POM
+https://git-scm.com/book/zh/v2   							  git
+http://book.haoduoshipin.com/gitbeijing/  					  git
+http://git.oschina.net/progit/            				      git
+http://www.alexkras.com/19-git-tips-for-everyday-use/         19 Tips For Everyday Git Use
+http://segmentfault.com/a/1190000004109495?utm_source=Weibo&utm_medium=shareLink&utm_campaign=socialShare     git
+https://github.com/geeeeeeeeek/git-recipes/wiki?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io   git
+http://www.oracle.com/technetwork/cn/community/java/apache-maven-getting-started-1-406235-zhs.html            maven
+
+----------------------------5-DataProcessing--------------------------------
+http://doc.redisfans.com/     						Redis命令参考
+blog.csdn.net/xw13106209/article/details/6583357  	#Navicat Premium 连接 Oracle 数据库
+http://www.imooc.com/article/1150   MySQL性能优化的最佳20+条经验
+http://www.imooc.com/article/1204   mysql　performance
+
+----------------------------6-Linux-------------------------------
+https://blog.linuxeye.com 				Linux运维笔记
+http://www.feng.com/iPhone/news/2016-04-25/Feng-friends-sharing-to-install-VirtualBox-virtual-machine-in-Mac-Pro_645143.shtml   mac install vb
+http://www.cnblogs.com/ggjucheng/archive/2012/01/08/2316599.html  losf
+http://forum.ubuntu.org.cn/viewtopic.php?t=390584  ubuntu年度巨献
+https://linux.cn/article-6594-1.html  docker
+https://help.ubuntu.com/stable/ubuntu-help/shell-keyboard-shortcuts.html  Ubuntu 快捷键
+http://coolshell.cn/articles/5426.html  vim
+www.imooc.com/article/1602   16个Linux服务器监控命令
+https://linux.cn/article-3487-1.html  unity mac
+http://mp.weixin.qq.com/s?__biz=MjM5NjY1NjYyMQ==&mid=200110283&idx=1&sn=5fdc296b9c5ce24a8392c098f68742e8&scene=4#wechat_redirect  监控Linux 性能   yd
+
+----------------------------7-IOS-------------------------------
+http://blog.devtang.com/               IOSBog
