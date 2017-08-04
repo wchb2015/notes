@@ -276,3 +276,7 @@ Socket是某种类型文件的抽象.Socket就是一种特殊的文件.它是一
 3.把Socket当成普通的文件,往里写数据
 4.要是发现Socket里有数据,就读出来,那必然是对方发过来的
 ------------------------------------------------------------------------------------------------------------------
+if I am given the opportunity. I am ready to share my experience and learn from others.
+
+
+The reasons behind my desire to study Computer Science are that I would like to expand my existing knowledge of programming and learn to apply it in various applications such as Artificial Intelligence, games and software development. I feel that having a good insight as to how a computer actually operates and deals with data would provide me with a solid base in understanding errors and the best ways to optimise code.
