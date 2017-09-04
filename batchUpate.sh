@@ -5,7 +5,7 @@ function batch_update() {
     do
         if test -d  $file 
         then
-            (cd $file ; git pull  ) 
+            (cd $file ; git pull; echo ' update'  $file ' success!!!')
         else
          echo  haha $file
         fi
