@@ -34,9 +34,10 @@ Super+1：打开主文件夹
 
 Ubuntu:
 ctrl+;最近复制的内容
-Ubuntu sudo apt-get install *** 之后,包的临时储存路径是/var/cache/apt/archives
+sudo apt-get install *** 之后,包的临时储存路径是/var/cache/apt/archives
 
 ============================Start==============================
+
 **1.Maven**
 <includeBaseDirectory></includeBaseDirectory>,设置为true的话,会把指定打包的内容外在嵌套一个文件夹.
 <fileSets></fileSets>用来设置所要打包的文件夹
@@ -54,10 +55,10 @@ mvnhelp:describe-Dplugin=assembly
 mvnhelp:describe-Dplugin=archetype-Ddetail
 mvnassembly:help-Ddetail=true-Dgoal=single
 
-TousetheAssemblyPlugininMaven,yousimplyneedto:
-①chooseorwritetheassemblydescriptortouse,
-②configuretheAssemblyPlugininyourproject'spom.xml,and
-③run"mvnassembly:single"onyourproject.
+To use the AssemblyPlugininMaven,you simply need to:
+①choose or write the assembly descriptor to use,
+②configure the AssemblyPlugininyourproject'spom.xml,and
+③run "mvnassembly:single" on your project.
 
 **2.DB**
 DML:data manipulation language,SELECT,UPDATE,INSERT,DELETE等
