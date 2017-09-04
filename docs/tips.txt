@@ -1,9 +1,9 @@
 chrome://net-internals/#dns
 
 配置相关:
-vim.bashrc
-aliasjps='jps-mlvV'
-source.bashrc
+vim .bashrc
+alias jps='jps -mlvV'
+source .bashrc
 
 Mac快捷键整理:
 1.显示Finder:Option+command+空格;
@@ -31,8 +31,10 @@ ctrl alt f1 #到达第一个工作台ctrl alt f7#回到图形化工作台
 Super+1：打开主文件夹
 在长段的命令中,使用Ctrl+←和Ctrl+→可快速将光标定位到命令中单词的首字母或末尾,实现在各单词之间的快速跳动定位.
 使用Ctrl+K快捷键可以将当前光标位置之后的所有部分快速清除,Ctrl+W可以清除当前光标位置之前的一个单词,而Ctrl+U则可以直接刚整行命令直接清除.
-ubuntu:ctrl+;最近复制的内容
-Ubuntu sudo apt-get install*** 之后,包的临时储存路径是/var/cache/apt/archives
+
+Ubuntu:
+ctrl+;最近复制的内容
+Ubuntu sudo apt-get install *** 之后,包的临时储存路径是/var/cache/apt/archives
 
 ============================Start==============================
 **1.Maven**
@@ -78,13 +80,16 @@ VO(ViewObject):显示各层对象,通常是web向模板渲染引擎层传输的�
 
 应用中不可直接使用日志系统(Log4j,Logback)中的API,而应依赖使用日志框架
 SLF4J中的API,使用门面模式的日志框架,有利于维护和各个类的日志处理方式统一.
+
 importorg.slf4j.Logger;
 importorg.slf4j.LoggerFactory;
 privatestaticfinalLoggerLOG=LoggerFactory.getLogger(Abc.class);
+
 1.slf4j-api-1.7.25
 2.slf4j-log4j12-1.7.25.jar
 3.log4j-1.2.17.jar
 <!--logstart-->
+
 <dependency>
 <groupId>org.slf4j</groupId>
 <artifactId>slf4j-api</artifactId>
@@ -102,6 +107,7 @@ privatestaticfinalLoggerLOG=LoggerFactory.getLogger(Abc.class);
 <artifactId>log4j</artifactId>
 <version>1.2.17</version>
 </dependency>
+
 <!--logend-->
 
 在Java集合框架中,对于参数值是未知类型的容器类,只能读取其中元素,不能向其中添加元素,
@@ -119,11 +125,11 @@ cd`dirname$0`，进入当前Shell程序的目录
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 sudo-E/usr/java/activemq-5.12.1/bin/activemqstart&&sudo-E/usr/java/zookeeper-3.4.6/bin/zkServer.shstart
 
-tail-300fshopbase.log#倒数300行并进入实时监听文件写入模式
+tail -300f shopbase.log#倒数300行并进入实时监听文件写入模式
 
 mvn dependency:tree打印整个依赖树
 mvn dependency:resolve打印出已解决依赖的列表
-mvn install -X想要查看完整的依赖踪迹，包含那些因为冲突或者其它原因而被拒绝引入的构件，打开Maven的调试标记运行
+mvn install -X想要查看完整的依赖踪迹,包含那些因为冲突或者其它原因而被拒绝引入的构件,打开Maven的调试标记运行
 mvn
 -D,--define<arg>Defineasystemproperty
 -U,--update-snapshotsForcesacheckformissing
