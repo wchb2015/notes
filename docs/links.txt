@@ -24,37 +24,12 @@ http://www.zuoxiaolong.com/html/article_37.html  bookList
 http://idea.iteblog.com/key.php
 http://www.allthingsdistributed.com/  亚马逊CTOBlog
 ----------------------------0-Question------------------------------------------
-Guauva缓存
-http://www.importnew.com/24896.html
-maven depency type=pom
-pkg-config
-brew link bison --force
-./configure, make,sudo make install
-RequestMappingHandlerMapping注解映射器
-RequestMappingHandlerAdapter注解适配器
-用泛型和用Object的区别.
-.app .dmg区别
-brew 和apt 区别
-tcp和tcp6区别
-301 302 threadlocal
-sublime 预览
-npm命令　
---save
-bower
-cheerio
-select 标签提交数据
-spring 监控
-https  配置
-ubuntu 开机启动项
-curl http://hq.sinajs.cn/list=P1701
+
 
 ----------------------------1-LA------------------------------------------
-http://cn.nytimes.com/
-https://en.wikipedia.org/wiki/Main_Page
 http://startupclass.club/         					 yc startup video
 http://www.lynda.com/           					 VideoTutorials
 https://www.thenewboston.com/  				         VideoTutorials
-https://github.com/rg3/youtube-dl/blob/master/README.md#readme  YouTubeDownLoad
 
 ----------------------------2-Java&Blog------------------------------------------
 http://macshuo.com/								池建强Blog
@@ -143,7 +118,6 @@ http://www.oracle.com/technetwork/cn/community/java/apache-maven-getting-started
 
 ----------------------------5-DataProcessing--------------------------------
 http://doc.redisfans.com/     						Redis命令参考
-blog.csdn.net/xw13106209/article/details/6583357  	#Navicat Premium 连接 Oracle 数据库
 http://www.imooc.com/article/1150   MySQL性能优化的最佳20+条经验
 http://www.imooc.com/article/1204   mysql　performance
 
