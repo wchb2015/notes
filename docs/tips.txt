@@ -1,3 +1,34 @@
+2017-10-21
+线程池的线程数=N(CPU)*U(CPU)*(1+W/C)
+
+N(CPU):CPU的核数
+U(CPU):0~1,期望的CPU的使用率
+W/C:等待时间与计算时间的比例
+
+编码的原因:
+1.在计算机中存储信息的最小单元是1个字节,即8个bit,所以能表示的字符范围是0-255个.
+2.人类要表示的符号太多,无法用1个字节来表示.
+3.要解决这个问题必须要有一个新的数据结构char,而从char到byte必须编码.
+
+1.ASCII编码.
+共128个,用一个字节的低7位表示.
+
+@RequestMapping(value="/permission_group",method=RequestMethod.POST,consumes={"text/*","application/*"})
+consumes:指定处理请求的提交内容类型(Content-Type),例如application/json,text/html;
+produces:指定返回的内容类型,仅当request请求头中的(Accept)类型中包含该指定类型才返回;
+
+A direct exchange delivers messages to queues based on amessage routingkey.
+The routingkey is amessage attribute added into the message header by the producer.
+The routingkey can be  seen as an "address" that the exchange use to decide how to route the message.
+A message goes to the queue(s) whose bindingkey exactly matches the routing key of the message.
+DefaultExchange:这种是特殊的DirectExchange,是rabbitmq内部默认的一个交换机。该交换机的name是空字符串,所有queue都默认binding到该交换机上。
+所有binding到该交换机上的queue，routing-key都和queue的name一样。
+
+Codethatusesgenericshasmanybenefitsovernon-genericcode:
+①Strongertypechecksatcompiletime.
+②Eliminationofcasts.
+③Enablingprogrammerstoimplementgenericalgorithms.
+
 chrome://net-internals/#dns
 
 配置相关:
