@@ -1,4 +1,9 @@
-2017-10-21
+#### 2017-10-25
+【强制】泛型通配符<? extends T>来接收返回的数据，此写法的泛型集合不能使用add方 法，
+而<? super T>不能使用get方法，做为接口调用赋值时易出错。 说明:扩展说一下PECS(Producer Extends Consumer Super)原则:
+第一、频繁往外读取内 容的，适合用<? extends T>。第二、经常往里插入的，适合用<? super T>。
+
+#### 2017-10-21
 线程池的线程数=N(CPU)*U(CPU)*(1+W/C)
 
 N(CPU):CPU的核数
@@ -6,9 +11,9 @@ U(CPU):0~1,期望的CPU的使用率
 W/C:等待时间与计算时间的比例
 
 编码的原因:
-1.在计算机中存储信息的最小单元是1个字节,即8个bit,所以能表示的字符范围是0-255个.
-2.人类要表示的符号太多,无法用1个字节来表示.
-3.要解决这个问题必须要有一个新的数据结构char,而从char到byte必须编码.
+- 在计算机中存储信息的最小单元是1个字节,即8个bit,所以能表示的字符范围是0-255个.
+- 人类要表示的符号太多,无法用1个字节来表示.
+- 要解决这个问题必须要有一个新的数据结构char,而从char到byte必须编码.
 
 1.ASCII编码.
 共128个,用一个字节的低7位表示.
@@ -25,9 +30,9 @@ DefaultExchange:这种是特殊的DirectExchange,是rabbitmq内部默认的一�
 所有binding到该交换机上的queue，routing-key都和queue的name一样。
 
 Codethatusesgenericshasmanybenefitsovernon-genericcode:
-①Strongertypechecksatcompiletime.
-②Eliminationofcasts.
-③Enablingprogrammerstoimplementgenericalgorithms.
+-  Strongertypechecksatcompiletime.
+-  Eliminationofcasts.
+-  Enablingprogrammerstoimplementgenericalgorithms.
 
 chrome://net-internals/#dns
 
@@ -37,16 +42,16 @@ alias jps='jps -mlvV'
 source .bashrc
 
 Mac快捷键整理:
-1.显示Finder:Option+command+空格;
-2.Mac系统下浏览器的刷新快捷键command+R,强制刷新快捷键为command+shift+R.
-3.ctrl+UP:command+tab(等效,切换应用).
-4.Alt键代替Option键;Windows标志键代替Command键.
-5.command+UiTerm2切换是否透明.
-6.Home键=Fn+左方向
-End键=Fn+右方向
-PageUP=Fn+上方向
-PageDOWN=Fn+下方向
-向前Delete=Fn+delete键
+1. 显示Finder:Option+command+空格;
+2. Mac系统下浏览器的刷新快捷键command+R,强制刷新快捷键为command+shift+R.
+3. ctrl+UP:command+tab(等效,切换应用).
+4. Alt键代替Option键;Windows标志键代替Command键.
+5. command+UiTerm2切换是否透明.
+6. Home键=Fn+左方向
+-  End键=Fn+右方向
+-  PageUP=Fn+上方向
+-  PageDOWN=Fn+下方向
+-  向前Delete=Fn+delete键
 
 IDEA快捷键整理:
 查看注释：Win:Ctrl+Q,Mac:Control+J
@@ -77,9 +82,9 @@ sudo apt-get install *** 之后,包的临时储存路径是/var/cache/apt/archiv
 mvn versions:set -DnewVersion=1.9.5.0-RELEASE
 mvn clean deploy -Dmaven.test.skip=true
 
-①clean:pre-clean/clean/post-clean
-②default:validate/initialize/generate-sources/process-sources/generate-resources/process-resources/compile/process-classes/generate-test-sources/process-test-sources/generate-test-resources/process-test-resources/test-compile/process-test-classes/test/prepare-package/package/pre-integration-test/integration-test/post-integration-test/verify/install/deploy
-③site:pre-site/site/post-site/site-deploy
+- clean:pre-clean/clean/post-clean
+- default:validate/initialize/generate-sources/process-sources/generate-resources/process-resources/compile/process-classes/generate-test-sources/process-test-sources/generate-test-resources/process-test-resources/test-compile/process-test-classes/test/prepare-package/package/pre-integration-test/integration-test/post-integration-test/verify/install/deploy
+- site:pre-site/site/post-site/site-deploy
 
 列出这个plugin所有的goal
 mvnhelp:describe-Dplugin=assembly
@@ -87,9 +92,9 @@ mvnhelp:describe-Dplugin=archetype-Ddetail
 mvnassembly:help-Ddetail=true-Dgoal=single
 
 To use the AssemblyPlugininMaven,you simply need to:
-①choose or write the assembly descriptor to use,
-②configure the AssemblyPlugininyourproject'spom.xml,and
-③run "mvnassembly:single" on your project.
+- choose or write the assembly descriptor to use,
+- configure the AssemblyPlugininyourproject'spom.xml,and
+- run "mvnassembly:single" on your project.
 
 **2.DB**
 DML:data manipulation language,SELECT,UPDATE,INSERT,DELETE等
@@ -112,11 +117,11 @@ BO(BusinessObject):业务对象,可以由Service层输出的封装业务逻辑�
 QUERY,数据查询对象,各层接收上层的查询请求。
 VO(ViewObject):显示各层对象,通常是web向模板渲染引擎层传输的对象.
 
-1.线程处于Sleep或者Blocked状态时,即程序不执行,没有分配CPU时间.
-3.HotSpot并不区分虚拟机栈和本地方法栈.
-4.栈容量只由-Xss参数设定.
-5.https://visualvm.github.io/plugins.html插件
-6.打印GC日志:-XX:+PrintGCDetails-XX:+PrintGCDateStamps-Xloggc:./gc.log
+1. 线程处于Sleep或者Blocked状态时,即程序不执行,没有分配CPU时间.
+3. HotSpot并不区分虚拟机栈和本地方法栈.
+4. 栈容量只由-Xss参数设定.
+5. https://visualvm.github.io/plugins.html插件
+6. 打印GC日志:-XX:+PrintGCDetails-XX:+PrintGCDateStamps-Xloggc:./gc.log
 
 应用中不可直接使用日志系统(Log4j,Logback)中的API,而应依赖使用日志框架
 SLF4J中的API,使用门面模式的日志框架,有利于维护和各个类的日志处理方式统一.
@@ -124,6 +129,8 @@ SLF4J中的API,使用门面模式的日志框架,有利于维护和各个类的�
 1.slf4j-api-1.7.25
 2.slf4j-log4j12-1.7.25.jar
 3.log4j-1.2.17.jar
+
+```
 <!--logstart-->
 
 <dependency>
@@ -145,6 +152,7 @@ SLF4J中的API,使用门面模式的日志框架,有利于维护和各个类的�
 </dependency>
 
 <!--logend-->
+``` 
 
 在Java集合框架中,对于参数值是未知类型的容器类,只能读取其中元素,不能向其中添加元素,
 因为,其类型是未知,所以编译器无法识别添加元素的类型和容器的类型是否兼容,唯一的例外是NULL.
@@ -304,18 +312,18 @@ static作用于成员变量用来表示只保存一份副本,而final的作用�
 Socket是某种类型文件的抽象.Socket就是一种特殊的文件.它是一个连接了两个用户的文件,任何一个用户向Socket里写数据,
 另一个用户都能看得到,不管这两个用户分布在世界上相距多么遥远的角落,感觉就像坐在一起传纸条一样.怎么理解这句话呢？
 想象一下,假设你要开发一个网络应用,需要在两个客户端之间发消息.整个过程可能包含以下步骤:
-1.客户端组装数据
-2.客户端之间约定好数据格式
-3.客户端向指定地址发送请求
-4.DNS服务器解析请求地址
-5.DNS没有找到地址,然后跳转到另一个DNS,一直到找到为止
-6.返回客户端真实的IP
-7.客户端向对应IP建立连接请求（三次握手）
-8.开始发送数据,窗口以2的k次幂大小滑动
+1. 客户端组装数据
+2. 客户端之间约定好数据格式
+3. 客户端向指定地址发送请求
+4. DNS服务器解析请求地址
+5. DNS没有找到地址,然后跳转到另一个DNS,一直到找到为止
+6. 返回客户端真实的IP
+7. 客户端向对应IP建立连接请求（三次握手）
+8. 开始发送数据,窗口以2的k次幂大小滑动
 所以有了Socket的概念之后,我们在两个客户端之间发送消息可能就是这样的：
-1.指定对方的地址
-2.打开一个和对方连接的Socket
-3.把Socket当成普通的文件,往里写数据
-4.要是发现Socket里有数据,就读出来,那必然是对方发过来的
+1. 指定对方的地址
+2. 打开一个和对方连接的Socket
+3. 把Socket当成普通的文件,往里写数据
+4. 要是发现Socket里有数据,就读出来,那必然是对方发过来的
 ------------------------------------------------------------------------------------------------------------------
 
