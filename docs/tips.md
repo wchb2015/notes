@@ -1,80 +1,127 @@
+#### 2017-11-04
+1. 通过getenforce 命令查看 SELinux 状态.
+2. 通过 setenforce 0  关闭selinux.
+3. MainLine Version 开发版.
+4. Legacy Version 历史版本.
+
+
+#### 2017-11-03
+```
+You should test your configuration at:
+https://www.ssllabs.com/ssltest/analyze.html?d=wchb7.com
+-------------------------------------------------------------------------------
+
+IMPORTANT NOTES:
+ - Congratulations! Your certificate and chain have been saved at:
+   /etc/letsencrypt/live/wchb7.com/fullchain.pem
+   Your key file has been saved at:
+   /etc/letsencrypt/live/wchb7.com/privkey.pem
+   Your cert will expire on 2018-02-01. To obtain a new or tweaked
+   version of this certificate in the future, simply run certbot again
+   with the "certonly" option. To non-interactively renew *all* of
+   your certificates, run "certbot renew"
+ - Your account credentials have been saved in your Certbot
+   configuration directory at /etc/letsencrypt. You should make a
+   secure backup of this folder now. This configuration directory will
+   also contain certificates and private keys obtained by Certbot so
+   making regular backups of this folder is ideal.
+ - If you like Certbot, please consider supporting our work by:
+
+   Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+   Donating to EFF:                    https://eff.org/donate-le
+```
+
+#### 2017-11-01
+- 普通队列:先进先出,后进后出.
+- 优先队列:出队顺序和入队顺序无关;和优先级相关.
+
 #### 2017-10-25
-【强制】泛型通配符<? extends T>来接收返回的数据，此写法的泛型集合不能使用add方 法，
-而<? super T>不能使用get方法，做为接口调用赋值时易出错。 说明:扩展说一下PECS(Producer Extends Consumer Super)原则:
-第一、频繁往外读取内 容的，适合用<? extends T>。第二、经常往里插入的，适合用<? super T>。
+- 【强制】泛型通配符<? extends T>来接收返回的数据，此写法的泛型集合不能使用add方 法，而<? super T>不能使用get方法，做为接口调用赋值时易出错。 
+- 说明:扩展说一下PECS(Producer Extends Consumer Super)原则:
+- 第一、频繁往外读取内 容的，适合用<? extends T>。第二、经常往里插入的，适合用<? super T>。
 
 #### 2017-10-21
+```
 线程池的线程数=N(CPU)*U(CPU)*(1+W/C)
 
 N(CPU):CPU的核数
 U(CPU):0~1,期望的CPU的使用率
 W/C:等待时间与计算时间的比例
+```
 
-编码的原因:
-- 在计算机中存储信息的最小单元是1个字节,即8个bit,所以能表示的字符范围是0-255个.
-- 人类要表示的符号太多,无法用1个字节来表示.
-- 要解决这个问题必须要有一个新的数据结构char,而从char到byte必须编码.
+1. 编码的原因:
+	-  在计算机中存储信息的最小单元是1个字节,即8个bit,所以能表示的字符范围是0-255个.
+	-  人类要表示的符号太多,无法用1个字节来表示.
+	-  要解决这个问题必须要有一个新的数据结构char,而从char到byte必须编码.
 
-1.ASCII编码.
-共128个,用一个字节的低7位表示.
+2. ASCII编码.共128个,用一个字节的低7位表示.
 
+3.
+  
+```
 @RequestMapping(value="/permission_group",method=RequestMethod.POST,consumes={"text/*","application/*"})
 consumes:指定处理请求的提交内容类型(Content-Type),例如application/json,text/html;
 produces:指定返回的内容类型,仅当request请求头中的(Accept)类型中包含该指定类型才返回;
+```
 
-A direct exchange delivers messages to queues based on amessage routingkey.
-The routingkey is amessage attribute added into the message header by the producer.
-The routingkey can be  seen as an "address" that the exchange use to decide how to route the message.
-A message goes to the queue(s) whose bindingkey exactly matches the routing key of the message.
-DefaultExchange:这种是特殊的DirectExchange,是rabbitmq内部默认的一个交换机。该交换机的name是空字符串,所有queue都默认binding到该交换机上。
-所有binding到该交换机上的queue，routing-key都和queue的name一样。
+#### RabbitMQ
+ 
+- A direct exchange delivers messages to queues based on amessage routingkey.
+- The routingkey is amessage attribute added into the message header by the producer.
+- The routingkey can be  seen as an "address" that the exchange use to decide how to route the message.
+- A message goes to the queue(s) whose bindingkey exactly matches the routing key of the message.
+- DefaultExchange:这种是特殊的DirectExchange,是rabbitmq内部默认的一个交换机。该交换机的name是空字符串,所有queue都默认binding到该交换机上。
+- 所有binding到该交换机上的queue，routing-key都和queue的name一样。
 
-Codethatusesgenericshasmanybenefitsovernon-genericcode:
--  Strongertypechecksatcompiletime.
--  Eliminationofcasts.
--  Enablingprogrammerstoimplementgenericalgorithms.
-
+```
 chrome://net-internals/#dns
+```
 
-配置相关:
-vim .bashrc
-alias jps='jps -mlvV'
-source .bashrc
+1. 配置相关:
 
-Mac快捷键整理:
-1. 显示Finder:Option+command+空格;
-2. Mac系统下浏览器的刷新快捷键command+R,强制刷新快捷键为command+shift+R.
-3. ctrl+UP:command+tab(等效,切换应用).
-4. Alt键代替Option键;Windows标志键代替Command键.
-5. command+UiTerm2切换是否透明.
-6. Home键=Fn+左方向
--  End键=Fn+右方向
--  PageUP=Fn+上方向
--  PageDOWN=Fn+下方向
--  向前Delete=Fn+delete键
+	```
+	vim .bashrc
+	alias jps='jps -mlvV'
+	source .bashrc
+	```
 
-IDEA快捷键整理:
-查看注释：Win:Ctrl+Q,Mac:Control+J
-生成单元测试:shift+command+T.
-BasicCompletion:control+;(DIY)
-Structurepopup:Cmd+F12
-SuperMethod:Cmd+U
+2. Mac快捷键整理:
 
-Linux快捷键整理:
-ctrl+shift+t打开一个新的终端标签.
-firefox&#后台执行
-ctrl alt f1 #到达第一个工作台ctrl alt f7#回到图形化工作台
-Super+1：打开主文件夹
-在长段的命令中,使用Ctrl+←和Ctrl+→可快速将光标定位到命令中单词的首字母或末尾,实现在各单词之间的快速跳动定位.
-使用Ctrl+K快捷键可以将当前光标位置之后的所有部分快速清除,Ctrl+W可以清除当前光标位置之前的一个单词,而Ctrl+U则可以直接刚整行命令直接清除.
+	- 显示Finder:Option+command+空格;
+	- Mac系统下浏览器的刷新快捷键command+R,强制刷新快捷键为command+shift+R.
+	- ctrl+UP:command+tab(等效,切换应用).
+	- Alt键代替Option键;Windows标志键代替Command键.
+	- command+UiTerm2切换是否透明.
+	- Home键=Fn+左方向
+	-  End键=Fn+右方向
+	-  PageUP=Fn+上方向
+	-  PageDOWN=Fn+下方向
+	-  向前Delete=Fn+delete键
 
-Ubuntu:
-ctrl+;最近复制的内容
-sudo apt-get install *** 之后,包的临时储存路径是/var/cache/apt/archives
+3. IDEA快捷键整理:
 
-============================Start==============================
+	- 生成单元测试:shift+command+T.
+	- BasicCompletion:control+;(DIY)
+	- Structurepopup:Cmd+F12
+	- SuperMethod:Cmd+U
 
-**1.Maven**
+4. Linux快捷键整理:
+
+	- ctrl+shift+t打开一个新的终端标签.
+	- firefox&#后台执行
+	- ctrl alt f1 #到达第一个工作台ctrl alt f7#回到图形化工作台
+	- Super+1：打开主文件夹
+	- 在长段的命令中,使用Ctrl+←和Ctrl+→可快速将光标定位到命令中单词的首字母或末尾,实现在各单词之间的快速跳动定位.
+	- 使用Ctrl+K快捷键可以将当前光标位置之后的所有部分快速清除,Ctrl+W可以清除当前光标位置之前的一个单词,而Ctrl+U则可以直接刚整行命令直接清除.
+
+5. Ubuntu:
+
+	- ctrl+;最近复制的内容
+	- sudo apt-get install *** 之后,包的临时储存路径是/var/cache/apt/archives
+
+
+#### Maven
+```
 <includeBaseDirectory></includeBaseDirectory>,设置为true的话,会把指定打包的内容外在嵌套一个文件夹.
 <fileSets></fileSets>用来设置所要打包的文件夹
 <appendAssemblyId></appendAssemblyId>来设置打出的包是否带有AssemblyId(也就是assembly.xml中设置的id)
@@ -82,40 +129,51 @@ sudo apt-get install *** 之后,包的临时储存路径是/var/cache/apt/archiv
 mvn versions:set -DnewVersion=1.9.5.0-RELEASE
 mvn clean deploy -Dmaven.test.skip=true
 
+mvn dependency:tree打印整个依赖树
+mvn dependency:resolve打印出已解决依赖的列表
+mvn install -X想要查看完整的依赖踪迹,包含那些因为冲突或者其它原因而被拒绝引入的构件,打开Maven的调试标记运行
+mvn
+-D,--define<arg>Defineasystemproperty
+-U,--update -snapshots Forces a check for missing releases and updated snapshots on remote repositories
+```
+
 - clean:pre-clean/clean/post-clean
 - default:validate/initialize/generate-sources/process-sources/generate-resources/process-resources/compile/process-classes/generate-test-sources/process-test-sources/generate-test-resources/process-test-resources/test-compile/process-test-classes/test/prepare-package/package/pre-integration-test/integration-test/post-integration-test/verify/install/deploy
 - site:pre-site/site/post-site/site-deploy
 
-列出这个plugin所有的goal
-mvnhelp:describe-Dplugin=assembly
-mvnhelp:describe-Dplugin=archetype-Ddetail
-mvnassembly:help-Ddetail=true-Dgoal=single
+1.  列出这个plugin所有的goal
+	- mvn help:describe-Dplugin=assembly
+	- mvn help:describe-Dplugin=archetype-Ddetail
+	- mvn assembly:help-Ddetail=true-Dgoal=single
 
-To use the AssemblyPlugininMaven,you simply need to:
-- choose or write the assembly descriptor to use,
-- configure the AssemblyPlugininyourproject'spom.xml,and
-- run "mvnassembly:single" on your project.
+2. To use the AssemblyPlugininMaven,you simply need to:
+	- choose or write the assembly descriptor to use,
+	- configure the AssemblyPlugininyourproject'spom.xml,and
+	- run "mvnassembly:single" on your project.
 
-**2.DB**
-DML:data manipulation language,SELECT,UPDATE,INSERT,DELETE等
-DDL:data definition language,CREATE,ALTER,DROP等
-DCL:Data Control Language,grant,deny,revoke等
+#### DB
 
-**3.Java**
+- DML:data manipulation language,SELECT,UPDATE,INSERT,DELETE等
+- DDL:data definition language,CREATE,ALTER,DROP等
+- DCL:Data Control Language,grant,deny,revoke等
+
+#### Java
 1. 如果当多个线程访问同一个可变的状态变量时没有使用合适的同步,那么程序就会出现错误.有三种方式可以修复这个问题.
-- 不在线程之间共享该状态变量.
-- 将状态变量修改为不可变的变量.
-- 在访问状态变量时使用同步.
+	- 不在线程之间共享该状态变量.
+	- 将状态变量修改为不可变的变量.
+	- 在访问状态变量时使用同步.
 2. 无状态对象一定是线程安全的.
 3. 每个Java对象可以用作一个实现同步的锁,称为内置锁(Intrinsic Lock)或Monitor Lock.
 4. 获得内置锁的唯一途径就是进入这锁保护的同步代码块或方法.
 5. 内置锁是可重入的.
 
-DO(DataObject):与数据库表结构一一对应,通过DAO层向上传输数据源对象.Model.
-DTO(DataTransferObject):数据传输对象,Service和Manager向外传输的对象.
-BO(BusinessObject):业务对象,可以由Service层输出的封装业务逻辑的对象.
-QUERY,数据查询对象,各层接收上层的查询请求。
-VO(ViewObject):显示各层对象,通常是web向模板渲染引擎层传输的对象.
+6.
+
+- DO(DataObject):与数据库表结构一一对应,通过DAO层向上传输数据源对象.Model.
+- DTO(DataTransferObject):数据传输对象,Service和Manager向外传输的对象.
+- BO(BusinessObject):业务对象,可以由Service层输出的封装业务逻辑的对象.
+- QUERY,数据查询对象,各层接收上层的查询请求。
+- VO(ViewObject):显示各层对象,通常是web向模板渲染引擎层传输的对象.
 
 1. 线程处于Sleep或者Blocked状态时,即程序不执行,没有分配CPU时间.
 3. HotSpot并不区分虚拟机栈和本地方法栈.
@@ -123,67 +181,20 @@ VO(ViewObject):显示各层对象,通常是web向模板渲染引擎层传输的�
 5. https://visualvm.github.io/plugins.html插件
 6. 打印GC日志:-XX:+PrintGCDetails-XX:+PrintGCDateStamps-Xloggc:./gc.log
 
-应用中不可直接使用日志系统(Log4j,Logback)中的API,而应依赖使用日志框架
-SLF4J中的API,使用门面模式的日志框架,有利于维护和各个类的日志处理方式统一.
+#### Linux
 
-1.slf4j-api-1.7.25
-2.slf4j-log4j12-1.7.25.jar
-3.log4j-1.2.17.jar
+1. sz命令发送文件到本地;rz命令本地上传文件到服务器.
+2. $0当前Shell程序的文件名
+3. dirname$0，获取当前Shell程序的路径
+4. cd `dirname$0` ，进入当前Shell程序的目录
+
+
+
+#### MySQL
+1. 连接池通常实现在Client端,是指应用(客户端)创建预先创建一定的连接
+2. 线程池实现在server端,通过创建一定数量的线程服务DB请求
 
 ```
-<!--logstart-->
-
-<dependency>
-<groupId>org.slf4j</groupId>
-<artifactId>slf4j-api</artifactId>
-<version>1.7.25</version>
-</dependency>
-
-<dependency>
-<groupId>org.slf4j</groupId>
-<artifactId>slf4j-log4j12</artifactId>
-<version>1.7.25</version>
-</dependency>
-
-<dependency>
-<groupId>log4j</groupId>
-<artifactId>log4j</artifactId>
-<version>1.2.17</version>
-</dependency>
-
-<!--logend-->
-``` 
-
-在Java集合框架中,对于参数值是未知类型的容器类,只能读取其中元素,不能向其中添加元素,
-因为,其类型是未知,所以编译器无法识别添加元素的类型和容器的类型是否兼容,唯一的例外是NULL.
-
-**4.Linux**
-1.sz命令发送文件到本地;rz命令本地上传文件到服务器.
-2.netstat-n|awk'/^tcp/{++S[$NF]}END{for(ainS)printa,S[a]}'
-3.$0当前Shell程序的文件名
-dirname$0，获取当前Shell程序的路径
-cd`dirname$0`，进入当前Shell程序的目录
-
-
-============================END==============================
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-sudo-E/usr/java/activemq-5.12.1/bin/activemqstart&&sudo-E/usr/java/zookeeper-3.4.6/bin/zkServer.shstart
-
-tail -300f shopbase.log#倒数300行并进入实时监听文件写入模式
-
-mvn dependency:tree打印整个依赖树
-mvn dependency:resolve打印出已解决依赖的列表
-mvn install -X想要查看完整的依赖踪迹,包含那些因为冲突或者其它原因而被拒绝引入的构件,打开Maven的调试标记运行
-mvn
--D,--define<arg>Defineasystemproperty
--U,--update-snapshotsForcesacheckformissing
-releasesandupdatedsnapshotson
-remoterepositories
-
-MySQL:
-连接池通常实现在Client端,是指应用(客户端)创建预先创建一定的连接
-线程池实现在server端,通过创建一定数量的线程服务DB请求
-
 实现RejectedExecutionHandler的java.util.concurrent中的类:
 ThreadPoolExecutor.AbortPolicy:用于被拒绝任务的处理程序,它将抛出RejectedExecutionException.
 ThreadPoolExecutor.CallerRunsPolicy:用于被拒绝任务的处理程序,它直接在execute方法的调用线程中运行被拒绝的任务；如果执行程序已关闭，则会丢弃该任务。
@@ -239,10 +250,6 @@ classpath:只能加载找到的第一个文件.
 classpath*:的使用是为了多个component(最终发布成不同的jar包)并行开发,各自的bean定义文件按照一定的规则:package+filename,
 而使用这些component的调用者可以把这些文件都加载进来.
 
---------------------------------------------------
-
-ab-n1000-c10http://localhost:8080/test_springmvc/user-module/getAllUsers.html/
-
 主机记录就是域名前缀，常见用法有：
 www：解析后的域名为www.wchb7.com
 @：直接解析主域名wchb7.com
@@ -253,11 +260,10 @@ AAAA：用来指定主机名（或域名）对应的IPv6地址（例如：ff06:0
 CNAME：如果需要将域名指向另一个域名，再由另一个域名提供ip地址，就需要添加CNAME记录。
 NS：域名服务器记录，如果需要把子域名交给其他DNS服务商解析，就需要添加NS记录。
 TXT：在这里可以填写任何东西，长度限制255。绝大多数的TXT记录是用来做SPF记录（反垃圾邮件）。
-MX：如果需要设置邮箱，让邮箱能收到邮件，就需要添加MX记录。
+MX：如果需要设置邮箱，让邮箱能收到邮件，就需要添加MX记录
 显性URL：从一个地址301重定向到另一个地址的时候，就需要添加显性URL记录（注：DNSPod目前只支持301重定向）。
 隐性URL：类似于显性URL，区别在于隐性URL不会改变地址栏中的域名。
 SRV：记录了哪台计算机提供了哪个服务。格式为：服务的名字、点、协议的类型，例如：_xmpp-server._tcp。
-
 同步就是:如果有多个任务或者事件要发生,这些任务或者事件必须逐个地进行,一个事件或者任务的执行会导致整个流程的暂时等待,这些事件没有办法并发地执行;
 异步就是:如果有多个任务或者事件发生,这些事件可以并发地执行,一个事件或者任务的执行不会导致整个流程的暂时等待.
 不要将多线程和异步画上等号,异步只是宏观上的一个模式,采用多线程来实现异步只是一种手段,并且通过多进程的方式也可以实现异步.
@@ -272,7 +278,6 @@ SRV：记录了哪台计算机提供了哪个服务。格式为：服务的名�
 阻塞IO:blockingIO,非阻塞:non-blockingIO,synchronousI/O,asynchronousI/O.
 AsynchronousI/OoperationcausestherequestingprocesstobeblockeduntilthatI/Ooperationcompletes.
 AnasynchronousI/Ooperationdoesnotcausetherequestingprocesstobeblocked.
-
 在Java中,提供了四种访问权限控制:默认访问权限(包访问权限),public,private以及protected.
 只有默认访问权限和public能够用来修饰类.修饰类的变量和方法四种权限都可以.(本处所说的类针对的是外部类,不包括内部类)
 1.修饰类.默认访问权限(包访问权限):用来修饰类的话,表示该类只对同一个包中的其他类可见.public:用来修饰类的话,表示该类对其他所有的类都可见.
@@ -283,18 +288,14 @@ protected:如果一个类的方法或者变量被protected修饰,对于同一个
 对于不同包的类,只有继承于该类的类才可以访问到该类的方法或者变量.
 public:被public修饰的方法或者变量,在任何地方都是可见的.
 Java中,被final修饰的类是不允许被继承的.
-
 不要搞混css和js标签
 <linkhref="/css/screen.css"rel="stylesheet">
 <scriptsrc="/js/jquery.min.js"></script>
 <scriptsrc="/js/main.js"></script>
-
 所谓线程安全无非是要控制多个线程对某个资源的有序访问或修改.
 认识java线程安全,必须了解两个主要的点:java的内存模型,java的线程同步机制.
 总结java的内存模型,要解决两个主要的问题:可见性和有序性.
 何谓可见性?多个线程之间是不能互相传递数据通信的,它们之间的沟通只能通过共享变量来进行.
-
-------------------------------------------------------------------------------------------------------------------
 
 重载和重写的关键点:
 重载的目的是使得我们能够用用一个统一的接口名称来调用一系列方法.这些方法的目的也许是一样的,但是它们的实现方式会根据传入的参数不同而不同.
@@ -306,9 +307,8 @@ final:如果两个方法有同样的参数列表,而其中一个的参数被声�
 static:可以重载一个静态的Java方法但是不能重写静态的Java方法,因为静态方法在方法区中只有一个.
 static:重载是关于对象(实例）和继承而言的.一个声明为静态的方法属于整个类(对于这个的所有对象都是一样的).因此重写它没有任何意义.
 static:对于重载,两个静态方法的重载没有什么特别的,只不过是修饰符多了个static修饰符.参数列表依然必须不同.
-
 static作用于成员变量用来表示只保存一份副本,而final的作用是用来保证变量不可变。
-------------------------------------------------------------------------------------------------------------------
+
 Socket是某种类型文件的抽象.Socket就是一种特殊的文件.它是一个连接了两个用户的文件,任何一个用户向Socket里写数据,
 另一个用户都能看得到,不管这两个用户分布在世界上相距多么遥远的角落,感觉就像坐在一起传纸条一样.怎么理解这句话呢？
 想象一下,假设你要开发一个网络应用,需要在两个客户端之间发消息.整个过程可能包含以下步骤:
@@ -325,5 +325,4 @@ Socket是某种类型文件的抽象.Socket就是一种特殊的文件.它是一
 2. 打开一个和对方连接的Socket
 3. 把Socket当成普通的文件,往里写数据
 4. 要是发现Socket里有数据,就读出来,那必然是对方发过来的
-------------------------------------------------------------------------------------------------------------------
-
+```
