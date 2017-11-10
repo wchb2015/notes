@@ -1,3 +1,36 @@
+#### 2017-11-07
+1. To comment out blocks in vim:
+ 
+	```
+	press Esc (to leave editing or other mode)
+	hit ctrl+v (visual block mode)
+	use the up/down arrow keys to select lines you want (it won't highlight everything - it's OK!)
+	Shift+i (capital I)
+	insert the text you want, i.e. '% '
+	press Esc
+	```
+2. To uncomment blocks in vim:
+
+	```
+	press Esc (to leave editing or other mode)
+	hit ctrl+v (visual block mode)
+	use the up/down arrow keys to select the lines to uncomment.
+	If you want to select multiple characters, use one or combine these methods:
+	use the left/right arrow keys to select more text
+	to select chunks of text use shift + left/right arrow key
+	you can repeatedly push the delete keys below, like a regular delete button
+	press d or x to delete characters, repeatedly if necessary
+	press Esc
+	```
+
+#### 2017-11-06
+1. 实例变量存储在堆中,局部变量存储在栈上.
+2. wait,notify,notifyAll的调用必须在对象的synchronized块中.
+3. 在实践中,对wait的使用一般是嵌在一个循环中,并且会判断相关的数据状态是否达到预期,如果没有则会继续等待,这么做主要是为了防止虚假唤醒.
+4. CyclicBarrier和CountDownLatch都是用于多个线程间协调的.二者的一个很大的差别在于,CountDownLatch是在多个线程都进行了latch.countDown后才会触发事件,唤醒await在latch上的线程,而执行countDown的线程,执行完countDown后会继续自己线程的工作.
+5. CyclicBarrier是一个栅栏,用于同步所有调用await方法的线程,并且等所有线程都到了await方法时,这些线程才一起返回继续各自的工作.此外,CountDownLatch和CyclicBarrier还有一个差别,那就是CountDownLatch不能循环使用,CyclicBarrier可以循环使用.
+
+
 #### 2017-11-04
 1. 通过getenforce 命令查看 SELinux 状态.
 2. 通过 setenforce 0  关闭selinux.
