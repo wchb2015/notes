@@ -1,3 +1,22 @@
+#### 2017-11-10
+1. 执行 apt update 后执行 sudo apt upgrade .
+2. ubuntu dns 问题
+
+```
+systemd-resolve www.google.com
+cat /etc/systemd/resolved.conf
+DNSSEC=allow-downgrade
+
+vim /etc/systemd/resolved.conf set
+DNSSEC=off
+
+https://askubuntu.com/questions/798644/unstable-wifi-with-intel-8260-808624f3-rev-3a-on-ubuntu-16-04-running-on-le/798697#798697
+https://askubuntu.com/questions/762198/16-04-lts-wifi-connection-issues/768268#768268
+https://grenangen.se/node/86
+http://www.sunzhongwei.com/solve-dns-lookup-failure-frequently-in-ubuntu-1610
+```
+
+
 #### 2017-11-07
 1. To comment out blocks in vim:
  
