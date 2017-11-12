@@ -1,8 +1,8 @@
 ### Quick Sort
 
-![alt](http://oylc9q7dv.bkt.clouddn.com/20171031/qJUe93OGSrwdOlkH2UfOpQs-.png)
+![alt](https://images.wchb7.com/20171112/5Rd4tvIU-5Fnedgd1J9UuPRC.png)
 
-![alt](http://oylc9q7dv.bkt.clouddn.com/20171031/8q8jUGrWa3B0h3pGAt0jD2DN.png)
+![alt](https://images.wchb7.com/20171112/EE2kgvuGYX6oQ1EA7q5Dwdhk.png)
 
 1. 基本思路:
 
