@@ -1,20 +1,69 @@
-#### 基本命令(dr=docker)
-	```
-	dr run ubuntu echo hello docker                         # 用Ubuntu的镜像输出hello docker
-	dr run  -p 8089:80 -d    nginx
-	dr cp index.html 6b333522f250://usr/share/nginx/html    #6b333522f250 是CONTAINER ID
-	docker在容器内做的改动都是暂时的.
-	dr commit -m 'wchb hello docker' 6b333522f250 nginx-fun #6b333522f250 是CONTAINER ID 产生一个新的image
-	dr rm  + container id
-	dr rmi + image id
+#### Docker3大核心概念.
+
+- Image:镜像,可以理解为一个只读的模板.
+- Container:容器,进程,镜像的运行实例.
+- Respository:仓库.注意Registry区分开,Registry(仓库注册服务器,仓库地址)是存储仓库的地方.
+
+
+#### Image
+
+```
+docker pull ubuntu:14.04  等价于下面
+docker pull registry.hub.docker.com/ubuntu:14.04
+#从从默认的Registry(Docker Hub Registry)中的Ubuntu仓库来下载标记为14.04的镜像.
+```
+
+> 推镜像到docker hub 
+
+```
+docker tag  alpine:latest wchb2017/my_alpine:v20171125
+docker push wchb2017/my_alpine:v20171125
+```
+
+1. 创建镜像的3种方式
+ - 基于已有容器的镜像创建(docker commit)
+ - 基于本地模板导入(docker import)
+ - 基于Dockerfile创建(推荐)
+
+#### 基本命令
+
+```
+docker version                                              #查看并判断docker是否正确安装
+docker run ubuntu echo hello docker                         # 用Ubuntu的镜像输出hello docker
+docker run  -p 8089:80 -d    nginx
+docker run  -d -p 8089:80  127e   #127e image id
+
+docker cp index.html 6b333522f250://usr/share/nginx/html    #6b333522f250 是CONTAINER ID
+docker commit -m 'wchb hello docker' 6b333522f250 nginx-fun #6b333522f250 是CONTAINER ID 产生一个新的image
+docker rm  + container id
+docker rmi + image id
 	
-	dr ps -a
-	dr cp     #在host 和container之间拷贝文件
-	dr commit #保存改动为新的image
+docker ps -a
+docker cp     #在host 和container之间拷贝文件
+docker commit #保存改动为新的image
 	
-	dr build -t hello_docer_t .
-	dr run -d -p 8089:80  127e   #127e image id
-	```
+docker build -t hello_docer_t .
+	
+docker system df
+docker images -a   #带显示中层镜像
+docker images -q   $只显示image ID
+docker rmi $(docker images -q)
+docker image ls
+docker rm $(docker ps -aq)
+	
+docker run --name mywebserver -p 9000:80 nginx
+	
+docker diff f2bb # f2bb containerId
+docker history nginx       #Show the history of an image
+	
+	
+docker start  CONTAINER #将一个已经终止的容器启动运行
+docker logs  CONTAINER #获取容器的输出信息
+	
+docker exec --help
+
+docker port CONTAINER
+```
 
 #### Dockerfile Examples
 1. File1:
@@ -40,6 +89,16 @@
 	```
 
 #### Dockerfile语法
+
+![alt](https://images.wchb7.com/20171126/2yh1KM87hh1ANp9MC0yvEiAu.jpg)
+
+1. Dockerfile一般分4个部分.
+  - 基础镜像信息
+  - 维护者信息
+  - 镜像操作命令
+  - 容器启动时执行命令
+
+
 | 命令 | 用途 | 备注 |
 | :-----: |:-------:| :-----:|
 | FROM | base image | |
@@ -67,7 +126,7 @@ docker inspect nginx
                 "Name": "cccaee6e687f19d7966a030d59e1f283a8ceb47415cc0037f780476108cddaf9",
                 "Source": "/var/lib/docker/volumes/cccaee6e687f19d7966a030d59e1f283a8ceb47415cc0037f780476108cddaf9/_data",
                 "Destination": "/usr/share/nginx/html",
-                "Driver": "local",
+                "dockeriver": "local",
                 "Mode": "",
                 "RW": true,
                 "Propagation": ""
@@ -80,10 +139,10 @@ docker inspect nginx
 Mac
 
 ```
-screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
+screen ~/Library/Containers/com.docker.docker/Data/com.docker.dockeriver.amd64-linux/tty
 docker exec -it nginx /bin/bash
 
-dr run -p 8090:80 -d -v $PWD/html:/usr/share/nginx/html nginx
+docker run -p 8090:80 -d -v $PWD/html:/usr/share/nginx/html nginx
 ```
 
 
@@ -106,6 +165,9 @@ docker-compose build
 ```
 
 #### docker-compose.yml 常用命令
+
+![alt](http://images.wchb7.com/20171127/RBkr11ACXs98S0tN3b0AMI0K.jpg)
+
 | 命令 | 用途 | 备注 |
 | :-----: |:-------:| :-----:|
 | build | 本地创建镜像 | |
@@ -122,29 +184,8 @@ docker-compose build
 | up | 启动服务 | |
 | stop | 停止服务 |  |
 | rm | 删除服务中的各个容器 |  |
-| logs     | 观察各个容器的日志 |  |
+| logs     | View output from containers |  |
 | ps     | 列出服务相关的容器 |  |
-
-
-####
-
-```
-docker system df
-docker images -a   #带显示中层镜像
-docker images -q   $只显示image ID
-docker rmi $(docker images -q)
-dr image ls
-docker rm $(docker ps -aq)
-
-docker run --name mywebserver -p 9000:80 nginx
-
-docker diff f2bb # f2bb containerId
-dr history nginx       #Show the history of an image
-
-
-docker start #将一个已经终止的容器启动运行
-docker logs  containerId #获取容器的输出信息
-```
 
 #### build image
 
@@ -169,4 +210,30 @@ Step 4/4 : CMD npm start --production
 Removing intermediate container 68ed5807b61e
 Successfully built 30806fea4568
 Successfully tagged myghost:v1
+```
+
+#### Docker Mysql
+
+```
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+
+docker run -it --rm mysql:tag --verbose --help
+
+```
+
+#### Docker数据管理
+
+1. docker在容器内做的改动都是暂时的.
+2. 容器管理数据主要两种方式.
+ - Data Volumes(数据卷):容器内数据直接映射到本地主机环境.
+ - Data Volume Containers(数据卷容器):使用特定容器维护数据卷.
+
+3. Data Volumes
+
+```
+#在容器内创建一个数据卷
+docker run -d -P --name web7 -v /d_data  training/webapp python app.py
+
+#挂载一个主机目录作为数据卷
+docker run -d -P --name web -v /Users/wchb/Music/test/d_data:/opt/webapp training/webapp python app.py
 ```
