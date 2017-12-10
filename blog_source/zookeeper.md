@@ -40,3 +40,7 @@ ephemeralOwner = 0x0
 dataLength = 3
 numChildren = 0
 ```
+
+```
+[zk: arch-zk-1.alta.elenet.me:2181(CONNECTED) 6] addauth digest userName:password
+```
