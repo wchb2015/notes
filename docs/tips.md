@@ -1,6 +1,6 @@
 #### 2017-12-01
 1. 在 logback 的世界中，日志信息不仅仅可以打印至 console，也可以打印至文件，甚至输出到网络流中，日志打印的目的地由 Appender 来决定，不同的 Appender 能将日志信息打印到不同的目的地去。
-2. 
+
 
 #### 2017-11-30
 1. 饿了么主打本地生活平台，业务形态具有天然的地域性，一笔交易从下单到履单，都在同一个城市内完成，所以我们以地域为维度将流量和数据进行切分，使得任何一笔交易都完整的在一个机房内完成，从而保证交易数据的实时一致性。
@@ -76,7 +76,6 @@ http://www.sunzhongwei.com/solve-dns-lookup-failure-frequently-in-ubuntu-1610
 2. 通过 setenforce 0  关闭selinux.
 3. MainLine Version 开发版.
 4. Legacy Version 历史版本.
-
 
 #### 2017-11-03
 ```
