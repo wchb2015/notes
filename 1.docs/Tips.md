@@ -1,3 +1,18 @@
+#### 2018-01-12
+1. DIV默认宽度100%,高度0.
+1. header/section/asside/article/footer 不自己嵌套自己.
+2. header/section/footer   >  aside/article/figure/hgroup/nav  >  div/figcaption  (级别)
+
+3. 如果当多个线程访问同一个可变的状态变量时没有使用合适的同步,那么程序就会出现错误.有三种方式可以修复这个问题:
+
+- 不在线程间共享该状态变量.
+- 将状态变量修改为不可变的变量.
+- 在访问状态变量时使用同步.
+
+4. 无状态对象一定是线程安全的.
+
+5. 两个应用上下文之间的故事.第一个是由DispatcherServlet创建的,第二个是由ContextLoaderListener创建的.DisparcherServlet加载包含WEB组件的bean,如控制器,视图解析器以及处理器映射.而ContextLoaderListener加载应用中的其它bean.这些bean通常是驱动应用后端的中间层和数据层组件.
+
 #### 2018-01-08
 1. 在Java 1.8中,引入了一个新的反射机制,java.lang.reflect.Executable.getParameters.这个方法会返回方法定义中参数的“正式”的名称,即你在源码中定义的名称。但是,这个反射机制,要求你使用"-parameters"参数进行编译.
 
