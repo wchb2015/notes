@@ -1,3 +1,7 @@
+#### 2018-04-19
+1. ssh -T git@github.com 测试本机和github,ssh协议的连通性.
+
+
 #### 2018-01-12
 1. DIV默认宽度100%,高度0.
 1. header/section/asside/article/footer 不自己嵌套自己.
