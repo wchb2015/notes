@@ -1,0 +1,4212 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAABE0AA8AAAAAHWwAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABWAAAADsAAABUIIslek9TLzIAAAGUAAAAQwAAAFY3d1HZY21hcAAAAdgAAACqAAACOvWLi0FjdnQgAAAChAAAABMAAAAgBtX/BGZwZ20AAAKYAAAFkAAAC3CKkZBZZ2FzcAAACCgAAAAIAAAACAAAABBnbHlmAAAIMAAABdQAAAjkYT9TNWhlYWQAAA4EAAAAMwAAADYQ6WvNaGhlYQAADjgAAAAfAAAAJAc6A1pobXR4AAAOWAAAACAAAAA0Kmz/7mxvY2EAAA54AAAAHAAAABwQPBJubWF4cAAADpQAAAAgAAAAIAEHC/NuYW1lAAAOtAAAAYQAAALxhQT4h3Bvc3QAABA4AAAAfgAAAMS3SYh9cHJlcAAAELgAAAB6AAAAhuVBK7x4nGNgZGBg4GIwYLBjYHJx8wlh4MtJLMljkGJgYYAAkDwymzEnMz2RgQPGA8qxgGkOIGaDiAIAJjsFSAB4nGNgZHZmnMDAysDAVMW0h4GBoQdCMz5gMGRkAooysDIzYAUBaa4pDA4Pwz+yMwf9z2KIYg5imAYUZgTJAQDcoQvQAHic7ZHNDYJAFIRnBXf94cDRIiyCKkCpwFCPJ092RcKNDoYKcN4+EmMPvpdvk539zQyAPYBCXEUJhBcCrJ5SQ9YLnLJe4qF5rdb+uWPDngNHTkta101pNyWa8lMhn6xx2dqUnW4q9YOIhAOOeueMSgsR/6ry+P7O5s6xVNg4chBsHUuFnWNJ8uZYwrw7chrsHXkODo7cB0dHOYCTY8kv0VE2WJKD6gOlWjsxAAB4nGNgQAMSEMgc9D8LhAESbAPdAHicrVZpd9NGFB15SZyELCULLWphxMRpsEYmbMGACUGyYyBdnK2VoIsUO+m+8Ynf4F/zZNpz6Dd+Wu8bLySQtOdwmpOjd+fN1czbZRJaktgL65GUmy/F1NYmjew8CemGTctRfCg7eyFlisnfBVEQrZbatx2HREQiULWusEQQ+x5ZmmR86FFGy7akV03KLT3pLlvjQb1V334aOsqxO6GkZjN0aD2yJVUYVaJIpj1S0qZlqPorSSu8v8LMV81QwohOImm8GcbQSN4bZ7TKaDW24yiKbLLcKFIkmuFBFHmU1RLn5IoJDMoHzZDyyqcR5cP8iKzYo5xWsEu20/y+L3mndzk/sV9vUbbkQB/Ijuzg7HQlX4RbW2HctJPtKFQRdtd3QmzZ7FT/Zo/ymkYDtysyvdCMYKl8hRArP6HM/iFZLZxP+ZJHo1qykRNB62VO7Es+gdbjiClxzRhZ0N3RCRHU/ZIzDPaYPh788d4plgsTAngcy3pHJZwIEylhczRJ2jByYCVliyqp9a6YOOV1WsRbwn7t2tGXzmjjUHdiPFsPHVs5UcnxaFKnmUyd2knNoykNopR0JnjMrwMoP6JJXm1jNYmVR9M4ZsaERCICLdxLU0EsO7GkKQTNoxm9uRumuXYtWqTJA/Xco/f05la4udNT2g70s0Z/VqdiOtgL0+lp5C/xadrlIkXp+ukZfkziQdYCMpEtNsOUgwdv/Q7Sy9eWHIXXBtju7fMrqH3WRPCkAfsb0B5P1SkJTIWYVYhWQGKta1mWydWsFqnI1HdDmla+rNMEinIcF8e+jHH9XzMzlpgSvt+J07MjLj1z7UsI0xx8m3U9mtepxXIBcWZ5TqdZlu/rNMfyA53mWZ7X6QhLW6ejLD/UaYHlRzodY3lBC5p038GQizDkAg6QMISlA0NYXoIhLBUMYbkIQ1gWYQjLJRjC8mMYwnIZhrC8rGXV1FNJ49qZWAZsQmBijh65zEXlaiq5VEK7aFRqQ54SbpVUFM+qf2WgXjzyhjmwFkiXyJpfMc6Vj0bl+NYVLW8aO1fAsepvH472OfFS1ouFPwX/1dZUJb1izcOTq/Abhp5sJ6o2qXh0TZfPVT26/l9UVFgL9BtIhVgoyrJscGcihI86nYZqoJVDzGzMPLTrdcuan8P9NzFCFlD9+DcUGgvcg05ZSVnt4KzV19uy3DuDcjgTLEkxN/P6VvgiI7PSfpFZyp6PfB5wBYxKZdhqA60VvNknMQ+Z3iTPBHFbUTZI2tjOBIkNHPOAefOdBCZh6qoN5E7hhg34BWFuwXknXKJ6oyyH7kXs8yik/Fun4kT2qGiMwLPZG2Gv70LKb3EMJDT5pX4MVBWhqRg1FdA0Um6oBl/G2bptQsYO9CMqdsOyrOLDxxb3lZJtGYR8pIjVo6Of1l6iTqrcfmYUl++dvgXBIDUxf3vfdHGQyrtayTJHbQNTtxqVU9eaQ+NVh+rmUfW94+wTOWuabronHnpf06rbwcVcLLD2bQ7SUiYX1PVhhQ2iy8WlUOplNEnvuAcYFhjQ71CKjf+r+th8nitVhdFxJN9O1LfR52AM/A/Yf0f1A9D3Y+hyDS7P95oTn2704WyZrqIX66foNzBrrblZugbc0HQD4iFHrY64yg18pwZxeqS5HOkh4GPdFeIBwCaAxeAT3bWM5lMAo/mMOT7A58xh0GQOgy3mMNhmzhrADnMY7DKHwR5zGHzBnHWAL5nDIGQOg4g5DJ4wJwB4yhwGXzGHwdfMYfANc+4DfMscBjFzGCTMYbCv6dYwzC1e0F2gtkFVoANTT1jcw+JQU2XI/o4Xhv29Qcz+wSCm/qjp9pD6Ey8M9WeDmPqLQUz9VdOdIfU3Xhjq7wYx9Q+DmPpMvxjLZQa/jHyXCgeUXWw+5++J9w/bxUC5AAEAAf//AA94nIVVX2hbZRQ/5/t7893s5ja9f7ouzdZ0TTqz3bRJmogbWya6bG6Cq0VbSV2ddIJjFtfIQHEig80Hda8yUN/0YQz8AyriiyD+xQd92R4HCnaCb3samnpumrpsCsLlfPf7zvedc37nL3CAtc/5W/wQZGA3tOBSY/g+TMjHmwzEoM1Q8+ZjRZY4oJhmBw5/YB6Za0yC5AkhlwA1A1yCBIBOwCII0Cj0U8BAMdUCzq05sKwkP7SlUY6fcJk4Fb/RyE79/6P5hjM/F4aZiXBoeMgzcqQ4Xi1hPqfDLG5FT+lchCVU3lYMyvuwhl1mqndQL0RsuloLywHtthLXI06OblTrhfWVnpSJ5+mwu/JdbtuN3IAnkW0LLMcRwaC7ktrlzridM6kVdyf9uO1UNBByI7JhwtG2sEwab07ORBeilWhqavJCqV0qzZTOl/7ZXQ5TbTcdcFelyGhhRDAQpdqp1FEX3w3cFTc1k9pJQkmm4ySCbSikxRP2QOfN+0tHS5MrpQuTU1Mk5nw0E5Xa0WvrOwDyGax9yB9ma6DAg82wHc43SAGTI4GjBWebOePAERFE8/AHaQpZASSTy8A4WwZiLQMQ82mFKATO0ILicRAoDm9p5P99E5b/fXG+kQYY3TYUuqmERWYoT0u/GNYL2q/4WB3LaVS+VynXsVYIcWw6DkCh3nX1D+VzlYN4LClF5yexSQos8exqZ3KVP+wtrC54u4Nznq6cq+xpMpUUnZ8FUYzE86ud0g28NOIv3Gj5/rmA3ABs7S/ywzFuQ4qyd6QxfNtiQIaEgp3w/entQg4Vcbqa16M5FfpeUB8t1+qeg7mI7cUyOe79wOk86gSxkVec4KPTX69++5x68Yubn5/F+w52z7u08sJX7fZXv8ekT/d2mILJxq6sn+SC6qEJknzLJCxyZEKwWVqYmAPBxBE/9DLeZiWHu7lcr/VytrCRuHojncNuTt9h46tmacmYisnSamdN2bZptcsmSysdVsy1PrOvOzF3xN64Rb937t/og9KHxYdcjIUqFAmIAHGHNzlns+RTPgeUYAQm9DwpNxfxbhhBHPaw3/gfTcXO2L+eJVIx5nsyGkvm9X4/f+bGkH45G0PaSjcMXTjcZyTvi3UdHoCDjQd3IDUVsgwYmUoJK/gp4JJxeRI0MKHZIkgynyIBqBTOUs6rOVCojvjZ4mCQz49ZMlMcp8QoYk6NoBfsxnJtsBohpa8iGJS+ZH7gU7NxME6cmF+t7cO9vB8d3jTWSct0ycW9ranXmolNDwmVkNnxe+8JtoztwS5rKJ0xWS95tQ/1zMYzg69MzUZnNtl1ofNbsml/OJm6f9wjRjpnu2o4MzHzn77IQkRd+1DjwMQ2pqSjGMMhyjrgTbBAKksuUm0iU7hI0aN2wOKOq7WYBSH0HGihj/jkiPxAfmwsEbfYrjMG+j3ij932Db/LV7I/xruNrhnroxjR9HRMb2nTvO0ZXOoHPk8H2ZhDPx93qcE/53sH5np/dkIP7zzhTVKdR/BAY/9ElkkR+A6lJGsqpJ4oQcTxpvBT3Kn58VkaJjgHyPEIws57xkaHh9KuVpDEpJZeMbZ5w/zBHi5NMQ4r5VphsFqID7TyB9eR4pX216c3AHxpdAwoqU9qg0ZJ6yVLKmMSz1iG2z27ifx18NkY0LPx1W/wCc2l5LrznrIsiKsqbmB78A9wIGx4tI8rjihVHJyY9pgMirenVq0yWg7Iw7eogG7ZgYM3qR9959A/fZkg6MnD/exlkmc+jWV4SB15XUR+eqC6l6ZmgPtN9z5JMfik05OV8ljylunJ4J+wA/FUaQSSKotsYsCWqaPBidBLcxkWx7XKFRIb45TGaEhjlF9uUVPqXOtcIwsXbBvfoZXIyRYFdkfnqjExH98xpnPczqzjX/uNdO1Y17Wpi5+6Ts8BXtjVFasp9KZ1mOiNbH65c5w6HgmyF2jFCZywM8mWjRc7T5Pmt0lRy7Y71+jYbpGyvwG4sH0XeJxjYGRgYADiwBB/53h+m68M3MwvgCIM1z5N/g6j///9v5H5BbMnkMvBwAQSBQCIcA9gAHicY2BkYGAO+p8FJF/8//v/F/MLBqAICuAFALYQB5kAeJxjfsHAwLwAiCNB+P9fbJjJmoGBMRUo/wKCAfO2EnQAAAAAANoBXgGcAgICVALaA1IDvAPkBAYEPARyAAEAAAANAF0ABAAAAAAAAgAUACQAcwAAAG4LcAAAAAB4nHWRzWrCQBSFT+pPqUIXLXTTzayKUohGKIibCoLuhbrrYtTRxCYZmYyKyz5Fd32HvlDfoO/QkziIFJtw9bvnnpl7ZwLgBt/wcHieGAf2UGd24Atcou+4RH3kuEweO66QXx1XyaHjGh6ROa7jFp/cwStfMVvhy7GHO+/e8QWuvcBxifqz4zL5xXGF/Oa4Sn53XMPE+3Bcx4P3M9DrvYmWoRWNQVN02kFXTPdCU4pSGQu5saE2meiLhU6timPtz3SSs9ypTCdqrJabWJoT5QQnymSRTkXgt0/UkUqVkVbN807ZdtmxdiEWRidi6HqItdErNbN+aO2612qd9sYAGmvsYRBhyUu0EGhQbfK/gzYCdElTOgSdB1eEFBIxFYkNV4RFJWPeZyyYpVQVHTHZx4y/yVGX2LGWFZri51TccUOn5B7nPefVCSPvGhVVwUl9znveO2KkhV8Wk82PZ8qwZf8OVcu1+fSmWCMw/HMOwXvKaysqM+p+cVuWag8tvv+c+xdd+4+teJxtjUEOwiAURJla24KliQfhUA2g/Sl+CKXx+loNrpzVezOLEY34Ron/0WhwQoszOvQYIKFwwQiNSbSBeO2SZ0tBP4j3zVjKNng32ZmtD1VVXCuOiw/pJ8S3WOU6l+K5UOTaDC4+2TjKMtN9KQf1ezLx/Sg/00FCvABHhjDjAAB4nGPw3sFwIihiIyNjX+QGxp0cDBwMyQUbGVidNjEwMmiBGJu5mBg5ICw+BjCLzWkX0wGgNCeQze60i8EBwmZmcNmowtgRGLHBoSNiI3OKy0Y1EG8XRwMDI4tDR3JIBEhJJBBs5mFi5NHawfi/dQNL70YmBhcADHYj9AAA) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headerlink {
+  font: normal 400 16px fontawesome-mini;
+  vertical-align: middle;
+  margin-left: -16px;
+  float: left;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0;
+  color: #333;
+}
+
+.markdown-body .headerlink:focus {
+  outline: none;
+}
+
+.markdown-body h1 .headerlink {
+  margin-top: 0.8rem;
+}
+
+.markdown-body h2 .headerlink,
+.markdown-body h3 .headerlink {
+  margin-top: 0.6rem;
+}
+
+.markdown-body h4 .headerlink {
+  margin-top: 0.2rem;
+}
+
+.markdown-body h5 .headerlink,
+.markdown-body h6 .headerlink {
+  margin-top: 0;
+}
+
+.markdown-body .headerlink:hover,
+.markdown-body h1:hover .headerlink,
+.markdown-body h2:hover .headerlink,
+.markdown-body h3:hover .headerlink,
+.markdown-body h4:hover .headerlink,
+.markdown-body h5:hover .headerlink,
+.markdown-body h6:hover .headerlink {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px fontawesome-mini;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\e157';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><style>/*github*/
+.codehilite {background-color:#fff;color:#333333;}
+.codehilite .hll {background-color:#ffffcc;}
+.codehilite .c{color:#999988;font-style:italic}
+.codehilite .err{color:#a61717;background-color:#e3d2d2}
+.codehilite .k{font-weight:bold}
+.codehilite .o{font-weight:bold}
+.codehilite .cm{color:#999988;font-style:italic}
+.codehilite .cp{color:#999999;font-weight:bold}
+.codehilite .c1{color:#999988;font-style:italic}
+.codehilite .cs{color:#999999;font-weight:bold;font-style:italic}
+.codehilite .gd{color:#000000;background-color:#ffdddd}
+.codehilite .ge{font-style:italic}
+.codehilite .gr{color:#aa0000}
+.codehilite .gh{color:#999999}
+.codehilite .gi{color:#000000;background-color:#ddffdd}
+.codehilite .go{color:#888888}
+.codehilite .gp{color:#555555}
+.codehilite .gs{font-weight:bold}
+.codehilite .gu{color:#800080;font-weight:bold}
+.codehilite .gt{color:#aa0000}
+.codehilite .kc{font-weight:bold}
+.codehilite .kd{font-weight:bold}
+.codehilite .kn{font-weight:bold}
+.codehilite .kp{font-weight:bold}
+.codehilite .kr{font-weight:bold}
+.codehilite .kt{color:#445588;font-weight:bold}
+.codehilite .m{color:#009999}
+.codehilite .s{color:#dd1144}
+.codehilite .n{color:#333333}
+.codehilite .na{color:teal}
+.codehilite .nb{color:#0086b3}
+.codehilite .nc{color:#445588;font-weight:bold}
+.codehilite .no{color:teal}
+.codehilite .ni{color:purple}
+.codehilite .ne{color:#990000;font-weight:bold}
+.codehilite .nf{color:#990000;font-weight:bold}
+.codehilite .nn{color:#555555}
+.codehilite .nt{color:navy}
+.codehilite .nv{color:teal}
+.codehilite .ow{font-weight:bold}
+.codehilite .w{color:#bbbbbb}
+.codehilite .mf{color:#009999}
+.codehilite .mh{color:#009999}
+.codehilite .mi{color:#009999}
+.codehilite .mo{color:#009999}
+.codehilite .sb{color:#dd1144}
+.codehilite .sc{color:#dd1144}
+.codehilite .sd{color:#dd1144}
+.codehilite .s2{color:#dd1144}
+.codehilite .se{color:#dd1144}
+.codehilite .sh{color:#dd1144}
+.codehilite .si{color:#dd1144}
+.codehilite .sx{color:#dd1144}
+.codehilite .sr{color:#009926}
+.codehilite .s1{color:#dd1144}
+.codehilite .ss{color:#990073}
+.codehilite .bp{color:#999999}
+.codehilite .vc{color:teal}
+.codehilite .vg{color:teal}
+.codehilite .vi{color:teal}
+.codehilite .il{color:#009999}
+.codehilite .gc{color:#999;background-color:#EAF2F5}
+</style><title>1.Word</title></head><body><article class="markdown-body"><h3 id="56-180811">56 180811<a class="headerlink" href="#56-180811" title="Permanent link"></a></h3>
+<ol>
+<li>anonymity
+- Actually,our policy guarantees anonymity.</li>
+<li>rescind
+- I will rescind the offer.</li>
+<li>moron</li>
+<li>poach
+- Our own investor poached him.</li>
+<li>wet
+- I&rsquo;m not wetting the bed.</li>
+<li>nook</li>
+<li>bowing 鞠躬.</li>
+<li>waist 腰部.</li>
+<li>denomination
+- Japanese coin,Lowest denomination.</li>
+<li>endure
+- I&rsquo;ll endure for your sake.</li>
+<li>forgo,mediocrity
+- I&rsquo;ll be forced to forgo those opportunities because of your mediocrity.</li>
+<li>lethal
+- non-lethal :非致命.</li>
+<li>prosthetic
+- a usable prosthetic appendage.可用的附加假肢.</li>
+<li>insist
+- I&rsquo;m going to have to insist that John be removed if I continue here.</li>
+<li>privy
+- There&rsquo;s a lot at play that you are not privy to. 很多内情你并不知晓.</li>
+<li>outlet
+- There&rsquo;s not a lot of outlets out there.</li>
+<li>princess : 公主.</li>
+<li>decorum</li>
+<li>seizure
+- fines, or even seizure and impounding of our equipment.罚款,甚至扣押或者没收我们的设备.</li>
+<li>ruin
+- That gentleman next door has the power to ruin us.</li>
+<li>diuretic
+- It&rsquo;s a diuretic.</li>
+<li>clench/unclench.收紧,放松.</li>
+<li>blackout
+- Did that blackouts</li>
+</ol>
+<h3 id="55-180811">55 180811<a class="headerlink" href="#55-180811" title="Permanent link"></a></h3>
+<ol>
+<li>emphasis
+- emphasis on &ldquo;independent&rdquo;.</li>
+<li>articulate
+- He is very articulate.</li>
+<li>lemming:A member of a crowd with no originality or voice of his own. One who speaks or repeats only what he has been told.</li>
+<li>rivet
+- Must be the rivet in my pants.</li>
+<li>buff out
+- That&rsquo;s a deep scratch. That will not buff out.</li>
+<li>counsel
+- I counsel any young founder today to pursue your dream not for profit or valuation.</li>
+<li>vilify</li>
+<li>plight
+-Did you just compare the treatment of billionaires in America today to the plight of the Jews in Nazi Germany?</li>
+<li>inflation
+- inflation is like  1.7.</li>
+<li>nannies</li>
+<li>spineless
+- spineless VCs.</li>
+<li>shove</li>
+<li>enticing
+- That&rsquo;s a very enticing offer.</li>
+<li>shitty
+- It&rsquo;s really shitty.</li>
+<li>tenacity,insanity</li>
+<li>wipe,right off the bat
+- Litigation wipes out half our funds right off the bat.</li>
+<li>hefty
+- payroll alone is going to be pretty hefty.</li>
+<li>division
+- That&rsquo;s like an entire division at Facebook.</li>
+<li>diffuse
+- No, I&rsquo;m totally kidding.I&rsquo;m diffusing the tension with humor.</li>
+<li>capped
+- Litigation and payroll are both capped.SG&amp;A,we still have a little wiggle room.</li>
+<li>subtract
+- I had to subtract the cost of the AD agency that nailed that slogan.</li>
+<li>hostile
+- This is the most hostile and aggressive act of provocation I&rsquo;ve ever had to endure.</li>
+<li>decency
+- It crosses every line of decency.</li>
+<li>integral</li>
+<li>grant
+- permission granted</li>
+<li>dough-money</li>
+<li>cyborg.半个机器人.</li>
+<li>distinguished
+- distinguished guests.</li>
+<li>rattle
+- you try to rattle somebody to see if they freak out or not.</li>
+<li>billboard</li>
+</ol>
+<h3 id="54-180810">54 180810<a class="headerlink" href="#54-180810" title="Permanent link"></a></h3>
+<ol>
+<li>santa clause/claus圣诞老人.</li>
+<li>frivolous
+- That lawsuit we know to be frivolous.</li>
+<li>pasties
+- So no pasties today.</li>
+<li>condescending
+- You were arrogant,condescending and offensive.</li>
+<li>hamstring
+- Hooli has the unlimited resources to hamstring you.</li>
+<li>boorish,vulgar,uncouth,course,graceless,puerile
+- your behavior was boorish and juvenile.
+- you were rude ,vulgar(低俗), and uncouth(毫无教养).
+- you were course(令人不悦),graceless(无礼) and puerile(天真).
+- you were obscene(猥琐),insulting(侮辱人) and ignorant(无知).
+- pretty assertive vaginal metaphors last round.
+- So it&rsquo;s been a bit of an uphill climb.(现在情况不妙)</li>
+</ol>
+<ul>
+<li>He is a vulgar human being.He&rsquo;s utterly distasteful.
+7. pledge</li>
+<li>can&rsquo;t collect your pledge.
+8. diplomatic</li>
+<li>I trust Erlich can be diplomatic and pull it off.
+9. testis/testes
+10. weed</li>
+<li>Take us into the weeds.讲的越深越好.
+11. misery</li>
+<li>I&rsquo;m effectively leveraging your misery.
+12. retainer定金.
+13. soulless
+14. top-notch</li>
+<li>top-notch resume
+15. decipher</li>
+<li>they were able to decipher the difference between yours and the others.
+16. resonate
+17. advantageous</li>
+<li>it&rsquo;s really advantageous for you take the call when it comes.
+18. energize
+19. immaculate</li>
+<li>John obsessed on designing and refining an immaculate interview process.
+20. spotlight
+21. methodology
+22. misconception
+23. dug</li>
+<li>When I&rsquo;ve dug into conversations with people about it, I&rsquo;ve realized that they haven&rsquo;t actually decided that interviewing and hiring is a critical business activity.
+24. inherent</li>
+<li>Soft skills are inherent qualities that some people have and some people don&rsquo;t.
+25. cultivate</li>
+<li>skills that can be measured and cultivated in people.
+26. tenure</li>
+<li>engineers of every tenure.
+27. hallmark</li>
+<li>John has designed a system to make interviewing a hallmark experience for candidates and a strategic advantage for your startup.
+28. resort
+29. disenchanted</li>
+<li>Interviewers can also get disenchanted,when,instead of following the thread of the conversation.
+30.  enchant</li>
+</ul>
+<h3 id="53-180807">53 180807<a class="headerlink" href="#53-180807" title="Permanent link"></a></h3>
+<ol>
+<li>dickhead</li>
+<li>crap out
+- our beta crapped out</li>
+<li>clawback</li>
+<li>menstruation</li>
+<li>menstruate</li>
+<li>pivot
+- I&rsquo;m pivoting.</li>
+<li>pamphlet</li>
+<li>frugality</li>
+<li>swayed</li>
+<li>chugging</li>
+<li>spook</li>
+<li>tampon</li>
+<li>selfie</li>
+<li>untenable
+- They&rsquo;re untenable. 他们太不着调了.</li>
+<li>fart
+- Does he fart a lot and smell like onions?</li>
+<li>farter</li>
+<li>unmistakable</li>
+<li>vengeance</li>
+<li>mellow</li>
+<li>propel</li>
+<li>unwavering
+- unwavering will</li>
+<li>exude
+- exude confidence.</li>
+<li>overthink</li>
+<li>vehemently</li>
+<li>proactive</li>
+<li>audacity
+- take revenge show that you have the audacity and the boldness to take revenge on their interviewer.</li>
+<li>retaliate</li>
+<li>被除数dividend和除数 divisor</li>
+<li>breach
+- breach of contract. 违约
+- unjust enrichment 不当得利.</li>
+<li>bukkake
+- says the guy who just got bukkaked with fat term sheets.</li>
+<li>abet
+- aiding and abetting.协助和教唆.</li>
+</ol>
+<h3 id="52-180804">52 180804<a class="headerlink" href="#52-180804" title="Permanent link"></a></h3>
+<ol>
+<li>gringo</li>
+<li>scurry
+- If i scurry to the restroom,do you imagine he would&hellip;</li>
+<li>accommodating</li>
+<li>displeasing</li>
+<li>incensed
+- I have never seen him so incensed.</li>
+<li>debut</li>
+<li>fairness
+- in fairness.</li>
+<li>penetration</li>
+<li>masturbate</li>
+<li>gratuitous</li>
+<li>mural</li>
+<li>incendiary</li>
+<li>raunchy</li>
+<li>chip
+- I threw Frisbee and it chipped my tooth.</li>
+<li>contagious
+- Failure is contagious.</li>
+<li>screen name.</li>
+<li>scumbag</li>
+<li>buckle up.系好安全带.</li>
+<li>No bars.没信号.</li>
+<li>fetus</li>
+<li>emasculating</li>
+<li>concede
+- I concede defeat.</li>
+<li>Remittance Addresses</li>
+<li>mileage allowance</li>
+<li>preliminaries</li>
+<li>utility bill</li>
+<li>unsubstantiated</li>
+<li>proprietor经营者/业主.</li>
+<li>impropriety
+- sexual impropriety</li>
+<li>impending
+- impending crash of Hooli&rsquo;s stock</li>
+<li>lascivious</li>
+</ol>
+<h3 id="51-180801">51 180801<a class="headerlink" href="#51-180801" title="Permanent link"></a></h3>
+<ol>
+<li>coward</li>
+<li>fascinating</li>
+<li>formidable</li>
+<li>donkey</li>
+<li>alien
+- We might as well have interns, we hire illegal aliens.</li>
+<li>ajar</li>
+<li>gunk
+- Hey! Make sure to clean off all the gunk off the front bumper, ok.</li>
+<li>coincidence</li>
+<li>grapefruit</li>
+<li>shocker</li>
+<li>ingest</li>
+<li>reincarnate
+- I&rsquo;ve been reincarnated during the same time period in which I exist.</li>
+<li>homeboy</li>
+<li>convertible</li>
+<li>lossless</li>
+<li>illest/chillest
+- He is the illest and the chillest?</li>
+<li>workaround</li>
+<li>quadruplet</li>
+<li>aesthetic
+- share a similar aesthetic.</li>
+<li>Backstabbing</li>
+<li>oversight
+- It was just an oversight.</li>
+<li>sandal</li>
+<li>iconoclasting
+- Besides, I&rsquo;m wearing sandals so I am iconoclasting a little bit.</li>
+<li>shameful</li>
+<li>numb
+- Give it a week or two, you&rsquo;ll get, like, numb to it.</li>
+<li>forewent
+- It is! Ten percent of Pied Piper! For which I forewent, yes, that&rsquo;s a real word, - one million dollars.</li>
+<li>retract
+- And now you&rsquo;re just gonna give me a seat on the board, only to retract that offer?!</li>
+<li>renege
+- You offering me a position on this board and reneging it is a perfect example of you having no vision, no balls and no game.</li>
+<li>countertop</li>
+<li>swirl
+- All I see is stars and swirls.</li>
+</ol>
+<h3 id="50-180731">50 180731<a class="headerlink" href="#50-180731" title="Permanent link"></a></h3>
+<ol>
+<li>significant</li>
+<li>erotic</li>
+<li>entice</li>
+<li>airtight</li>
+<li>fountains
+- Are there any water fountains in your office?</li>
+<li>iron
+- I ironed out our customer acquisition strategy.</li>
+<li>sweat
+- It&rsquo;s not magic, it&rsquo;s talent and sweat.</li>
+<li>puke
+- puked out a bunch of tech specs.</li>
+<li>clown</li>
+<li>camaraderie
+- The camaraderie is quite apparent.</li>
+<li>pointless</li>
+<li>overheard</li>
+<li>assertive
+- I, uh, don&rsquo;t wanna be too assertive here but I could use your input on a few things for the business plan.</li>
+<li>perverted</li>
+<li>grand
+- 600 grand a year.</li>
+<li>revenge</li>
+<li>statutory</li>
+<li>appellate</li>
+<li>rollout</li>
+<li>paradigm
+- Video compression is a completely different paradigm.</li>
+<li>tuck</li>
+<li>max out</li>
+<li>atrocity</li>
+<li>primal</li>
+<li>ejaculate</li>
+<li>irate</li>
+<li>irony</li>
+<li>algebra</li>
+<li>tremor</li>
+<li>moron</li>
+</ol>
+<h3 id="49-180729">49 180729<a class="headerlink" href="#49-180729" title="Permanent link"></a></h3>
+<ol>
+<li>ritual
+- shutdown ritual</li>
+<li>ubermensch</li>
+<li>managerial</li>
+<li>incomprehensible</li>
+<li>rad:adj:cool.
+-The Google of music, which is a really rad way to pitch something.</li>
+<li>poser</li>
+<li>cradle
+- Silicon Valley is the cradle of innovation.</li>
+<li>perpetrator</li>
+<li>spew
+- spewing ignorance!</li>
+<li>dubious
+- He was pursuing a number of extremely dubious positions.
+- privide dubious value.</li>
+<li>intangible
+- The true value of college education is intangible.</li>
+<li>prophecy</li>
+<li>tingling</li>
+<li>congenital
+- congenital diseases.</li>
+<li>beneficence</li>
+<li>commutative</li>
+<li>proportional
+- The number that do hit the cache is proportional to the number of coins (the branching factor).</li>
+<li>knapsack</li>
+<li>quintessential</li>
+<li>susceptible</li>
+<li>topple</li>
+<li>mimics</li>
+<li>rife</li>
+<li>tripping</li>
+<li>rusty</li>
+<li>sketch</li>
+<li>regurgitate</li>
+<li>gotcha</li>
+<li>conveyor</li>
+<li>ascii code/unicode</li>
+</ol>
+<h3 id="48-180721">48 180721<a class="headerlink" href="#48-180721" title="Permanent link"></a></h3>
+<ol>
+<li>recur</li>
+<li>theorem</li>
+<li>amphibian </li>
+<li>carnivore </li>
+<li>triple v</li>
+<li>triplet
+- I think this might be more efficient solution than checking every triplet of numbers in disarray.</li>
+<li>disarray</li>
+<li>oxymoron
+- The phrase “cruel kindness” is an oxymoron.</li>
+<li>pathological
+- He is a pathological liar.</li>
+<li>pejorative</li>
+<li>congressman</li>
+<li>decrement
+- We&rsquo;re only decrementing n by one or two each time.</li>
+<li>henceforth
+- And then every time henceforth you&rsquo;re doing memoized calls of Fibonacci of k and those cost constant time.</li>
+<li>belabor
+- I don’t want to belabour the point, but it’s vital you understand how important this is.</li>
+<li>playoff</li>
+<li>disguise</li>
+<li>blackjack</li>
+<li>anesthetic </li>
+<li>crisper</li>
+<li>octopus</li>
+<li>cautionary
+- cautionary tale</li>
+<li>braggart</li>
+<li>corrupt</li>
+<li>cadaver</li>
+<li>ingrained
+- These attitudes are very deeply ingrained in the culture.</li>
+<li>dovetail</li>
+<li>doable</li>
+<li>literally/figuratively</li>
+<li>canonical</li>
+<li>novice</li>
+</ol>
+<h3 id="47-180718">47 180718<a class="headerlink" href="#47-180718" title="Permanent link"></a></h3>
+<ol>
+<li>secluded</li>
+<li>scuff</li>
+<li>ensue</li>
+<li>forensically</li>
+<li>forensic</li>
+<li>custody</li>
+<li>behead</li>
+<li>casket=coffin</li>
+<li>ordeal
+- This lawsuit is going to be a protracted and time-consuming ordeal.</li>
+<li>Scavenger Hunt</li>
+<li>mythic</li>
+<li>weird</li>
+<li>pathologic</li>
+<li>abduct</li>
+<li>mastermind</li>
+<li>sadistic/sadist</li>
+<li>discount</li>
+<li>alibi</li>
+<li>handyman</li>
+<li>competent
+- A handyman competent with wood and metal.</li>
+<li>deceptive</li>
+<li>trump</li>
+<li>cotter pin</li>
+<li>shrapnel</li>
+<li>sideshow</li>
+<li>red herring</li>
+<li>detonation</li>
+<li>elevate</li>
+<li>checkmate</li>
+<li>stalemate</li>
+</ol>
+<h3 id="46-180717">46 180717<a class="headerlink" href="#46-180717" title="Permanent link"></a></h3>
+<ol>
+<li>captivate</li>
+<li>flop</li>
+<li>heist</li>
+<li>bomb</li>
+<li>diabolical</li>
+<li>corporal</li>
+<li>collar</li>
+<li>rambling</li>
+<li>dissertation</li>
+<li>regression
+- regression test</li>
+<li>doctoral</li>
+<li>handcuff</li>
+<li>hostage</li>
+<li>binocular
+- binoculars 望远镜</li>
+<li>squad</li>
+<li>demeanor</li>
+<li>zoom</li>
+<li>trooper</li>
+<li>scramble</li>
+<li>scavenger</li>
+<li>berm</li>
+<li>jurisdictional</li>
+<li>turf</li>
+<li>warrant</li>
+<li>prostitute</li>
+<li>decapitation</li>
+<li>childlike</li>
+<li>renter</li>
+<li>even-tempered
+- He is pretty e·ven-tem·pered.</li>
+<li>lollipop
+- Actually reached into the basket to pull out a lollipop.</li>
+</ol>
+<h3 id="45-18-07-11">45 18-07-11<a class="headerlink" href="#45-18-07-11" title="Permanent link"></a></h3>
+<ol>
+<li>colloquial </li>
+<li>farther</li>
+<li>thrive</li>
+<li>evict</li>
+<li>dictatorship</li>
+<li>saucer</li>
+<li>buggy
+- moon buggy</li>
+<li>nonexistent
+- On a Sunday morning traffic was almost nonexistent.</li>
+<li>pruning</li>
+<li>delimiter</li>
+<li>stark
+- It was such a stark contrast to the world I came from, where conformity is demanded, and the Donnas of the world rule.</li>
+<li>tipsy</li>
+<li>pooper
+- party pooper</li>
+<li>rebellious</li>
+<li>champagne</li>
+<li>facsimile</li>
+<li>operational</li>
+<li>trailer</li>
+<li>vessel</li>
+<li>peace officer</li>
+<li>revelation</li>
+<li>agitate</li>
+<li>lien holder</li>
+<li>purchaser.</li>
+<li>itemize</li>
+<li>mutilate</li>
+<li>apostrophe</li>
+<li>clockwise</li>
+<li>vertex.pl: vertices</li>
+<li>acyclic</li>
+</ol>
+<h3 id="44-18-07-05">44 18-07-05<a class="headerlink" href="#44-18-07-05" title="Permanent link"></a></h3>
+<ol>
+<li>litmu
+- litmus test</li>
+<li>amplify</li>
+<li>shadow</li>
+<li>huddle</li>
+<li>bijection</li>
+<li>isomorphic</li>
+<li>tattletale</li>
+<li>outfit</li>
+<li>memorial
+- memorial day</li>
+<li>spill</li>
+<li>rip</li>
+<li>freak</li>
+<li>minion</li>
+<li>wand
+- even a wand of mascara</li>
+<li>bummer</li>
+<li>flatten</li>
+<li>grieve</li>
+<li>delightful</li>
+<li>cliche</li>
+<li>maid</li>
+<li>loony bin
+- a psychiatric hospital</li>
+<li>lame</li>
+<li>pity</li>
+<li>goody-goody</li>
+<li>mortified</li>
+<li>appetizing</li>
+<li>lipstick</li>
+<li>hyperventilate</li>
+<li>lossy</li>
+<li>blockbuster</li>
+</ol>
+<h3 id="43-180702">43 180702<a class="headerlink" href="#43-180702" title="Permanent link"></a></h3>
+<ol>
+<li>sabotage</li>
+<li>improvise</li>
+<li>newbie</li>
+<li>prick</li>
+<li>arrogant</li>
+<li>notoriety</li>
+<li>pornography</li>
+<li>missionary</li>
+<li>curate</li>
+<li>nourishing</li>
+<li>uplifting</li>
+<li>angels and demons</li>
+<li>humble</li>
+<li>horrific</li>
+<li>rot</li>
+<li>philanthropist</li>
+<li>gravitate</li>
+<li>throwback</li>
+<li>innovative</li>
+<li>cheekily
+- Can I cheekily ask how much you&rsquo;ve invested in education in the last few years?</li>
+<li>diagonally</li>
+<li>matrix</li>
+<li>piss</li>
+<li>tightrope</li>
+<li>germane</li>
+<li>paralyze</li>
+<li>decompress</li>
+<li>artifice</li>
+<li>maxima</li>
+</ol>
+<h3 id="42-180701">42 180701<a class="headerlink" href="#42-180701" title="Permanent link"></a></h3>
+<ol>
+<li>hexadecimal 16进制</li>
+<li>bump</li>
+<li>bumper</li>
+<li>devastate
+- If you got that wrong, it might have been really devastating for the company.</li>
+<li>episodic</li>
+<li>decline</li>
+<li>perk</li>
+<li>thrilled</li>
+<li>mesh
+- Ask future teammates about how long they typically work, and figure out if that meshes with your
+lifestyle.</li>
+<li>sympathize
+- Many of us can probably sympathize with this position.</li>
+<li>overshoot</li>
+<li>avenue</li>
+<li>psyched
+- It&rsquo;s a common story: you join a company, and you&rsquo;re psyched.</li>
+<li>complacency
+- By outlining your path in advance and checking in on it regularly, you can avoid falling into this compla­cency trap.</li>
+<li>immutable</li>
+<li>Mutable</li>
+<li>realm</li>
+<li>paranoia</li>
+<li>ethos</li>
+<li>admonition</li>
+<li>alignment</li>
+<li>compartmentalize</li>
+<li>trove</li>
+<li>stance</li>
+<li>aspirational</li>
+<li>boggle
+- boggle board
+- boggle question</li>
+<li>nudge</li>
+<li>upshot</li>
+<li>amorphous</li>
+<li>blob</li>
+<li>desperate</li>
+</ol>
+<h3 id="41-180630">41 180630<a class="headerlink" href="#41-180630" title="Permanent link"></a></h3>
+<ol>
+<li>shroud</li>
+<li>confiscate</li>
+<li>retarded</li>
+<li>downsize</li>
+<li>coupe</li>
+<li>slit
+- at slit</li>
+<li>scrape
+- scrape off accumulated stickers.</li>
+<li>fatigue</li>
+<li>surety</li>
+<li>surety bond</li>
+<li>renewal
+- renewal notice</li>
+<li>dispose</li>
+<li>constitute</li>
+<li>litigator
+- top-shelf litigator.
+- 诉讼律师.</li>
+<li>litigated</li>
+<li>litigation
+- civil litigation.</li>
+<li>sleek
+-  I write sleek performant low-overhead scala code with higher order functions that will run on anything.</li>
+<li>futuristic</li>
+<li>bezel
+- slimmer bezel</li>
+<li>notch</li>
+<li>hush</li>
+<li>revamp</li>
+<li>unclog
+- unclog your mind.</li>
+<li>clog</li>
+<li>conceivable</li>
+<li>acronym
+- AIDS is an acronym for &ldquo;Acquired Immune Deficiency Syndrome&rdquo;.</li>
+<li>silly</li>
+<li>freebie</li>
+<li>cringe
+- Suppose our interviewer hits us with a question that makes us cringe: Can we do better?</li>
+<li>conversely</li>
+<li>flawless</li>
+<li>prevalence</li>
+<li>verbose verbosity</li>
+</ol>
+<h3 id="40-180627">40 180627<a class="headerlink" href="#40-180627" title="Permanent link"></a></h3>
+<ol>
+<li>alphanumeric</li>
+<li>condense</li>
+<li>fluff</li>
+<li>amiable</li>
+<li>asymptotic
+- However, since we are making a recursive call that goes n deep and uses O(n) stack space already, it does not affect our asymptotic space complexity.</li>
+<li>interchangeable
+- Please note that array questions and string questions are often interchangeable.Thati s,a question that this book states using an array may be asked instead as a string question, and vice versa.</li>
+<li>iconic</li>
+<li>sublet</li>
+<li>reclaim
+- You may be entitled to reclaim some tax.
+- I reclaimed my suitcase from the lost luggage office.</li>
+<li>sailboat</li>
+<li>beforehand
+- We can build up the reverse integer one digit at a time. While doing so, we can check beforehand whether or not appending another digit would cause overflow.
+- research the recruiter beforehand.</li>
+<li>palindrome</li>
+<li>splice
+- Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.</li>
+<li>vicious</li>
+<li>interleave</li>
+<li>horrendous
+- This would be horrendously complicated, so don&rsquo;t even start going down this road.</li>
+<li>errand</li>
+<li>ethnicity</li>
+<li>perjury</li>
+<li>elect</li>
+<li>in absentia</li>
+<li>pursuant
+- The committee will issue a decision within 15 days pursuant to rule 182.</li>
+<li>juvenile</li>
+<li>court</li>
+<li>convict
+- There might not have been enough evidence to convict him.</li>
+<li>defendant</li>
+<li>barrel</li>
+<li>crippling
+- A crippling attack of malaria kept him in bed for months.</li>
+<li>morally</li>
+<li>composed
+- She looked remarkably composed throughout the funeral.</li>
+<li>rile
+- Don&rsquo;t let her rile you.</li>
+</ol>
+<h3 id="39-180625">39 180625<a class="headerlink" href="#39-180625" title="Permanent link"></a></h3>
+<ol>
+<li>wringer</li>
+<li>insane
+- It&rsquo;s insane.</li>
+<li>insanely
+- an insanely strong product.</li>
+<li>outlier</li>
+<li>flat out
+- Some people just flat-out refuse to read long resumes.</li>
+<li>proofread
+- Please get at least one native English speaker to proofread your resume.</li>
+<li>stigma
+- Being an unmarried mother no longer carries the social stigma that it used to.
+- Certain languages have stigmas associated with them. Sometimes this is because of the language them­ selves, but often it&rsquo;s because of the places where this language is used.</li>
+<li>caliber
+- When recruiters at some of the top tech companies see resumes that list every flavor of Java on their resume, they make negative assumptions about the caliber of candi­date.</li>
+<li>blabber(on about)
+- When a candidate blabbers on about a problem, it&rsquo;s hard for an interviewer who isn&rsquo;t well versed in the subject or project to understand it.</li>
+<li>incongruent</li>
+<li>congruent
+- Our goals are congruent; there is no conflict.</li>
+<li>oscillate
+- My emotions oscillate between desperation and hope.</li>
+<li>contingency
+- You must be able to deal with all possible contingencies.</li>
+<li>residual
+- Residual oil has to be cleaned up.</li>
+<li>penalize
+- The present tax system penalizes poor people.</li>
+<li>converge
+- Due to roadworks, three lanes of traffic have to converge into two.</li>
+<li>skewed(not accurate or exact:not straight:)</li>
+<li>impact</li>
+<li>volatility
+- There are many stories about his volatility and volcanic temper.</li>
+<li>physiological psychology
+- Touching causes a physiological reaction.
+- She studied behavioural psychology at college.</li>
+<li>participatory
+- participatory democracy</li>
+<li>ruthless</li>
+<li>gleam
+- He polished the table until it gleamed.</li>
+<li>suboptimal</li>
+<li>optimally</li>
+<li>sheriff</li>
+<li>gamut
+- run the gamut of sth
+- Jonson has run the gamut of hotel work, from porter to owner of a large chain of hotels.</li>
+<li>retrospective
+- Retrospectively, I can see where we went wrong.</li>
+<li>ternary</li>
+<li>conformance=conformity
+- conformity assessment</li>
+<li>versed
+- be versed in sth
+- When a candidate blabbers on about a problem, it&rsquo;s hard for an interviewer who isn&rsquo;t well versed in the subject or projectto understand it.</li>
+<li>nugget
+- a nugget of information/truth</li>
+<li>succinct
+- I thought she expressed her feelings most succinctly at the meeting.</li>
+</ol>
+<h3 id="38-180625">38 180625<a class="headerlink" href="#38-180625" title="Permanent link"></a></h3>
+<ol>
+<li>brainteasers</li>
+<li>atrophy
+- Never let  your coding skills atrophy.</li>
+<li>evangelist
+- At Microsoft, for instance, some PMs may be essentially customer evangelists, working in a customer-facing role that borders on marketing.</li>
+<li>possess
+- She possesses the unusual talent of knowing when to say nothing.
+- Your interviewer will want to see that you possess this flexibility in your communication.</li>
+<li>assess.pulling his / her own weight.
+- Most commonly, Teamwork/ Leadership is assessed with questions like, &ldquo;Tell me about a time when a teammate wasn&rsquo;t pulling his / her own weight:</li>
+<li>diligence
+- Due Diligence
+- technical due diligence技术背景调查.</li>
+<li>slot
+- I put my money in the slot and pressed the button but nothing came out.
+- The CEO is often slotted into a product manager interview or a dev manager interview, as this is often the closest match for the CEO&rsquo;s current responsibilities.
+- In other cases, the poor performance was a result of the employee being mis-slotted.</li>
+<li>opt
+- With some of my clients, the CEO has even opted to not interview and to leave the company upon the acquisition.</li>
+<li>averse</li>
+<li>lean on something
+- they look for and lean on patterns, opting to repeat what others have said or done.</li>
+<li>lean towards sth
+- She&rsquo;s not sure what she wants to do, but she&rsquo;s leaning towards medicine.
+- The big companies tend to take a risk-averse approach to hiring.If someone is on the fence, they often lean towards a no-hire.</li>
+<li>pluck
+- You can ask questions similar to these, but don&rsquo;t just pluck questions out of here.</li>
+<li>cluster
+- When you ask questions that are too easy, performance gets clustered together.</li>
+<li>shrink
+- Every new skill or attribute you evaluate shrinks the number of offers extended, unless you counter-balance this by relaxing the requirements for a different skill.</li>
+<li>cite</li>
+<li>recite
+- Sure, all else being equal, you might prefer someone who could recite the finer points of a two-inch thick algorithms textbook.</li>
+<li>proprietary
+- This is proprietary software, and you have no right to copy it without a license from the owner.</li>
+<li>fluster
+- Adding on a &ldquo;scary&rdquo; question might just fluster a candidate and cause him to underperform.</li>
+<li>cling
+- cling to sth
+- She clings to the hope that her husband will come back to her.
+- candidates can cling to each thing that might possibly sound positive or negative.</li>
+<li>dissuade
+- Moreover, a good candidate who has a negative reaction to you or to the company is less likely to accept an offer-and they might dissuade their friends from interviewing/accepting as well.</li>
+<li>infuse
+- Find a way to infuse some positivity into the interview.</li>
+<li>flawed
+- Not describing the details of the actions they took makes them a flawed candi­ date, but not necessarily a flawed employee.</li>
+<li>optimum/optimal</li>
+<li>traction
+- A few years ago, I started a company with a few friends that ultimately produced 3 distinct products that each achieved impressive traction.</li>
+<li>inbound</li>
+<li>payout
+- With this insurance policy there is a maximum payout of €2,500.</li>
+<li>stipulation
+- The only stipulation is that you have to register.</li>
+<li>wiggle
+- wiggle room
+- Some elements have a lot of wiggle-room.</li>
+<li>overlook
+- His film was nominated for an Oscar, but Reiner himself was overlooked as best director.
+- Milestones are an especially important element that&rsquo;s often overlooked.
+- The final point is extremely important and usually overlooked.</li>
+<li>compensation
+- Milestone-based compensation can be especially helpful for aligning incentives.</li>
+<li>sheer,toll
+- I underestimated the sheer amount of effort it would take, and the toll it would have on my team.</li>
+<li>glorify
+- Especially since acqui-hires are glorified in the Valley.</li>
+<li>rigor
+- You go through the rigors of due diligence.</li>
+<li>full-on
+- The hotel specializes in full-on luxury.</li>
+<li>sniff
+- He sniffed his socks to see if they needed washing.</li>
+</ol>
+<h3 id="37-180623">37 180623<a class="headerlink" href="#37-180623" title="Permanent link"></a></h3>
+<ol>
+<li>subside
+- The police are hoping that the violence will soon subside.
+- Then after things subsideed, she would reach out, and we would both be happy to not have to deal with the larger issue.</li>
+<li>denial,rope
+- rope someone into something
+- I was roped into playing softball last night.
+- But each time , I knew I was being roped into denial.</li>
+<li>hold out on sb
+- I held out on writing her back.</li>
+<li>write back</li>
+<li>pushover
+- Krista gets whatever she wants – her parents are real pushovers.</li>
+<li>demystify
+- What I need is a book that will demystify the workings of a car engine for me.</li>
+<li>Brute Force</li>
+<li>bevy
+- they come away feeling grilled or discouraged after trying to answer a bevy of questions.</li>
+<li>grill(vt to ask someone a lot of questions for a long time)
+- Your recruiter is usually there to prep you, not to grill you on technical questions.</li>
+<li>stumble
+- Your recruiter can be your biggest advocate, even pushing to re-interview you if you stumbled on your first interview.</li>
+<li>struggling</li>
+<li>blank slate
+- Interviewer feedback is kept confidential from the other interviewers, so you can be assured that you enter each interview with blank slate.</li>
+<li>endorser
+- To extend an offer, the HC wants to see at least one interviewer who is an &ldquo;enthusiastic endorser:&rsquo;</li>
+<li>packet</li>
+<li>prerequisite
+- While it&rsquo;s not a prerequisite to be a Mac user, you should at least be familiar with the system.</li>
+<li>escort
+-  if you don&rsquo;t pass, you&rsquo;ll simply be escorted out of the building without ever having been the wiser (until now).</li>
+<li>veto
+- The VP typically won&rsquo;t be present but can still veto the hire if they weren&rsquo;t impressed.</li>
+<li>cardinal: one two three four five. ordinal: first, second,third, fourth, fifth.</li>
+<li>invariant
+- traits that are invariant throughout all mammals
+- To prove the correctness of the algorithm, we define the loop invariant.</li>
+<li>consecutive</li>
+<li>preprocessing
+- sorting is often a good preprocessing step</li>
+<li>sweep
+- After sorting, we can sweep the sorted array to find if there are any two consecutive duplicate elements.</li>
+<li>dominate
+- The entire algorithm is dominated by the sorting step, which is O(nlog n) .</li>
+<li>overhead
+- The reason is hash table has some overhead in maintaining its property.</li>
+<li>naive</li>
+<li>logarithmic
+- Each operation costs logarithmic time complexity in the sliding window which size is min(k, n).</li>
+<li>incur</li>
+<li>telecast</li>
+<li>unconvincing</li>
+<li>obsessive</li>
+<li>optionality 期权</li>
+</ol>
+<h3 id="36-180622">36 180622<a class="headerlink" href="#36-180622" title="Permanent link"></a></h3>
+<ol>
+<li>wrestler. eyebrow.eyeliner</li>
+<li>stash
+- Each house has a certain amount of money stashed.</li>
+<li>rob</li>
+<li>cremate
+- Her body was burned, cremateed at 1800 degrees.</li>
+<li>aside
+- Stand aside, please, and let these people pass.</li>
+<li>aside from
+- Money continues to be a problem but aside from that we&rsquo;re all well.
+- I hardly watch any television, aside from news and current affairs.</li>
+<li>fearless</li>
+<li>vise</li>
+<li>brawny
+- She would wrap her brawny legs around me and squeeze until I almost couldn&rsquo;t breathe.
+- He was a big brawny man with huge hands.</li>
+<li>bleeding heart</li>
+<li>lexicographical
+- Enumerating a dataset of strings in lexicographical order.</li>
+<li>outperform,deteriorate
+- Another reason why trie outperforms hash table, is that as hash table increases in size, there are lots of hash collisions and the search time complexity could deteriorate to O(n), where n is the number of keys inserted.</li>
+<li>till</li>
+<li>jerk,swing
+- If you were driving with her, she would jerk the car to the side of the road, get out, leaving the car door swingging open.
+- swinging the bag and the cane gun.</li>
+<li>autopsy
+- Her autopsy report says that her heart weighted 360 grams.</li>
+<li>compassionate</li>
+<li>filthy</li>
+<li>multitude
+- This case has raised a multitude of questions.</li>
+<li>fixate
+- While people tend to fixate on equity ownership and equality,what really matter is whether there is equal power sharing between founders.</li>
+<li>clump,peacock,strut
+- The girls were all clumped together watching these young peacocks strut their stuff, knowing their job was to sit there and be impressed.</li>
+<li>heroin,fentanyl
+- There are so much heroin and fentanyl on the streets these days.</li>
+<li>overdose</li>
+<li>choke</li>
+<li>cookout
+- She had been hosting a cookout for friends.</li>
+<li>slur
+- John showed up in bad shape,slurring her words,fighting off drowsiness.</li>
+<li>forbade</li>
+<li>charcoal</li>
+<li>grudge
+- I was still holding a grudge about it.</li>
+<li>delight</li>
+<li>bland</li>
+<li>imitate</li>
+<li>crack up
+- Making me crack up.</li>
+</ol>
+<h3 id="35-180618-d">35 180618 D<a class="headerlink" href="#35-180618-d" title="Permanent link"></a></h3>
+<ol>
+<li>coach. fresher. outburst. robber</li>
+<li>dive : past tense dived or us also dove, past participle dived</li>
+<li>premise
+- He premised his argument on several incorrect assumptions.
+- We don’t accept the premise that cutting taxes will necessarily lead to increased economic productivity.</li>
+<li>quotes
+- He began his speech by quoting Shakespeare.
+- u can get quotes online or over the phone very quickly from dozens of competitors.</li>
+<li>colossal
+- They were asking a colossal amount of money for the house.
+- It was a colossal waste of time.</li>
+<li>boundless
+- She has boundless energy and enthusiasm.
+- Her love for her baby is boundless.</li>
+<li>raves
+- She was ranting and raving about some imagined insult.</li>
+<li>battle(do battle)
+- Even if no one is hurt, if there’s real damage and insurance companies will soon do battle, it’s a good idea to call 911.</li>
+<li>precinct
+- If you call 911 or your local precinct and bring in a neutral third party to document the accident, you’ll be doing yourself a favor.</li>
+<li>err</li>
+<li>suite</li>
+<li>nimble</li>
+<li>voluntary</li>
+<li>impediment</li>
+<li>duress</li>
+<li>excerpt</li>
+<li>threesome</li>
+<li>numerator/denominator.</li>
+<li>tumble</li>
+<li>nightgown</li>
+<li>weary
+- Here, sit down and rest your weary legs.</li>
+<li>clash</li>
+<li>sue
+- They&rsquo;re gonna reverse-engineer a version as close as they can without getting sued.</li>
+<li>ensue</li>
+<li>scuffle</li>
+<li>assure</li>
+<li>bureaucratic</li>
+<li>permutation</li>
+<li>permute
+- we wish to permute the order of the bytes.</li>
+<li>sperm
+- sperm patty</li>
+<li>spectre</li>
+<li>whittle
+- whittle sth down
+- We had 80 applicants for the job, but we&rsquo;ve whittled them down to six.</li>
+<li>unpick</li>
+<li>unwinding</li>
+</ol>
+<h3 id="34-180616">34 180616<a class="headerlink" href="#34-180616" title="Permanent link"></a></h3>
+<ol>
+<li>squirrel. lettuce. colonel. fruit. recipe. sew. choir.watermelon.</li>
+<li>advertisement. bathroom.</li>
+<li>tragic</li>
+<li>exploratory</li>
+<li>solidify
+- I am here to help you solidify your understanding of computer science fundamentals and then learn how to apply those fundamentals to crack the coding interview.</li>
+<li>riddled
+- Finally, when he began coding, he flew through the code with an initial solution, but it was riddled with mistakes that he failed to catch.</li>
+<li>acquisition</li>
+<li>combat
+- I&rsquo;ve seen their mistakes and struggles, and I&rsquo;ve devel­oped techniques and strategies to help them combat those very issues.</li>
+<li>gut
+- At the end of the interview, the interviewer will walk away with a gut feel for how you did.
+- He knew he had to trust his gut(instincts) and do what felt right.</li>
+<li>periodically
+- Understanding trees, graphs, lists, sorting, and other knowledge does come up periodically.</li>
+<li>correlate
+- Even if the skills wouldn&rsquo;t be that hard to learn on their own, they say it&rsquo;s reasonably well-correlated with being a good developer.</li>
+<li>meaty
+- You get to focus on the interesting, &ldquo;meaty&rdquo; parts of the code: the function that the question is really all about.</li>
+<li>pseudo-
+- pseudocode</li>
+<li>randomness.
+- pure randomness.</li>
+<li>upsurge</li>
+<li>slant</li>
+<li>anagram</li>
+<li>tuple</li>
+<li>ace</li>
+<li>sufficient</li>
+<li>qualitative</li>
+<li>comprehend</li>
+<li>shine
+- Here he shines a light on four components,but recommends using them together, so their impact compounds.
+- Basically, this is ur chance to shine.</li>
+<li>reflective</li>
+<li>craft
+- craft a story.</li>
+<li>bewilder
+- If you bewildered the interviewer at this stage you will be viewed as somebody who can&rsquo;t communicate clearly.</li>
+<li>banned
+- he was banned from driving for a year</li>
+<li>converse
+- It would be great if u can be able to at least converse with them not just ask completely amateurish questions.</li>
+<li>issue
+- u issue a depth-first search.</li>
+<li>delegate
+- help you delegate some of the edge cases to other methods.</li>
+<li>disposal
+- at sb&rsquo;s disposal
+- They should have that tool(hash table) at their disposal.</li>
+<li>oftentimes
+- oftentimes the interviews will even take a picture of the code that you wrote.</li>
+</ol>
+<h3 id="33-180610">第33组 180610<a class="headerlink" href="#33-180610" title="Permanent link"></a></h3>
+<ol>
+<li>roof. blender.blander. blunder.</li>
+<li>legs.lags.lugs.leagues.</li>
+<li>dead/ded/.did/dɪd/.deed/diːd/.dud/dʌd/.dad/dæd/.</li>
+<li>preempt</li>
+<li>delimit</li>
+<li>cue</li>
+<li>peripheral</li>
+<li>lucrative</li>
+<li>lure</li>
+<li>watermark</li>
+<li>docile</li>
+<li>brittle</li>
+<li>guru
+- these 3 are my gurus.</li>
+<li>foster</li>
+<li>epic</li>
+<li>tear
+- Immediately after graduation ceremonies concluded, workers began tearing out granite counters and carpet as part of a 10-week project.</li>
+<li>detract
+- The window additions will not detract from the chevron pattern of the library’s walls and will add an interesting element to the facility</li>
+<li>retention
+- INcrease retention on eBanking Website.</li>
+<li>manifesto</li>
+<li>overhaul</li>
+<li>severance
+- severance package</li>
+<li>debrief</li>
+<li>defender</li>
+<li>nerd</li>
+<li>contiguous</li>
+<li>oddly</li>
+<li>dwarf</li>
+<li>dopamine</li>
+<li>detach</li>
+<li>pajamas</li>
+<li>eternity</li>
+<li>eternal</li>
+</ol>
+<h3 id="32-180608">第32组 180608<a class="headerlink" href="#32-180608" title="Permanent link"></a></h3>
+<ol>
+<li>jaw. 下巴.mower.</li>
+<li>outsource</li>
+<li>freight.</li>
+<li>expedite</li>
+<li>legit</li>
+<li>laminate</li>
+<li>plasticky</li>
+<li>placebo</li>
+<li>procurement</li>
+<li>cathedral</li>
+<li>plethora</li>
+<li>futile</li>
+<li>rebrand</li>
+<li>stuffy</li>
+<li>boardroom</li>
+<li>rehash</li>
+<li>pique</li>
+<li>painstaking</li>
+<li>rest</li>
+<li>pitch
+- Interesting pitch. 有趣的展示.
+- When you pitched me Pied Piper.</li>
+<li>niche</li>
+<li>flattery</li>
+<li>smokescreen</li>
+<li>ho-hum</li>
+<li>wicked</li>
+<li>pedantic</li>
+<li>hassle
+- It took me an extra 15 minutes to get across the border. Major hassle.</li>
+<li>funnel</li>
+<li>elite</li>
+<li>all-out</li>
+<li>boom</li>
+</ol>
+<h3 id="31-180530">第31组 180530<a class="headerlink" href="#31-180530" title="Permanent link"></a></h3>
+<ol>
+<li>granite satellite.tournament.janitor.ostrich.</li>
+<li>English alphabet.</li>
+<li>latter
+- Work on the latter will commence mid-June and will be carried out at night both to spare the campus the noise and vibrations during the day and to reduce the likelihood of injuries to passersby.</li>
+<li>commence</li>
+<li>commencement</li>
+<li>orally</li>
+<li>stutter</li>
+<li>laminated</li>
+<li>waive</li>
+<li>wreck
+- If u get into a wreck the insurance company will help you cover your losses.</li>
+<li>obliged</li>
+<li>rehabilitation</li>
+<li>wages</li>
+<li>funeral
+- funeral expenses.</li>
+<li>outright</li>
+<li>out-of-pocket</li>
+<li>deductible</li>
+<li>slam
+- I slammed on (= quickly used) the brakes, but it was too late.</li>
+<li>asshole</li>
+<li>snot
+- She&rsquo;s just full of snot.</li>
+<li>jester
+- and also be her court jester.</li>
+<li>scream
+- That&rsquo;s me screaming.</li>
+<li>watercolor
+-  We stared as my grandmother&rsquo;s watercolors on my wall started to blur.</li>
+<li>slam
+-  She gave me my taste in music. Riding around in her Ford Escort, she&rsquo;d slip in a cassette, explaining the difference between Funkadelic and Parliament.</li>
+<li>singly</li>
+<li>disjoint</li>
+<li>intersperse</li>
+<li>anagram</li>
+<li>reflexive</li>
+<li>chase</li>
+<li>lick</li>
+<li>fingerprint</li>
+<li>divine
+- To Iterate is Human, to Recurse, Divine.
+- No divine inspiration allowed.</li>
+</ol>
+<h3 id="30-180526">第30组 180526<a class="headerlink" href="#30-180526" title="Permanent link"></a></h3>
+<ol>
+<li>Mouse pad. Power cord. wrist rest</li>
+<li>ergonomic and comfortable.Mechanical keyboard</li>
+<li>lashing straps</li>
+<li>1美分-Penny</li>
+<li>5美分-Nickel</li>
+<li>10美分-Dime</li>
+<li>25美分-quarter dollar,quarter</li>
+<li>50美分-half dollar</li>
+<li>1美元-One Dollar</li>
+<li>burping 打嗝. pilot. dribbling. rugby. baseball. curry.</li>
+<li>pilot
+- you&rsquo;re piloting a two-ton missile.</li>
+<li>Chinese buffet restaurant. meteor shower 流星雨. immigrant.permanently.</li>
+<li>trippy</li>
+<li>mighty</li>
+<li>flavoursome</li>
+<li>baffle</li>
+<li>Fictional</li>
+<li>Embark</li>
+<li>emanate</li>
+<li>detention</li>
+<li>detain</li>
+<li>beep beeped/unbeeped</li>
+<li>mistress
+- Buy a sports car, get a mistress half your age, run a marathon, open a restaurant &hellip;</li>
+<li>rage
+- rage-quitting</li>
+<li>bet
+- I will bet a lot of money that there are a &ldquo;silent majority&rdquo; of programmers out there who merely want to do their work and go home.</li>
+<li>envious
+- Having the ability to work is something I am envious of!</li>
+<li>nag
+- It is not your job to nag around for tasks.</li>
+<li>plummet
+- I feel tired and my productivity plummets.</li>
+<li>sentiment
+- I agree with this sentiment, to a point. The biggest problem with only working 9-5 and never putting any time in on your own to learn new technologies is that your skills will become stale.</li>
+<li>caveat</li>
+<li>twofold</li>
+<li>sap
+- Instead of making us more efficient, multitasking ends up sapping our productivity, killing our focus, and adding to our stress level.</li>
+<li>juggle
+- Juggling tasks makes everything take longer.</li>
+<li>snap
+- I’ve put up with my in-laws for four days and didn’t snap once…</li>
+<li>jackpot
+- It was kind of hitting the jackpot for him at that age.</li>
+<li>timescale</li>
+<li>labyrinth</li>
+<li>gray</li>
+<li>hog
+- What Is Google Chrome Helper, and Why Is It Hogging My CPU Cycles?</li>
+<li>haunted,ghoul
+- If you use a Mac and Google&rsquo;s Chrome browser, you may occasionally be haunted by a ghoul that goes by the name of “Google Chrome Helper.”.</li>
+<li>rampage,rogue
+- The quick story is that Google Chrome Helper isn&rsquo;t really the problem. It tends to go on the rampage when there&rsquo;s a rogue extension or when Google Chrome’s plug-in settings are configured to run everything by default.</li>
+<li>martyr
+- Google Chrome Helper is a martyr.</li>
+<li>assimilation,assimilate</li>
+</ol>
+<h3 id="29-180515">第29组 180515<a class="headerlink" href="#29-180515" title="Permanent link"></a></h3>
+<ol>
+<li>strapline 副标题.Chat bots. 聊天机器人.razor 剃刀.male grooming products. ambulation</li>
+<li>Scented Bar.  Hand/Body Soap.viral video.病毒视频.email advocacy</li>
+<li>purveyor. sauce . scarf 围巾 hamster 仓鼠.kitten 小猫 horror movie</li>
+<li>romance movies.  penguin 企鹅. fought/bought/ate/won/forgot/slept/drunk/drank..garage/garbage</li>
+<li>caviar 鱼子酱. bonus/award. metropolitan (metro).</li>
+<li>savvy
+- Children today are much more tech-savvy than their grandparents.</li>
+<li>behemoth
+- When google launched Gmail in 2004, the company wasn&rsquo;t quite the all conquering data-gathering behemoth we know today.</li>
+<li>ploy
+- But Google cleverly turned a problem into a marketing ploy.</li>
+<li>counter
+- To counter such resistance, Fb has progressively turned off the message facility on its own app and telling mobile users they must migrate to Messenger.</li>
+<li>diversion
+- For anyone needing  diversion on the bus, train or in the office, a Fb quiz-usually put together by a third party- is often the first port of call.</li>
+<li>incentivise
+- Competitions aren&rsquo;t the only way to incentivise.</li>
+<li>harness
+- The company offers a quality services and harnesses the power of existing users to bring more customers.</li>
+<li>arena
+- The business-to-business market is different from the B2C arena and often requires a different approach to growth hacking.</li>
+<li>time-honored:(of a custom or tradition) respected or valued because it has existed for a long time.
+- One time-honoured startegy is to provide useful business intelligence to your target audience.</li>
+<li>impeccable
+- The company&rsquo;s approach was a relatively crude but funny video, presented by the founder with impeccable comic timing around the strapline.&rdquo;Our blades are fucking great.&rdquo;</li>
+<li>sheen
+- The videos share some of the no-nonsense crudity of one dollar Shave but add a sitcom sheen.</li>
+<li>crush
+- Her arm was crushed in the accident.</li>
+<li>stringent
+- the stringent time-to-market constraints that prevail in a competitive climate such as web-conferencing would have prevented us from doing this.</li>
+<li>subtlety
+- give yourself a subtlety of expression.</li>
+<li>creepy</li>
+<li>creep</li>
+<li>envision</li>
+<li>imagery</li>
+<li>typography</li>
+<li>crisp</li>
+<li>gutter</li>
+<li>probiotic</li>
+<li>jive</li>
+<li>litter</li>
+<li>lump
+- Look at that lion! It’s eating a huge lump of meat.
+- Like signing bonuses, stock compensation between companies can be compared by amortizing it over three years and then lumping that value into salary.</li>
+<li>frugal</li>
+<li>ingenuity
+- Man first landed on the moon in 1969. It was an amazing feat of human ingenuity.</li>
+<li>vomit
+- Julie ate some bad food yesterday. She&rsquo;s going to vomit.</li>
+<li>skinny</li>
+<li>critique</li>
+<li>job vacancies and resumes</li>
+</ol>
+<h3 id="28-180511">第28组 180511<a class="headerlink" href="#28-180511" title="Permanent link"></a></h3>
+<ol>
+<li>Stainless Steel 不锈钢.noble savages.luggage 行李. weigh luggage.kiosk</li>
+<li>rink 滑冰场.bribe 贿赂=kickback(s), kickback(s) also means resistance.</li>
+<li>taboo
+- Sex is a taboo subject for many people.
+- In this company, dating a coworker is considered taboo.</li>
+<li>pre-marital
+- premarital sex</li>
+<li>chastity
+- In general, they were just much less obsessed with female chastity than europeans were.</li>
+<li>paragon
+- a paragon of a wife</li>
+<li>savagery</li>
+<li>thwart
+- She did all she could to thwart his plans.
+- The army thwarted the attempt at a coup.</li>
+<li>galleon
+- The Spanish wanted to colonize Florida to set up military bases to thwart the pirates who preyed on silver-laden Spanish galleons coming out of Mexico.</li>
+<li>indigenous
+- There are several indigenous groups that still live in the area.</li>
+<li>inquisitive, inquisition
+- me as an inquisitive child
+- His political enemies were conducting an inquisition into the details of his personal life.</li>
+<li>warrior</li>
+<li>servitude
+-  penal servitude</li>
+<li>captivity
+- Big Cats in Captivity</li>
+<li>graze
+- cattle grazing on the slopes
+- one of the long spikes grazed his shoulder, ripping his robes</li>
+<li>perpetual
+- He seems to have a perpetual grin on his face.</li>
+<li>grasping
+- Research Project: Hand Grasp Animation</li>
+<li>pathetic</li>
+<li>sympathetic
+- 3 Ways to Be Sympathetic</li>
+<li>metaphorical
+- By making a metaphorical comparison between a complex problem and a recognisable situation, other people can understand what’s meant right away.</li>
+<li>brutal</li>
+<li>brutality</li>
+<li>unleashed
+- The storm unleashed its fury.</li>
+<li>cruelty</li>
+<li>tale
+- Are you telling tales again? Or is that the truth?</li>
+<li>heathens
+- a missionary sent to distant lands to convert the heathens</li>
+<li>befall-befell
+- It&rsquo;s sad to think of the unhappy fate that befell him.
+- The drought was only one of many hardships to befall the small country.</li>
+<li>unheard
+- Their cries for help were unheard.</li>
+<li>attentive
+- The hospital is proud of its attentive staff.</li>
+<li>adjourn
+- This meeting is adjourned. means it&rsquo;s finished.
+- We&rsquo;re going to adjourn this meeting until next week .means we&rsquo;re going to take a break , we&rsquo;re going to come back and finish next time.</li>
+<li>unanimous
+- it&rsquo;s unanimous.Approved.
+- a unanimous vote to upgrade the school&rsquo;s computer facilities</li>
+<li>acrobatic
+- a child who is a natural acrobat with a superb sense of balance</li>
+</ol>
+<h3 id="27-180509">第27组 180509<a class="headerlink" href="#27-180509" title="Permanent link"></a></h3>
+<ol>
+<li>cupcakes, cereal, delicious herb, jerk(a stupid person, usually a man) 很讨厌的人.beeper.</li>
+<li>referral.</li>
+<li>hinge
+- give me a referral.
+- After all, applying online is tricky; a personal referral is much better, and your ability to do so hinges on your network.</li>
+<li>contend(vi,vt)
+- will contend for the championship this year
+- contended with the problems of municipal government
+- contends that the new law would help only the wealthy
+- The bomb squad has to contend with this traffic.</li>
+<li>shin. chin.
+- kick you in the shin.</li>
+<li>shock : a bad surprise.</li>
+<li>plague
+- Drought and wildfires continue to plague the area.</li>
+<li>cynical
+- <code>Basically means that you think negatively about everything.</code>
+- She&rsquo;s become more cynical in her old age.</li>
+<li>conundrum
+- He is faced with the conundrum of trying to find a job without having experience.</li>
+<li>kludgy:awkwardly or inelegantly made or done.</li>
+<li>equanimous.equanimity
+- Stay equanimous.</li>
+<li>rectify
+- Rectify your eating habits to stay disease free.</li>
+<li>marginalize
+- It&rsquo;s unrealistic for majority of the readers here to practice what you said without the help from native speakers ‘cause most fobs guys are isolated/marginalized as f*** at the first place even for many fob girls.</li>
+<li>jeopardy
+- His laziness caused the company to perform badly last quarter. Moreover, his attitude toward the board has put his job in jeopardy.</li>
+<li>clamp</li>
+<li>referendum
+- The issue was decided by referendum.</li>
+<li>scrutiny
+- Her opinion is based on a careful scrutiny of the text.</li>
+<li>genie
+- He rubbed the magic lamp to summon the genie.
+- I don&rsquo;t think u can put that genie back in the bottle now.</li>
+<li>normative</li>
+<li>yawn
+- Scientists may have just solved one of life’s biggest mysteries: Why yawning is contagious.</li>
+<li>statehood
+- California was 60 years away from statehood when the Constitution was signed, for instance.</li>
+<li>Brag
+- always bragging about his success(vi)
+- bragged that she was the faster runner on her team(vt)</li>
+<li>aggrandize
+- Sorry, We can be a little bit self-aggrandizing sometimes here in America.
+- a movie that aggrandizes the bad guys and makes the cops look like dopes</li>
+<li>romanticize/romanticization
+- He has romanticized notions of army life.</li>
+<li>infantilize/infantilization</li>
+<li>pinnacle
+- a singer who has reached the pinnacle of success
+- pinnacle of humanness</li>
+<li>decimate
+- Crops from both countries will be decimated.
+- decimate a regiment
+- And like other native Americans, their populations were decimated by diseases.</li>
+<li>decimation: means one in ten.</li>
+<li>dwelling
+- What Is Dwelling Insurance?</li>
+<li>degradation
+- without degradation
+- environmental degradation</li>
+<li>problematic
+- inherently problematic
+- Rules of grammar are more problematic for non-native speakers.</li>
+<li>matrilineal
+- matrilineal society</li>
+</ol>
+<h3 id="26-180505">第26组 180505<a class="headerlink" href="#26-180505" title="Permanent link"></a></h3>
+<ol>
+<li>rung
+- The lower you start, the more rungs there are to climb.</li>
+<li>rubric
+- the rubrics at the beginning of the chapters are intended to be humorous</li>
+<li>dangle
+- approaching the dangling null at the end of each list
+- The money she dangled in front of him wasn&rsquo;t enough to convince him to sell.
+- She sat on the edge of the pool, dangling her feet in the water.
+- Some companies will dangle money at you as an alternative to going on the PIP.You can take it and bail.</li>
+<li>shackle
+- placed shackles on the legs of the prisoners
+- Obviously, this is much easier if you aren&rsquo;t shackled to them by some kind of unhumane quasi-slavery  visa situation that we do to our friends who happen to  be bron somewhere else.</li>
+<li>perilous
+- If you are in a perilous visa situation, you also have to solve for that at the same time, unfortunately.</li>
+<li>aka .also known as.</li>
+<li>wretched
+- families living in wretched poverty</li>
+<li>techie 技术人员</li>
+<li>woeful
+- My skill set was woefully out of date.
+- The student&rsquo;s grades were woeful.</li>
+<li>clunky
+- I drive a clunky old station wagon.
+- even last year&rsquo;s laptops look clunky</li>
+<li>asterisk : *  symbol (*)</li>
+<li>opacity
+- Critics have noted the opacity of her writing style.</li>
+<li>wonder
+- It has made wonders for me.</li>
+<li>probabilistic
+- Life is probabilistic, you can&rsquo;t define your future for sure.</li>
+<li>mortality
+- Your mortality is approaching and you suddenly realise time is limited.</li>
+<li>ailment
+- There&rsquo;s all sorts of odd ailments that hit in the 40&rsquo;s because evolution.</li>
+<li>libido
+- Your libido will drop , and finally you can get five minutes of peace and quiet without thinking about sex all the time.</li>
+<li>cardio
+- YOu can get it whenever you want. Still it helps with the cardio.</li>
+<li>ossify
+- You can cheerfully sink into your comfort zone and let your opinions ossify into grumpy old man syndrome.Don&rsquo;t do that, it&rsquo;s not pleasant for anyone.</li>
+<li>dandy
+- Now everything is fine and dandy.</li>
+<li>rant
+- his rants against organized religion</li>
+<li>shameless
+- The actor made a shameless plug for his movie.</li>
+<li>paradise
+- Welcome to the paradise where you can pick any type of fonts that you would want.</li>
+<li>hodgepodge
+- the exhibit was a hodgepodge of mediocre art, bad art, and really bad art</li>
+<li>dimple
+- dimples 酒窝 beard 胡子 cages笼子 animals and cages in the zoo. underwear. 内衣.</li>
+<li>crunch
+- I think we&rsquo;re going to have to crunch our burn-rate again.</li>
+<li>Crunches
+- 4 Reasons Why You Should Not Do Crunches</li>
+<li>contentious
+- Contentious politics in China
+- The dispute involves one of the region&rsquo;s most contentious leaders.</li>
+<li>unwieldy
+- What is nature&rsquo;s purpose in providing huge, unwieldy horns for &hellip;</li>
+<li>phony=fake.Sometime, people will steal something from other people and pass it off as their own. And these people are called “phonies”.</li>
+<li>autograph:a signature, especially that of a celebrity written as a memento for an admirer.
+- autograph is for celebrity, signature is for normal people.</li>
+</ol>
+<h3 id="25-180501">第25组 180501<a class="headerlink" href="#25-180501" title="Permanent link"></a></h3>
+<ol>
+<li>churn
+- And on and on until a narrowly-scoped changelist has expanded to include lots of unrelated churn.
+- The biggest problem they face is churn. Wireless providers lose an average of about 30% of their customers a year to competitors.</li>
+<li>scissor 剪刀.</li>
+<li>egregious
+- an egregious example of political bias</li>
+<li>gripe
+- Students griped about having too much homework.
+- THe author may gripe about splitting the changelist because it&rsquo;s a tedious task.</li>
+<li>emphatic
+- Even if my emphatic recommenda­tion could sway them to reconsider, he would surely get rejected in the later stages of the hiring process. There were just too many red flags.</li>
+<li>emphatically
+- When the code quality is low, emphatically request a split.
+- Yellen responds to Trump: I can &lsquo;emphatically&rsquo; say politics do not affect us</li>
+<li>abomination
+- you are much better off auditing a couple of sloppy 300-line changelist than a single 600-line abomination.
+- Some people view the sculpture as art while others see it as an abomination.</li>
+<li>be better off:be in a better position, especially in financial terms.
+- Oh, honey, you&rsquo;re better off without him.
+- As a computer programmer, you&rsquo;re better off moving to a city that&rsquo;s home to a lot of tech companies.</li>
+<li>trivia
+- many firms will ask so-called &ldquo;trivia&rdquo; questions</li>
+<li>trivial
+- Grant approveal when remaining fixes are trivial.</li>
+<li>needless
+- This adds needless code review rounds, wasting time for both author and reviewer.</li>
+<li>compliment/complement
+- Sincere compliments ease this tension by demonstrating that you are their supportive teammate and not the cruel gatekeeper.</li>
+<li>slayings 凶杀案.</li>
+<li>canvass
+- Detectives are unsure whether the attacker was alone but said there were signs of forced entry into the home. Investigators have interviewed neighbors and canvassed the area.</li>
+<li>stew
+- The longer you and your teammate stew in stalemate , the more damaging it is to your relationship.</li>
+<li>weigh
+- Weigh the cost of just approving the changes.</li>
+<li>slog
+- Wildland firefighter training starts with a wet slog.
+- It will be a long, hard slog before everything is back to normal.
+- Why did mine turn into a three-week slog through passive-aggressive much while Bob&rsquo;s was a two-day breeze?</li>
+<li>ambush
+- We have reports of enemy soldiers ambushing civilians on this road.</li>
+<li>retain
+- A landlord may retain part of your deposit if you break the lease.
+- They insisted on retaining old customs.</li>
+<li>sake:The sake of something is the reason for doing it.
+- The parents worked hard for their children&rsquo;s sake.</li>
+<li>obstruct
+- my job wasn&rsquo;t to obstruct her work,but rather help it move forward.
+- A large tree obstructed the road.</li>
+<li>affront
+- I took it as an affront,
+- A lie is an affront to the soul, as well as an insult to the intelligence of the person to whom one lies.</li>
+<li>stall
+- Interviewers want to see that, when faced with an ambiguous situation, you don&rsquo;t get overwhelmed and stall.
+- Recall that the review that had been stalled for three painful weeks.</li>
+<li>strangle
+- Bob didn&rsquo;t try to strangle the review to perfection.
+- The company is trying to strangle the smaller competition.</li>
+<li>brusque
+- She asked for a cup of coffee and received a brusque reply: “We don&rsquo;t have any.”</li>
+<li>hinder
+- If you feel unable to bring code up to your quality standards,think about what aspects of the review process are hindering you and how you can address them.
+- Their journey was hindered by snow and high winds. economic growth hindered by sanctions</li>
+<li>legible
+- It&rsquo;s just for us to write in a more easier way, more legible way, so that our code looks nicer.</li>
+<li>erratic
+- so far your effort to land a summer job has been very erratic</li>
+<li>animation
+- showing animations.</li>
+<li>loiter
+- loitering objects</li>
+<li>32 fahrenheit or zero degrees celsius.</li>
+</ol>
+<h3 id="24-180428">第24组 180428<a class="headerlink" href="#24-180428" title="Permanent link"></a></h3>
+<ol>
+<li>derail
+- Code reviews require more tact and care than usual communication because there&rsquo;s a high risk of derailing the discussion into a personal agrument.</li>
+<li>bizarrely
+- You would expect reviewers to dial up their politeness in reviews, but bizarrely I&rsquo;ve found them to go the opposite direction.</li>
+<li>stapler
+- Hand me that stapler , then fetch me a soda.</li>
+<li>stray
+- The farther you stray from authoritative documentation, the shakier your evidence becomes.</li>
+<li>spontaneity
+- Lists can close you off to spontaneity and exploration of things you didn&rsquo;t plan for.</li>
+<li>guillotine
+- shinier guillotine</li>
+<li>superfluous
+- Everything else is superfluous.</li>
+<li>rhetorical
+- rhetorical question.</li>
+<li>gut
+- Tools will come and go,but your brain and your gut will be here with you for the rest of your life.</li>
+<li>periphery
+- A &ldquo;Boundary Class&rdquo; is a class that lies on the periphery of a system, but within it.
+- As the kids walked around the periphery, they were invited to pluck a few mint leaves and have a nibble.</li>
+<li>dutifully
+- I dutifully recorded all of the issues I spotted.</li>
+<li>shakeup
+- It won the 1990 elections, and immediately carried out a radical shake-up of the country&rsquo;s welfare system by creating the first ‘post-welfarist’ society.</li>
+<li>nil
+- COS displays an error message if the user’s order history is nil.</li>
+<li>dismissively
+- she explained dismissively that these issues were not worth the engineering time to fix.</li>
+<li>meander
+- My tone was professional but meandering into the realm of passive-aggressive.</li>
+<li>obstinate
+- As you might guess,john&rsquo;s replies became even more obstinate.</li>
+<li>dread
+- can&rsquo;t swim and dreads the water
+- All morning, I felt a sinking weight in the pit of my stomach as I dreaded the next round of review.</li>
+<li>pound
+- my heart began pounding in my chest as I grew more infuriated by each of her responses.</li>
+<li>hammer rebuttal
+- I immediately started hammering my keyboard with rebuttals, pointing out that she had neither made my suggested changes nor offered justification for me to approve.We repeated this routine every day for three weeks.The code barely changed.</li>
+<li>fling
+- Fine Doubled for Car Drivers Flinging Cigarette Butts on the Roads.</li>
+<li>handover
+- I will handover the final homework#2 document by tomorrow.........can you build table of contents?
+- the police officer ordered the suspect to hand over his weapons</li>
+<li>polynomial 多项式.</li>
+<li>confront
+- my mom confronted her with some hard evidence.</li>
+<li>confrontation
+- Have you ever had a confrontation at your last job?</li>
+<li>peed
+- I peed my pants.</li>
+<li>sarcasm
+- a voice full of sarcasm</li>
+<li>stale</li>
+<li>stalemate
+- He immediately recognized the situation for what it was : a stalemate.</li>
+<li>backward
+- economically backward countries
+- my original approach was backward and bob&rsquo;s was quietly brilliant.</li>
+<li>convoluted
+- An F is reserved for code that is either functionally incorrect or so convoluted that you don&rsquo;t have confidence in its correctness.</li>
+<li>withhold
+- The only reason you should withhold approval is if the code remains at an F after a few rounds of review.</li>
+</ol>
+<h3 id="23-180427">第23组 180427<a class="headerlink" href="#23-180427" title="Permanent link"></a></h3>
+<ol>
+<li>either,adv,用于否定句.也.
+- My other work didn&rsquo;t look so good on paper either.</li>
+<li>hornswoggle(horn·swog·gle)
+- If they hornswoggled me into helping them, it&rsquo;s evidence of their strong leadership qualities.</li>
+<li>peon
+- I was just the mindless peon whose work was so irrelevant that it could be pre-empted at a moment&rsquo;s notice.
+- “Those rich politicians don&rsquo;t care about peons like us,” she complained.</li>
+<li>nevertheless
+- It was an undocumented system, built on deprecated infrastructure,but it was nevertheless  a critical components in production.</li>
+<li>liable
+- It&rsquo;s liable to rain.
+- I was liable to lose several more in the grunt work of keeping it operational.</li>
+<li>absurd
+- Meanwhile, I couldn&rsquo;t complete any projects because Google kept interrupting them midway through and assigning me new ones. They dynamic felt absurd.</li>
+<li>velociraptor/dinosaur</li>
+<li>exponentially
+- Popular wisdom said that each promotion was exponentially harder than the last.</li>
+<li>rather adv
+- I would rather go to the movies than stay at home.
+- These weren&rsquo;t Zucherberg hopefuls, but rather people who wanted to build modest, profitable businesses that pay their bills.</li>
+<li>captivate
+- Founders on Indiae Hackers captivated me because they were in control.</li>
+<li>stagnate(V) stagnant(adj)
+- Whether their business became a runaway success or stagnated for years, they were calling the shots.
+- Stagnant water</li>
+<li>euphemism
+- This was a common enough occurrence at Google that there was euphemism for it a defrag.</li>
+<li>morale and momentum
+- Stuff that you don&rsquo;t like is a painful drag on morale and momentum.</li>
+<li>belittle
+- Try to be around smart, productive, happy, and positive people that don&rsquo;t belittle your ambitions.</li>
+<li>terse
+- I am almost sure I am terse to the point of rudeness when replying emails.</li>
+<li>espresso. 浓咖啡 caffeine 咖啡因</li>
+<li>willpower
+- I don&rsquo;t have much willpower when it comes to sweet things, so I mostly just try to keep junk foot out of the house.</li>
+<li>stimulants
+- stimulant abuse.
+- the relaxed zoning regulations should serve as a stimulant for development in the area</li>
+<li>dissect
+- a 20-person meeting where you dissect code line by line.</li>
+<li>innocuous
+- All my to-do lists started out as innocuous tools to assist me in my life, but slowly transformed,each and every time, into thankless , soul training exercises in reductionism.</li>
+<li>stamina
+- Beeween interruptions like meetings and emails, the time you have available to focus on code is scarce.Your mental stamina is even shorter supply.
+- Vegetarian items to boost your stamina.</li>
+<li>squander
+- Don&rsquo;t squander these resources on tasks a computer can do, especially when a computer can do them better.
+- Don’t squander your potential living a life that amounts to far less than the one you are capable of living.</li>
+<li>accusatory
+- People accusatory fingers pointed at businessman.</li>
+<li>forfeit
+- If the review process requires the author to run these checks manually, you forfeit most of the benefit.
+- those unable to meet their taxes were liable to forfeit their property</li>
+<li>bicker
+- Consistent style is certainly important, but a code review is not the time to bicker about where to put the curly braces.
+- How To Avoid Bickering In Marriage?</li>
+<li>defer,hash out
+- intransitive verb,to submit to another&rsquo;s wishes, opinion, or governance usually through deference or respect
+- deferred to her father&rsquo;s wishes
+- admit,defer,deny.
+- Just defer to the style guide and move on.If you encounter a style issue your guide doesn&rsquo;t cover and it&rsquo;s important enough to discuss, hash it our with your team.</li>
+<li>codify
+- When you reach agreement, codify that decision in your style guide.</li>
+<li>virtuous
+- When you start review immediately, you create a virtuous cycle.</li>
+<li>moot
+- Your low-level notes might become moot once the author integrates your high-level notes.
+- The court ruled that the issue is now moot because the people involved in the dispute have died.</li>
+<li>jello-果冻 dumbass 笨蛋.</li>
+</ol>
+<h3 id="22-180420">第22组 180420<a class="headerlink" href="#22-180420" title="Permanent link"></a></h3>
+<ol>
+<li>tilde ~.</li>
+<li>deprecate</li>
+<li>tedious
+- The work is tedious, but it needs to get done.</li>
+<li>dummy:  a person who is habitually silent
+- dummy data
+- We&rsquo;re going to do is make up an array of dummy to do&rsquo;s.</li>
+<li>lunatics
+- People are lunatics about smoking here.</li>
+<li>hideous
+- Donald Trump hair - hideous or handsome?</li>
+<li>adorable
+- The music is adorable.</li>
+<li>cater
+- The restaurant caters for parties.
+- A local restaurant catered the banquet.
+- the second one which is really catered towards those that are new maybe you&rsquo;ve just tried vscode recently in the last few month.</li>
+<li>vernacular
+- writes essays in a very easy-to-read, vernacular style
+- this can teach you the vernacular we use in other parts of product to make thing make sense.</li>
+<li>squiggle
+- His handwriting looks like a bunch of squiggles.
+- a pediatrician&rsquo;s waiting room full of squiggling toddlers</li>
+<li>obfuscate
+- Hashing is a way to obfuscate the actual plain text password.</li>
+<li>spot
+- She spotted a deer in the woods.
+- We’ll be able to spot that change and we’ll be able to deny the user access.</li>
+<li>mad
+- mad at sb
+- What are you so mad about?
+- If you keep teasing that dog, you&rsquo;ll make him mad.
+- I really mad at user5 I want to wipe all their data.</li>
+<li>hectic
+- documentation is going to be hectic only for me</li>
+<li>rowing
+- She was on the rowing team.</li>
+<li>rove :wander about aimlessly
+- I&rsquo;m going to rove through the forest/mountains.</li>
+<li>wander
+- I was just wandering around the house.
+- They wandered down the street.</li>
+<li>groove:v,dance or listen to popular or jazz music, especially that with an insistent rhythm.</li>
+<li>sack
+- I was sacked ,it means they lost their job.
+- Do shareholders have the right to sack the entire board of directors?</li>
+<li>pinpoint
+- They were finally able to pinpoint the cause of the fire.
+- He pinpointed the city on the map.</li>
+<li>devious
+- he&rsquo;s as devious as a politician needs to be</li>
+<li>infomercial</li>
+<li>debt
+- He is trying to pay off gambling debts.</li>
+<li>inimical
+- Is any of this inimical to the use of architecture?
+- his father&rsquo;s inimical glare</li>
+<li>taint
+- They wouldn&rsquo;t be tainted by any sort of favoritism or politics.
+- that rare political campaign that wasn&rsquo;t marred by the taint of false accusations</li>
+<li>shrewd
+- They&rsquo;d see past all that and recognize me for high-quality code and shrewd engineering decisions.
+- She&rsquo;s shrewd about her investments.</li>
+<li>omniscient
+- In my head, the promotion committee was this omniscient and fair entity.</li>
+<li>wager
+- I would wager a bet that ninety percent of the people&rsquo;s email addresses contain english letters.
+- I would wager that......
+<div class="codehilite"><pre>gonna-going to.
+wanna-want to; want a.
+gotta-(I&#39;ve)got to.
+
+coulda-could have
+shoulda-should have
+woulda-would have
+musta-must have
+
+lotsa-a lot of
+sorta-sort of
+kinda-kind of
+</pre></div></li>
+<li>chopsticks</li>
+<li>clutter
+- Many candidates make the mistake of adding all 13 of their prior projects, cluttering their resume with small, non-impressive projects.</li>
+<li>uncluttered
+- In order to keep the diagram uncluttered, you can repeat data stores and external entities.</li>
+</ol>
+<h3 id="21-180415">第21组 180415<a class="headerlink" href="#21-180415" title="Permanent link"></a></h3>
+<ol>
+<li>concatenate
+- U choose a letter U just concatenate it onto the end of string.
+- Then we can concatenate another string using the plus operator.</li>
+<li>subtlety
+- Now there are some more subtleties to arrow functions.</li>
+<li>ideology,from the ground up:(idiomatic) From the first step through to completion; entirely.
+- You can install a module knowing it was built from  the ground up using a non-blocking ideology.
+- How To Grow Your Leadership Status Using The Tool of Ideology
+- This place is a real dump—we&rsquo;ll have to rebuild it from the ground up.</li>
+<li>overkill
+- Now it&rsquo;s definitely overkill for this course but I wanted to make you aware that they exist.
+- This might seem like   overkill.</li>
+<li>ditch
+- Ditch the node package manager explanation.
+- ditch an old car
+- had to ditch their plan
+- His girlfriend ditched him.</li>
+<li>hilarious
+- Some people don&rsquo;t like his comedy, but I think he&rsquo;s hilarious.
+- 39 Super Hilarious Pictures
+- hilarious prank.
+- It&rsquo;s hilarious.</li>
+<li>tweak
+- We just wanted to tweak his original idea a bit.
+- Now we do need to tweak this a little bit.(代码稍微修改一下.)</li>
+<li>testify
+- I can testify to the foregoing since I was actually present when it happened.</li>
+<li>revert
+- He reverted to bad habits.</li>
+<li>nuance, pl:nuances
+- Nuances of flavor and fragrance cannot be described accurately.
+- He listened to the subtle nuances in the song.</li>
+<li>indentation</li>
+<li>rundown
+- They gave us a rundown on the main points of the news.(an item-by-item report or review : summary)</li>
+<li>foolproof
+- DNA fingerprinting gives police a virtually foolproof way to link a suspect to a crime scene.
+- We now have a foolproof schema that has good defaults and validation.
+- Now this token is not foolproof.</li>
+<li>populate
+- Immigrants began to populate the area in the late 19th century.
+- Strange creatures populate the ocean depths.
+- The error object is not going to get populated.</li>
+<li>skyrocket
+- The temperature is skyrocketing as the sun starts coming up.</li>
+<li>relay
+- we can print a message that relays that message to the user.
+- Please relay the news to the rest of the team.</li>
+<li>hoist
+- The cargo was hoisted up onto the ship.</li>
+<li>intimate
+- intimate knowledge of the law
+- They remained intimate friends throughout their lives.</li>
+<li>blurry
+- But my recollection of Sammy Shakusky is very blurry and faint and distant.</li>
+<li>upfront
+- I want to give you experience upfont playing around with Promise.</li>
+<li>pry
+- It&rsquo;s important to not put anything in here that you don&rsquo;t want prying eyes to see.</li>
+<li>mustache</li>
+<li>nowhere
+- node modules directory is nowhere in sight.
+- The book is nowhere to be found.
+- Arguing will get us nowhere.
+- I have nowhere to go.</li>
+<li>alter.
+- Alcohol can alter a person&rsquo;s mood.
+- The place has altered in the 10 years since I left.</li>
+<li>breadcrumb:A “breadcrumb” (or “breadcrumb trail”) is a type of secondary navigation scheme that reveals the user’s location in a website or Web application.</li>
+<li>cryptic
+- Now when you run that command you&rsquo;re going to get a lot of cryptic output.</li>
+<li>choppy
+- choppy water</li>
+<li>globbing
+- We can use the globbing pattern to specify multiple files.</li>
+<li>fictitious
+- She gave a fictitious address on the application.
+- The characters in the book are all fictitious.</li>
+</ol>
+<h3 id="20-180407">第20组 180407<a class="headerlink" href="#20-180407" title="Permanent link"></a></h3>
+<ol>
+<li>buzzword
+- Although the underlying concepts aren’t new, Microservice is one of the biggest buzzword of the two last years.</li>
+<li>leeway
+- Are employees held to the same standards as typical candidates?Essentially yes, although there is a bit more leeway.
+- They give their students leeway to try new things.
+- The fault-tolerance expert is given some leeway in not satisfying all the architectural drivers.</li>
+<li>overhype.
+- &ldquo;You think the media is overhyping?&rdquo; —Don Lemon</li>
+<li>hallucinate(hal·lu·ci·nate)
+- The patient may hallucinate if she has a fever.</li>
+<li>erroneous
+- erroneous assumption
+- detect whether the program has entered an erroneous state</li>
+<li>pernicious(per·ni·cious)
+- She thinks television has a pernicious influence on our children.
+- nondeterminism is a very pernicious form of complex behavior.</li>
+<li>dividend(div·i·dend)
+- Profits are distributed to shareholders as dividends.</li>
+<li>ameliorate(a·me·lio·rate)
+- medicine to ameliorate the pain.</li>
+<li>hazard(s)(haz·ard)
+- the tumbledown old barn was considered a fire hazard.</li>
+<li>inflict(in·flict)
+- they inflicted serious injuries on three other men.</li>
+<li>behoove(be·hoove)
+- I think it would  behoove  us to prioritize hiring a woman.
+- Once again, it behooves a project to capture this critical information in a systematic, clear, and repeatable way.</li>
+<li>forte
+- Public speaking isn’t your forte.</li>
+<li>podium 讲台.(po·di·um)</li>
+<li>drill:instruction or training in military exercises.
+- Every fall semester and every spring semester we conduct campus-wide evacuation drills.</li>
+<li>analogous(a·nal·o·gous)
+- a town council and a government body that serves an analogous function.
+- Facebook knows public perception of Zuckerberg is analogous to their view of the social network.</li>
+<li>confectionery n 糖果.(con·fec·tion·er·y)</li>
+<li>demilitarize(de·mil·i·ta·rize)
+- a demilitarized zone</li>
+<li>bunk
+- We&rsquo;ll bunk here for the night.</li>
+<li>naysayer(nay·say·er)
+- naysayers claim that the idea is just a rebranding of service-oriented architecture (SOA).
+- Sometimes you just need to thank the nonbelievers and naysayers, for they are what give you the inspiration to keep going.</li>
+<li>roster(ros·ter)
+- His name has been added to the team roster.
+- The team has a roster of 40 players.</li>
+<li>oddity(odd·i·ty)
+- Her shyness makes her a bit of an oddity in the business world.</li>
+<li>nuts:crazy, foolish, or strange:
+- You&rsquo;re nuts if you think you can go mountain climbing in a snowstorm.</li>
+<li>phoneme/allophone</li>
+<li>tantalizing
+- This was baffling but tantalizing when introduced in the first episode.</li>
+<li>flip
+- the yacht was flipped by a huge wave
+- I&rsquo;m going to flip it using exclamation mark.
+- Even though you and your team spent painstaking hours writing this proposal, selecting just the right graphics, and coming up with the best solution for your client’s problem, they may only read this one page and then flip to your pricing table.</li>
+<li>trapezoid.(trap·e·zoid) 梯形;</li>
+<li>diphthong. 双元音.</li>
+<li>kettle. n水壶. cattle.黄牛.</li>
+<li>pickle. 泡菜,咸菜;</li>
+</ol>
+<h3 id="19-180402">第19组 180402<a class="headerlink" href="#19-180402" title="Permanent link"></a></h3>
+<ol>
+<li>pesky
+- pesky mosquitoes</li>
+<li>atop
+- The house sits atop a cliff overlooking the ocean.</li>
+<li>cadence.
+- a much quicker cadence of application development.
+- the steady cadence of the drums
+- the microservices approach enables a much quicker cadence of application development.</li>
+<li>bloat.
+- big, bloated monolithic applications.
+- Nasty Culprits of Belly Bloat</li>
+<li>afterthought.
+- Creating and maintaining service contracts is a difficult task that should not be taken lightly or treated as an afterthought.</li>
+<li>offhand
+- I couldn&rsquo;t give them the figures offhand.</li>
+<li>showstopper.
+- The issues identified in this chapter are complex, but they certainly aren’t showstoppers.</li>
+<li>formulaic.
+- There is no formulaic way to write excellent requirements;</li>
+<li>scribble
+- it’s easy to scribble a DFD on a whiteboard while discussing how the user’s business operates.</li>
+<li>retrofit
+- It can be difficult and expensive to retrofit desired quality characteristics into a product late in development or after delivery.
+- The factory has been retrofitted to meet the new safety regulations.
+- We can retrofit your car with the new fuel system.</li>
+<li>span.
+- They can span multiple stories and multiple iterations.
+- Her academic interests span a wide variety of topics.</li>
+<li>devoid
+- the so-called comedy is totally devoid of intelligence, originality, and even laughs</li>
+<li>chatty
+- a chatty neighbor</li>
+<li>faint.
+- Some fans were so excited to see Brad Pitt that they fainted.
+- We heard a faint noise.</li>
+<li>tenet
+- Component sharing is one of the core tenets of SOA.</li>
+<li>mediator.
+- if you two cannot resolve this argument on your own, we&rsquo;ll have to bring in a mediator</li>
+<li>proliferation.
+- SOA, has no upper limit and promotes the proliferation of multiple heterogeneous protocols through its messaging middleware component.</li>
+<li>impedance 电阻</li>
+<li>supper
+-  breakfast, lunch, and supper</li>
+<li>superstition
+- It is a common superstition that a black cat crossing your path is bad luck.</li>
+<li>clumsy
+- However, split infinitives tend to be clumsy and unnecessary.</li>
+<li>hurdle
+- There are four hurdles to jump.
+- Look for questions with multiple hurdles.</li>
+<li>abhor
+- We believe we know that Americans abhor extremes and mistrust ideology</li>
+<li>compromise
+- irrational asshole that doesn&rsquo;t compromise on anything.
+- To avoid an argument, always be ready to seek compromise.</li>
+<li>extravagant
+- The film is notable for its extravagant settings and special effects.</li>
+<li>indulgence
+- No, You Don&rsquo;t Deserve That Indulgence Today</li>
+<li>aquarium
+- build an  Aquarium with sharks in it</li>
+<li>stunned
+- I was stunned when it ended up being so valuable.</li>
+<li>cruel,phenomenal
+- There are some really phenomenal teachers.
+- the phenomenal ability to remember the names of thousands of people</li>
+<li>annul
+- unfortunately, his arrogant attitude annuls the many generous favors he does for people
+- Kenyan Supreme Court annuls presidential election in historic ruling</li>
+</ol>
+<h3 id="18-180330">第18组 180330<a class="headerlink" href="#18-180330" title="Permanent link"></a></h3>
+<ol>
+<li>steadfastly
+- He was steadfast in his support of the governor&rsquo;s policies.</li>
+<li>avid
+- I myself am an avid Kindle user and rarely read anything that&rsquo;s not on Kindle.
+- avid blogger honing your grammar and punctuation skills
+- avid for publicity/success.(urgently eager)</li>
+<li>hone
+- Hone your approach by thinking critically about the outcomes of your code reviews.
+- The desire for variety is expected from a chef who&rsquo;s honed her skills across the country and landed in Cleveland just three years ago to accept a job at Michael Symon&rsquo;s esteemed Lola.</li>
+<li>executive n. 行政人员</li>
+<li>despair
+- I was overcome by despair at being unable to find them.(n)
+- Things look bad now, but don&rsquo;t despair.</li>
+<li>cavalier
+- They are too cavalier in their treatment of others.
+- She has a cavalier attitude about spending money.</li>
+<li>disdainful
+- He looked at the waiter with a disdainful glare.</li>
+<li>contempt
+- He feels that wealthy people view him with contempt because he is poor.</li>
+<li>debunk.
+- The article debunks the notion that life exists on Mars.
+- The results of the study debunk his theory.</li>
+<li>sham.cheap falseness
+- Many people believed he could help them, but I knew he was a sham.</li>
+<li>vexing.adj. causing or likely to cause vexation</li>
+<li>flaunt.bucket.
+- She liked to flaunt her wealth by wearing furs and jewelry.
+- Thus, when they see a candidate seems to flaunt which specific versions of a language they know, recruiters will often bucket the candidate as &ldquo;not our kind of person:&rsquo;</li>
+<li>footage</li>
+<li>dysfunctional.</li>
+<li>procrastinate
+- He procrastinated and missed the submission deadline.
+- He told her to stop procrastinating and get to work.</li>
+<li>sentiment</li>
+<li>fudge.
+- Politicians have been known to fudge the issues.</li>
+<li>padlock. 挂锁.</li>
+<li>homage.</li>
+<li>opinionated.
+- Those talk shows want opinionated pundits, not cautious, diffident debaters.</li>
+<li>idiomatic</li>
+<li>friction
+- Oil in a car engine reduces friction.</li>
+<li>flaky
+- flaky ideas about taxes.(crazy or eccentric)</li>
+<li>relent</li>
+<li>relentless.showing or promising no abatement of severity, intensity, strength, or pace
+- Her relentless optimism held the team together.</li>
+<li>unrelenting:not softening or yielding in determination
+- that professor tends to be unrelenting about deadlines</li>
+<li>fuzzy  n-&gt;fuzz
+- Without my glasses everything looks fuzzy.</li>
+<li>patriotic.patriot.
+- Let’s think of the British government I’m always thinking about the British government part of my patriotic duty.</li>
+<li>seasoned.
+- it&rsquo;s also a good refresher for the seasoned Java developer.</li>
+<li>lag.
+- Java performance lagged well behind C++.</li>
+</ol>
+<h3 id="17-180323">第17组 180323<a class="headerlink" href="#17-180323" title="Permanent link"></a></h3>
+<ol>
+<li>monotone
+- She spoke in a monotone voice.</li>
+<li>nasty
+- That nasty old man yelled at me just for stepping on his lawn!</li>
+<li>enunciate
+- she enunciated each word slowly.
+- So in his order, the judge wants to correctly enunciate the law.</li>
+<li>enclose
+- the entire estate was enclosed with walls
+- She enclosed a photo with the card.</li>
+<li>uptime
+- We need to maximize network uptime.</li>
+<li>agenda
+- There are several items on the agenda for tonight&rsquo;s meeting.</li>
+<li>commingle.
+- Fact and fiction commingle in the story.
+- the dust had commingled with the rain
+- He commingled his personal funds with money from the business.</li>
+<li>circumvent.
+- He found a way to circumvent the law.</li>
+<li>ensemble.
+- in the ensemble
+- We went to listen to a new jazz ensemble.</li>
+<li>timeliness:the fact or quality of being done or occurring at a favorable or useful time.
+- managers were happy with the timeliness of the deliveries</li>
+<li>atomicity
+- A very simple consistency requirement is that of failure atomicity.
+- The application either terminates normally, producing the intended results, or is aborted, producing no results at all.</li>
+<li>connotation
+- For many people, the word “fat” has negative connotations.</li>
+<li>bootstrapping
+- the company is bootstrapping itself out of a marred financial past</li>
+<li>mistranslate
+- He mistranslates the word for ‘love-sorcery worked with roots’, which he renders as ‘she should not be a scold</li>
+<li>perceptions
+- The show started off making fun of the goofy grandiosity of the tech industry, but the current perception of Silicon Valley is more critical.</li>
+<li>Rarely
+- Rarely, an individual might actively try to block the BA from working with the ideal contacts for some reason.
+- I rarely drive above 60 mph</li>
+<li>espouse
+- The new theory has been espoused by many leading physicists.
+- The premises of the on-site customer and close customer collaboration with developers that agile methods espouse certainly are sound.</li>
+<li>apprentice</li>
+<li>convene
+- We convened at the hotel for a seminar.
+- A world council was convened in Paris.</li>
+<li>misfeed.
+- a high-speed commercial scanner designed to reduce paper jams and misfeeds</li>
+<li>plural.adj,n. 复数.</li>
+<li>Thesaurus.词库. a book that lists words in groups of synonyms and related concepts.</li>
+<li>synonyms and antonyms同义词和反义词.</li>
+<li>protracted
+- he had certainly taken his time, even protracting the process</li>
+<li>lavatory.飞机上的洗手间.</li>
+<li>piggyback</li>
+<li>mutate
+- technology continues to mutate at an alarming rate</li>
+<li>rumble
+- thunder rumbled, lightning flickered</li>
+<li>malignant
+- a powerful and malignant influence
+- a highly malignant form of cancer</li>
+</ol>
+<h3 id="16-180319">第16组 180319<a class="headerlink" href="#16-180319" title="Permanent link"></a></h3>
+<ol>
+<li>nightingale n 夜莺</li>
+<li>collateral</li>
+<li>vetted .veterinarian,veterinary. vt:to evaluate for possible approval or acceptance
+- I have to take my dog to the vet.
+- They vetted her thoroughly before offering her the job.</li>
+<li>full-fledged
+- coldlike symptoms that never quite develop into full-fledged colds</li>
+<li>deferral/deferment. postponement
+- Two dozen other states permit tax deferrals, according to the report.</li>
+<li>outstrip
+- The new hotel outstrips all other hotels in the area in size and luxury.</li>
+<li>vaguely
+- he vaguely remembered talking to her once</li>
+<li>intonation
+- she spoke English with a German intonation</li>
+<li>masonic.共济会.</li>
+<li>rollerblading.skateboarding</li>
+<li>mandarin chinese</li>
+<li>fiancée</li>
+<li>perimeter. 周长</li>
+<li>a bit contrived</li>
+<li>auditorium礼堂</li>
+<li>adverbial.状语.</li>
+<li>obituary.讣告</li>
+<li>fabulous
+- He is making fabulous amounts of money.
+- I had a fabulous time.The weather has been fabulous.</li>
+<li>needy
+-  needy and elderly people</li>
+<li>
+<p>prank. n. 恶作剧.</p>
+</li>
+<li>
+<p>Rote.
+- Rote learning. 死记硬背的学习.
+- rote activity.</p>
+</li>
+<li>hypothesis.假设.
+- Other chemists rejected his hypothesis.</li>
+<li>toss.
+- Do you really want to risk having your resume tossed for this reason?
+- fair coin tossing
+- She tossed the ball high in the air.
+- She tossed the paper at the recycling bin.
+- He tossed his dirty socks onto the floor.</li>
+<li>utter</li>
+<li>utterance.</li>
+<li>sensical:nonsense</li>
+<li>roared.
+- The bear roared.</li>
+<li>licorice. 甘草</li>
+<li>sloppy
+- Your work has been very sloppy lately.</li>
+<li>seesaw. 跷跷板.</li>
+<li>bulky
+- bulky packages might cost more to mail
+- He was a bulky man, military, in his mid to late thirties.</li>
+</ol>
+<h3 id="15-180317">第15组 180317<a class="headerlink" href="#15-180317" title="Permanent link"></a></h3>
+<ol>
+<li>imbue.
+- I spend a lot of time praying that they are imbued with greater wisdom.
+- Those origins undoubtedly imbueed the company with a deep understanding of the importance of SEO.</li>
+<li>deliveryman</li>
+<li>handy.
+- a handy desktop encyclopedia
+- And if you&rsquo;re handy with phone wiring, it could be your big weekend.(skillful)</li>
+<li>compose.
+- the system is composed of a group of machines</li>
+<li>avionics. 航空电子学</li>
+<li>crafted.
+- She crafted a strategy to boost the company&rsquo;s earnings.</li>
+<li>apologetic
+- They were apologetic about the error.We received an apologetic letter</li>
+<li>unapologetically.in a manner that does not acknowledge or express regret.
+- She was unapologetic about her remarks.</li>
+<li>exigencies
+- the exigencies requiring snap decisions that traders on the stock exchange face every day</li>
+<li>proposition.
+- a detailed investment proposition
+- He made an attractive business proposition.</li>
+<li>semantic
+-  the process of semantic development</li>
+<li>purport.
+- Do you purport to spend the rest of your life on that couch, or do you think you might get a job someday?
+- I do not understand the purport of your remarks
+- Beware of users who purport to speak for a user class to which they do not belong.</li>
+<li>intermediary.
+- intermediaries between lenders and borrowers</li>
+<li>liability
+- The company is trying to limit its liability in this case.</li>
+<li>acyclic</li>
+<li>cyclic
+- cyclic changes in the weather</li>
+<li>asymmetric</li>
+<li>symmetric</li>
+<li>propagate
+- the French propagated the idea that the English were violent and gluttonous drunkards</li>
+<li>overlapping
+- The roof shingles overlap each other
+- Baseball season overlaps the football season in September.
+- Some of their duties overlap.</li>
+<li>interpose
+- The new system has interposed a bureaucratic barrier between doctors and patients.
+- He tried to interpose himself between the people who were fighting.</li>
+<li>lodging.lodge
+- they found a cheap lodging in a backstreet
+- Several employees have lodged a complaint against you.</li>
+<li>headless</li>
+<li>amalgam
+- The layered pattern can be seen as the amalgam of several tactics
+- an amalgam of musical forms</li>
+<li>augment
+- he augmented his summer income by painting houses</li>
+<li>gauge
+- besides getting a gauge of your energy and confidence levels.
+- astronomers can gauge the star&rsquo;s intrinsic brightness
+- He accurately gauged the mood of the voters.(estimate, judge )</li>
+<li>magnitude.
+-  a much smaller magnitude.
+- If one appreciated a gift of such magnitude, then one would put up more of a fight before returning it.</li>
+<li>noxious
+- they were overcome by the noxious fumes
+- mixing bleach and ammonia can cause noxious fumes that can seriously harm you</li>
+<li>filthy
+- a filthy hospital with no sanitation</li>
+<li>pedigree
+- Democracy&rsquo;s pedigree stretches back to ancient Greece</li>
+<li>augmented
+- augmented pensions for those retiring at 65</li>
+<li>boilerplate
+- boilerplate code</li>
+<li>non-boilerplate.
+- I&rsquo;m going to copy this file so we don&rsquo;t have to rewrite that boilerplate and we&rsquo;ll paste it right in here.</li>
+</ol>
+<h3 id="14-180312">第14组 180312<a class="headerlink" href="#14-180312" title="Permanent link"></a></h3>
+<ol>
+<li>polymorphism.多态.</li>
+<li>encapsulate
+- The contaminated material should be encapsulated and removed.</li>
+<li>spoiler.
+- The review contains a few spoilers, so don&rsquo;t read it if you haven&rsquo;t seen the movie.</li>
+<li>intuit.
+- I intuited his real identity
+- She intuited a connection between the two crimes.</li>
+<li>drudgery.
+- Use a tool—automation eliminates drudgery</li>
+<li>Relieve.
+- Relieve tension between customer/user and developers.Build trust on all sides.</li>
+<li>gallop.warp.
+- Prevent scope creep (or gallop, or warp speed)</li>
+<li>omission
+- There are a few omissions in the list.
+- Her omission from the team was surprising.</li>
+<li>mnemonic
+- To distinguish &ldquo;principal&rdquo; from &ldquo;principle&rdquo; use the mnemonic aid &ldquo;the principal is your pal.&rdquo;</li>
+<li>Firmware:固件.</li>
+<li>freelance.
+- a freelance journalist</li>
+<li>intimidation
+- intimidation  lawsuit.</li>
+<li>intimidating.
+- he tries to intimidate his rivals</li>
+<li>substitute.
+- if you like, you can use nuts as a substitute for coconut in that recipe
+- you&rsquo;ll be getting a substitute until your regular teacher is feeling better
+- I found someone to substitute for me.
+- soy milk is used as a substitute for dairy milk</li>
+<li>conduit.
+- The Analyst Role:Principal conduit between customer/user and developers
+- water flowed along the conduit to the fountain</li>
+<li>negation.
+- evil is not merely the negation of goodness
+- issued specific negations of all of the charges against her</li>
+<li>half trousers.</li>
+<li>biriyani</li>
+<li>operand.操作数.</li>
+<li>indenting 缩进.</li>
+<li>glean.
+- the information is gleaned from press clippings</li>
+<li>apportion.
+- voting power will be apportioned according to contribution</li>
+<li>comprise.
+- the country comprises twenty states</li>
+<li>consist.
+- The exhibition will consist of a wide range of products aimed at the construction industry.</li>
+<li>imminent.
+- These patients are facing imminent death.
+- I am recording this video just before the imminent release of JAVA 10.</li>
+<li>irrespective.
+- Child benefit is paid irrespective of income levels
+- But algorithms and data structures are the most basic thing.The algorithm remains same irrespective of programming language and the common data structures’ concept also remains the same in all languages, only implementation changes.</li>
+<li>jurisdiction
+- federal courts had no jurisdiction over the case
+- His attorney claimed the court lacked jurisdiction in this matter.</li>
+<li>defective
+- This computer is defective. I want my money back.
+- defective brakes</li>
+<li>handicapped
+- He has been handicapped since his motorcycle accident.</li>
+<li>unoccupied stall</li>
+<li>commonality (plural commonalities)
+- a commonality of interest ensures cooperation
+- one commonality between the two very different women is their passion for charity work</li>
+</ol>
+<h3 id="13-180307">第13组 180307<a class="headerlink" href="#13-180307" title="Permanent link"></a></h3>
+<ol>
+<li>italicize:set (text) in italics.</li>
+<li>refrain.
+- she refrained from comment
+- I was going to make a joke but I refrained.</li>
+<li>vending machine</li>
+<li>akin
+- something akin to gratitude overwhelmed her
+- foxes are closely akin to dogs
+- The two languages are closely akin.</li>
+<li>variants
+- A new variant of the disease has appeared.</li>
+<li>assortment
+- the room was filled with an assortment of clothes</li>
+<li>assort
+- assort these butterfly specimens according to geographic origin</li>
+<li>granddaddy
+- the granddaddy of all English mystery novels</li>
+<li>inkling
+- the records give us an inkling of how people saw the world
+- Some things are universal about being a teenager: The budding sexuality and sense of identity, the dramatic emotions, the profound need for acceptance and confusing inklings of first love.</li>
+<li>pendrive</li>
+<li>pancake</li>
+<li>omelet</li>
+<li>muffin</li>
+<li>toast</li>
+<li>vanilla/strawberry</li>
+<li>yet.
+- conj:the path was dark, yet(but at the same time/but nevertheless) I slowly found my way.</li>
+<li>vibrate.
+- And it should vibrate. 指手机.
+- When you blow into the instrument, the air vibrates the reed.</li>
+<li>superb.
+- a superb performance.
+- They&rsquo;ve done a superb job.</li>
+<li>daunting.
+- Few things are more daunting than having to speak in front of a large crowd.</li>
+<li>hyphen(-)</li>
+<li>right carrot</li>
+<li>minutia.pl.minutiae
+- He was bewildered by the contract&rsquo;s minutiae.</li>
+<li>blazing.
+- She runs with blazing speed.
+- the blazing logs in the fireplace cast a warm glow on our holiday party</li>
+<li>punctuation.</li>
+<li>granularity.</li>
+<li>precedent
+- behavior that may be explained by a precedent event in her troubled life</li>
+<li>malware
+- Additionally, the administration alerted the public that Russia is targeting the U.S. energy grid with computer malware that could sabotage the systems.</li>
+<li>toothpaste 牙膏.</li>
+<li>mint flavor.薄荷味.</li>
+<li>dartboard 飞镖.</li>
+<li>dizzy
+- The children were dizzy after spinning in circles.</li>
+<li>simulated
+- red ocher intended to simulate blood
+- They are trained in simulated combat.</li>
+</ol>
+<h3 id="12-180305">第12组 180305<a class="headerlink" href="#12-180305" title="Permanent link"></a></h3>
+<ol>
+<li>relinquish.
+- She was forced to relinquish control of the project.
+- The court ordered him to relinquish custody of his child.</li>
+<li>eschew.
+- he appealed to the crowd to eschew violence
+- a psychologist who eschews the traditional methods of psychotherapy</li>
+<li>landmark.
+- In the landmark book The Mythical Man-Month.</li>
+<li>eloquent
+- eloquent presentation</li>
+<li>eloquently.
+- an eloquent writer and speaker, Elizabeth Cady Stanton was one of the founders of the women&rsquo;s rights movement</li>
+<li>backbone
+- She is the backbone of the family.
+- He showed some backbone by refusing to compromise his values.</li>
+<li>explicit
+- They were given explicit instructions.
+- the speaker&rsquo;s intentions were not made explicit</li>
+<li>vigilance. adj : vigilant.
+- Constant vigilance is the only possible response to the terrifying Rise of The Machines.
+- Her group studied 27 subjects during four hours of simulated driving and found vigilance decreased in about 21 minutes on average.</li>
+<li>vest
+- Our packages include nice salaries,cash earn-outs,stock whick vests after only four years of working there.
+- executive power is vested in the president</li>
+<li>belie.
+- The brilliance of the sun belied the low temperature.</li>
+<li>arbitrate
+- the board has the power to arbitrate in disputes</li>
+<li>subsume.
+- games and team sports are subsumed under the classification of “recreation”
+- red, green, and yellow are subsumed under the term &ldquo;color&rdquo;</li>
+<li>aplomb.
+- He showed great aplomb in dealing with the reporters.
+- you&rsquo;ve handled a difficult situation with perfect aplomb</li>
+<li>sanity
+- The sanity of the decision was never in question.</li>
+<li>ignorant.
+- This is unbelievably patronising, ignorant and plain stupid.</li>
+<li>outlay.
+- direct outlay.
+- But the costs of the conflict could go far beyond the hefty financial outlays .</li>
+<li>pendant</li>
+<li>necklace</li>
+<li>bracelet</li>
+<li>niece/nephew</li>
+<li>stochastic.
+- Stochastic arrival.</li>
+<li>sporadic.
+- Sporadic events.</li>
+<li>intruder.
+- detecting intruders</li>
+<li>malicious.
+- malicious behavior</li>
+<li>revoke.
+- The judge revoked her driver&rsquo;s license.
+- Their privileges were revoked after they misbehaved.</li>
+<li>conjecture
+- conjectures about the newcomer were many and varied
+- Most of the book is conjecture, not fact.</li>
+<li>lackluster
+- no excuses were made for the team&rsquo;s lackluster performance</li>
+<li>contentment
+- he found contentment in living a simple life in the country</li>
+<li>contented
+- The baby gave a contented burp.
+- Our dog leads a happy and contented life.</li>
+<li>sparing</li>
+<li>resent
+-I didn&rsquo;t steal the money I have. I resent being treated like I did.</li>
+<li>resentment.
+- his resentment at being demoted
+- He&rsquo;s filled with resentment at his boss.</li>
+<li>moisturizer lotion.</li>
+</ol>
+<h3 id="11-180227">第11组 180227<a class="headerlink" href="#11-180227" title="Permanent link"></a></h3>
+<ol>
+<li>quantifiable
+- It is difficult to quantify intelligence.</li>
+<li>inception.
+- Since inception , the people in the group have taken their task most seriously.
+- We&rsquo;ll assist you at every stage from inception to completion.</li>
+<li>sustainment</li>
+<li>continuum
+- a state program that aims to provide a continuum of care for low-income residents facing addiction.</li>
+<li>merits and demerits.
+- the merits and demerits of these proposals</li>
+<li>collocation.
+- 700 common English verb collocations.</li>
+<li>endow
+- The money will be used to endow the museum and research facility.</li>
+<li>coin
+- Bruce Jay Nelson is generally credited with coining the term &ldquo;remote procedure call&rdquo;</li>
+<li>extraneous.
+- An unlocked phone also means cleaner software, with no extraneous apps pre-installed by your carrier.
+- extraneous information.</li>
+<li>unambiguous.明确的.
+- instructions should be unambiguous</li>
+<li>resent.
+- She resented being told what to do.</li>
+<li>reckless.
+- He is a wild and reckless young man.
+- It is our case that he was reckless and negligent in the way he drove.</li>
+<li>perturb
+- It perturbed him that his son was thinking about leaving school.
+- the caller&rsquo;s strange remark perturbed me enough to keep me awake that night</li>
+<li>caustic.
+- She wrote a caustic report about the decisions that led to the crisis.</li>
+<li>invective.
+- an overbearing, bullying boss who is fond of sending invective e-mails to long-suffering assistants</li>
+<li>hackle.
+- The dog stared, ears flattening, and she saw his hackles rise along his spine.</li>
+<li>visionary/delusional</li>
+<li>courtesy
+- They treated us with courtesy and kindness.</li>
+<li>The rookie.
+- There are three rookies in the starting lineup.</li>
+<li>logistics
+- the logistics of a political campaign</li>
+<li>cozy
+- The room was warm and cozy.</li>
+<li>spotty -wifi
+- students with spotty attendance records</li>
+<li>foremost
+- Safety is their foremost concern.</li>
+<li>suppress
+- Political dissent was brutally suppressed.
+- The governor tried to suppress the news.</li>
+<li>jealous
+- They were jealous of his success.</li>
+<li>awful
+- the place smelled awful</li>
+<li>parallelism</li>
+<li>as.
+adverb:used in comparisons to refer to the extent or degree of something.(比较)
+conjunction:used to indicate that something happens during the time when something is taking place.(同时)
+preposition:used to refer to the function or character that someone or something has.
+noun:an ancient Roman copper coin.</li>
+</ol>
+<h3 id="10-180224">第10组 180224<a class="headerlink" href="#10-180224" title="Permanent link"></a></h3>
+<ol>
+<li>consensus.
+- There is a lack of consensus among the citizens.
+- We tried to get a consensus of opinion and it proved to be easier than I thought.</li>
+<li>prorate.
+- Your HW score must be B (80%) or higher to get a full credit for your self-evaluation;otherwise your collaboration score will be prorated.</li>
+<li>gerund. 动名词.</li>
+<li>infinitive. 不定式.</li>
+<li>transitive verb. 及物动词.</li>
+<li>intransitive verb. 不及物动词.</li>
+<li>present participle. 现在分词.past participle过去分词.preposition.介词.conjunction. 连词.parentheses. 插入语.</li>
+<li>independent sentences.独立的句子.</li>
+<li>Glossary: 词汇表.</li>
+<li>insofar
+- But she does tie the philosophy to the facts of his life, insofar as we know them.</li>
+<li>marshal
+- She carefully marshaled her thoughts before answering the question.</li>
+<li>inhibit.
+- cold inhibits plant growth
+- You shouldn&rsquo;t allow fear of failure to inhibit you.</li>
+<li>grip
+- The little boy gripped his mother&rsquo;s hand tightly.</li>
+<li>invaluable,extremely useful; indispensable.
+- Their help has been invaluable to us.</li>
+<li>synergy.
+- synergy!双赢.
+- good teamwork creates synergy.
+- A synergy has developed among the different groups working on this project.</li>
+<li>vigorously.
+- She remained vigorous into her nineties.
+- His speech was met with vigorous applause.</li>
+<li>heterogeneous.
+- an ethnically heterogeneous population</li>
+<li>scrutinize.
+- Her performance was carefully scrutinized by her employer.
+- After another silent scrutinization , the woman seemed to relent.</li>
+<li>ramification
+- The early design decisions constrain the decisions that follow, and changing these decisions has enormous ramifications.
+- They discussed the possible ramifications [=consequences] of the new treaty.</li>
+<li>ripple-&gt;tsunami</li>
+<li>in-kind 实物的,非现金的.always used before a noun US.: made up of something other than money.
+- The charity also accepts in-kind donations such as food or clothing.</li>
+<li>sapling.: a young tree</li>
+<li>meager/copious.
+- She came to this country with a fairly meager English vocabulary, but she is learning more words every day.
+- The storm produced a copious amount of rain.
+- she took copious notes</li>
+<li>cyclone. chiefly US : tornado</li>
+<li>sprinkle(sprinkle vt: to scatter in drops or particles),concerted
+- Even if being warm and friendly doesn&rsquo;t come naturally to you, you can still make a concerted effort to sprinkle in positive remarks throughout the interview.</li>
+<li>sprinkler.洒水器.
+- He sprinkled water on the plants.
+- “Is it raining?” “It&rsquo;s just sprinkling a little.”</li>
+<li>hose. pl: hoses.a long, usually rubber tube that liquids or gases can flow through</li>
+<li>synopsis
+- synopsis outline
+- I don&rsquo;t need to know every little plot twist; just give me a synopsis of the movie.</li>
+<li>delineate
+- The report clearly delineates the steps that must be taken.</li>
+</ol>
+<h3 id="9-180216">第9组 180216<a class="headerlink" href="#9-180216" title="Permanent link"></a></h3>
+<ol>
+<li>jitter.
+- The jitter of the response</li>
+<li>antarctica n:南极洲</li>
+<li>consonant 辅音.</li>
+<li>vowels 元音.</li>
+<li>bonus.
+- And, as an extra added bonus , he can actually do the job.</li>
+<li>tip of the tongue.舌尖.</li>
+<li>rewind
+- Rewind the tape so that we can hear that song again.</li>
+<li>didactic</li>
+<li>phonetic,adj,of or relating to speech sounds.</li>
+<li>coca-cola</li>
+<li>regiment</li>
+<li>confess.
+- I must confess that I half believed you</li>
+<li>exhausted.
+- I mean I was just exhausted, totally exhausted. I could barely walk up a flight of stairs without panting and wheezing.</li>
+<li>exhaustive
+- The list was long but not exhaustive.</li>
+<li>garment</li>
+<li>Proof-read .校对.</li>
+<li>epilogue. n.结语.</li>
+<li>resilient
+- how resilient it must be to erroneous input</li>
+<li>erroneous.</li>
+<li>purview
+- The case is within the court&rsquo;s purview.
+- That question is outside my purview.</li>
+<li>unambiguous</li>
+<li>encryption/decryption</li>
+<li>gigabytes</li>
+<li>thumbnail
+- You can see a larger version of the picture by clicking on the thumbnail.</li>
+<li>portability. 可移植性.</li>
+<li>barcode. 条码</li>
+<li>footage .镜头.</li>
+<li>quasi  prefix.seemingly; apparently but not really.quasi-American</li>
+<li>disgruntled
+- one disgruntled former employee.</li>
+<li>repudiate.
+- He has publicly repudiated the government&rsquo;s policies.</li>
+</ol>
+<h3 id="8-180211">第8组 180211<a class="headerlink" href="#8-180211" title="Permanent link"></a></h3>
+<ol>
+<li>ascribe to
+- ascribed their stunning military victory to good intelligence beforehand</li>
+<li>autonomy
+- a teacher who encourages individual autonomy
+- The territory has been granted autonomy.</li>
+<li>holistic
+- We need to take a more holistic approach to improving our schools.</li>
+<li>prescribes
+- This drug should not be prescribed to children.</li>
+<li>overarch</li>
+<li>granularity</li>
+<li>granular</li>
+<li>heuristic
+- a heuristic computer program
+- As we’ve seen, recursion is a pretty good heuristic in this case.</li>
+<li>annex
+- Many privileges were annexed exclusively to royalty.
+- The government planned to annex the islands.</li>
+<li>redeem
+- He wants to redeem his reputation.
+- The company redeemed some of its stock.</li>
+<li>dude</li>
+<li>underpin
+- The result is a rapid growth curve to underpin the Facebook messaging masterplan.
+- a wall underpinned by metal beams</li>
+<li>camaraderie.
+- the enforced camaraderie of office life
+- There is great camaraderie among the teammates.</li>
+<li>gastronome. a gourmet.</li>
+<li>interoperability</li>
+<li>biscuit</li>
+<li>wordy
+- The original script was too wordy.</li>
+<li>colon  punctuation :</li>
+<li>practitioner
+- a French doctor who was once the most famous practitioner of natural childbirth</li>
+<li>allure
+- was so allured by his sister&rsquo;s college roommate that before long he was asking her for a date</li>
+<li>drowsy.sleepy.</li>
+<li>scorch.The meat will scorch.肉要烤焦了.</li>
+<li>sleepyhead.</li>
+<li>sitcom.</li>
+<li>scum</li>
+<li>scammer.
+- She was the victim of an insurance scam.</li>
+<li>cafeteria.</li>
+<li>supper,supperless</li>
+<li>wastage.
+- the wastage of natural resources.It could also reduce food wastage which is estimated to cost at least 10 billion yuan every year.</li>
+<li>Intranet .  intranets and extranets</li>
+</ol>
+<h3 id="7">第7组<a class="headerlink" href="#7" title="Permanent link"></a></h3>
+<ol>
+<li>subordinate clause</li>
+<li>syntactic</li>
+<li>underbrush</li>
+<li>heed
+- She failed to heed the warnings.
+- if we had heeded the ranger&rsquo;s advice, we might not have gotten lost</li>
+<li>syndrome</li>
+<li>rational</li>
+<li>rationale
+- the rationale for starting the school day an hour later is that kids will supposedly get an extra hour of sleep.</li>
+<li>concurrence
+- The concurrence of heavy rain and strong winds delayed the plane&rsquo;s departure.
+- looked for some sign of concurrence among the delegates to the conference</li>
+<li>ledger</li>
+<li>equity
+- I should get more equity than Dinesh.
+- In making these decisions we should be governed by the principle of equity.</li>
+<li>matrices</li>
+<li>pertinent
+- he impressed the jury with his concise, pertinent answers to the attorney&rsquo;s questions</li>
+<li>preliminary
+- a meeting to discuss seating arrangements that was merely a preliminary to the formal negotiating sessions</li>
+<li>liaison
+- Administrators need to establish a close liaison with employees.
+- he&rsquo;s our liaison with a number of interested parties</li>
+<li>elicitation</li>
+<li>tabular
+- Results can be viewed graphically, printed or recorded as tabular data.</li>
+<li>traverse
+- light rays traversing a crystal.</li>
+<li>metabolic</li>
+<li>practicality</li>
+<li>wizard
+- He is a wizard at math.
+- A web site can have novice users, and a wizard makes complex tasks seem easy</li>
+<li>portfolio
+- But when you combine our portfolios, Peter Gregory and I account for billions of dollars in assets.</li>
+<li>viable
+- He could not suggest a viable alternative.</li>
+<li>novelty
+- a novelty teapot
+- Electric-powered cars are still novelties.</li>
+<li>plumbing
+- The house has old plumbing.</li>
+<li>infringe
+- To see if you&rsquo;re infringing on any copy righted material.</li>
+<li>infringement
+- any government action limiting freedom of speech is an infringement of the U.S. Constitution
+- this bill is an infringement of our civil liberties</li>
+<li>thereof
+- We can also try to be more honest about our contribution, or lack thereof .</li>
+<li>depicts
+- Angels are usually depicted with wings.</li>
+<li>herein
+- For an explanation of the abbreviations used herein, see the section entitled “Abbreviations in this Work.”</li>
+</ol>
+<h3 id="6">第6组<a class="headerlink" href="#6" title="Permanent link"></a></h3>
+<ol>
+<li>laborious
+- The colourful faces are the result of laborious work.
+- the volunteers have been commendably laborious in their cleanup of the beach</li>
+<li>ramp.
+- a wheelchair ramp</li>
+<li>flout.
+- Despite repeated warnings, they have continued to flout the law.</li>
+<li>thrash.pistol.
+- He thrashed me with his belt.
+- After thrashing him, one of the youths pulled a pistol and shot him in the stomach.</li>
+<li>spiral</li>
+<li>amortize.
+- they want to amortize the tooling costs quickly
+- amortized time complexity 均摊时间复杂度</li>
+<li>parenthetical</li>
+<li>parentheses:括号. ()</li>
+<li>dash</li>
+<li>unremitting
+- She was recognized for her unremitting efforts to improve the lives of people in her city.
+- unremitting rain that lasted for six days</li>
+<li>transistors</li>
+<li>anomaly
+- her C grade is an anomaly, as she&rsquo;s never made anything except A&rsquo;s and B&rsquo;s before</li>
+<li>fidelity.
+- Marriage is still glamorous and still thought to include, as an aspiration, lifelong sexual fidelity .
+- they have never wavered in their fidelity to the cause of freedom</li>
+<li>abound.
+- They live in a region where oil abounds.
+- a city that abounds with art museums and private galleries</li>
+<li>trapdoor</li>
+<li>impede.
+- He claims that economic growth is being impeded by government regulations.
+- The soldiers could not impede the enemy&rsquo;s advance.</li>
+<li>physics</li>
+<li>physicist</li>
+<li>unify
+- The creation of the national railroad system unified the country.</li>
+<li>supersede.
+- In the commercial world new technologies supersede the old.
+- This edition supersedes the previous one.</li>
+<li>infrequent.
+- My lawn didn&rsquo;t require cutting as often because rain fell infrequently .</li>
+<li>malleable
+-  infinitely malleable.无限可塑</li>
+<li>dampen.
+- nothing could dampen her enthusiasm
+- Unequal co-founder relationships are a way to dampen future co-founder issues.</li>
+<li>inexorable.
+- the inexorable rise of a political movement</li>
+<li>omissions
+- There are a few omissions in the list.</li>
+<li>molecules
+- There is not a molecule of evidence to support these charges.</li>
+<li>schematics.
+- a schematic diagram of their business model</li>
+<li>superimpose
+- A triangle superimposed on an inverted triangle forms a six-pointed star.</li>
+</ol>
+<h3 id="5">第5组<a class="headerlink" href="#5" title="Permanent link"></a></h3>
+<ol>
+<li>discrepancy.
+- there&rsquo;s a discrepancy between your account and his
+- Discrepancies in the firm&rsquo;s financial statements led to an investigation.</li>
+<li>plagiarism
+- The student has been accused of plagiarism.</li>
+<li>expulsion
+- The government engaged in mass expulsions.</li>
+<li>fraudulent
+- Corrupt leaders were chosen in a fraudulent election.</li>
+<li>tamper.
+- someone tampered with the brakes on my car
+- One count of aggravated vehicular homicide and the charge of tampering with evidence was dismissed.</li>
+<li>deem.
+- the event was deemed a great success
+- The principal will take whatever action she deems appropriate in this case.</li>
+<li>preparedness
+- The military is in a state of preparedness.</li>
+<li>closure.
+- The government forced the closure of the factory.
+- It is an attempt to speed the process along so we can bring it to closure .</li>
+<li>disclosure
+- We demand full disclosure of the facts.</li>
+<li>tentative
+- We have tentative plans for the weekend.
+- the baby&rsquo;s first tentative steps</li>
+<li>provisional
+- The government has given provisional approval for the use of the new drug.</li>
+<li>surveillance
+- The bank robbery was recorded by surveillance video cameras.</li>
+<li>credible
+- We&rsquo;ve received credible information about the group&rsquo;s location.</li>
+<li>luncheon.a formal lunch, or a formal word for lunch.
+- The luncheon is for the National Republican Senatorial Committee.</li>
+<li>comedian
+- You&rsquo;ll like my friend. He&rsquo;s a real comedian.</li>
+<li>de-facto 实际上
+- with the death of his father, he became the de facto head of the family</li>
+<li>distill
+- They distill the whiskey from malted barley.</li>
+<li>presuppose
+- the book presupposes its readers will already know something about the subject</li>
+<li>tame
+- He struggled to tame his temper.</li>
+<li>preclude.
+- his difficulties preclude him from leading a normal life</li>
+<li>unthinkable
+- to most people it seemed unthinkable that such a gentle man could be guilty of such awful crimes</li>
+<li>repertoire
+- He has a limited repertoire when it comes to cooking.
+- The band&rsquo;s repertoire includes both classic and modern jazz.</li>
+<li>copious.
+- The storm produced a copious amount of rain.</li>
+<li>procure.
+- However, the couple was reportedly being made to jump through hoops in order to procure the necessary paperwork.
+- he procured his wife to sign the agreement
+24.bottleneck
+- performance bottlenecks</li>
+<li>enumerate
+- Let me enumerate my reasons for doing this.</li>
+<li>tradeoffs
+- the education versus experience trade-off which governs personnel practices.</li>
+<li>mediocre.
+- The dinner was delicious, but the dessert was mediocre.</li>
+<li>interim
+- there was a brief interim in the proceedings while everyone got organized
+- there is no question that the work on the North Side will enhance everyone’s use and experience of the Library,” wrote Emily Miller Bonney, interim library dean, in an announcement on the library’s website.</li>
+<li>testimonials
+- Social media is filled with inspiring weight loss testimonials.</li>
+<li>stake
+- She staked the tomatoes to keep them from falling over.</li>
+</ol>
+<h3 id="4">第4组<a class="headerlink" href="#4" title="Permanent link"></a></h3>
+<ol>
+<li>trek
+- We trekked across the country in her old car.
+- Our car broke down and we had a long trek back to town.</li>
+<li>autism</li>
+<li>pretentious
+- Are people rich and pretentious?</li>
+<li>cutthroat
+- while traveling the ancient Silk Road, traders were constant prey to cutthroats and thieves</li>
+<li>legitimately:adv,合理地.legitimate adj,conforming to the law or to rules. v,make legitimate; justify or make lawful.
+- money earned legitimately [=legally] a question that can be legimately asked</li>
+<li>monolith,n,可数,formed of a single large block of stone.</li>
+<li>spaghetti,n,意大利面.</li>
+<li>exceptionally: to a greater degree than normal; unusually.
+- an exceptionally difficult task</li>
+<li>delineation
+- his simple but striking delineations of Dutch landscapes</li>
+<li>inadvertently:adv,without intention; accidentally.
+- an inadvertent encounter with a rattlesnake in the brush</li>
+<li>Pseudo-code: 伪代码.</li>
+<li>integers, or floating point.,negatives,positives,正负数.</li>
+<li>equation</li>
+<li>quadratic,adj,involving the second and no higher power of an unknown quantity or variable. n,a quadratic equation.
+- We need quadratic time.</li>
+<li>unidirectional:adj,moving or operating in a single direction.
+- In both cases, movement is unidirectional, as in, everyone is trying to move in the same direction.</li>
+<li>reconcile:v,restore friendly relations between.
+- But most tend to reconcile conflicts through heart-to-heart talks.
+- It can be difficult to reconcile your ideals with reality.</li>
+<li>recap:n,a summary of what has been said; a recapitulation.
+          v,state again as a summary; recapitulate.</li>
+<li>verbatim:adv,in exactly the same words as were used originally.逐字地
+- Some passages in the book are taken verbatim from the blog …
+- don&rsquo;t read it verbatim.</li>
+<li>apricot:n,杏.</li>
+<li>construe:v,interpret (a word or action) in a particular way.
+- The way the court construes various words has changed over time.</li>
+<li>wholly,adv,entirely; fully.
+- An infant is wholly dependent on its mother.</li>
+<li>concomitant.
+- The drug&rsquo;s risks increase with the concomitant use of alcohol.</li>
+<li>esoteric.
+- metaphysics is such an esoteric subject that most people are content to leave it to the philosophers</li>
+<li>cartridge</li>
+<li>rinse.
+- I gave my hands a quick rinse.always rinse your hair thoroughly.
+- I rinsed my face in the sink.</li>
+<li>ergonomi
+- Microsoft Natural Ergonomic Keyboard 4000 for Business - Wired</li>
+<li>remainders.
+- He was returned to prison to serve the remainder of the seven-year sentence.
+- He devoted the remainder of his life to other literary projects and died in 1903 of cancer.</li>
+<li>tout.
+- The company is running advertisements touting the drug&rsquo;s effectiveness.</li>
+<li>ware
+- She sold her wares at the market.</li>
+<li>payoff
+- You&rsquo;ll have to work hard but there&rsquo;ll be a big payoff in the end.
+- We made a lot of sacrifices with little payoff.</li>
+<li>money sign</li>
+</ol>
+<h3 id="3-2018-02-02">第3组 2018-02-02<a class="headerlink" href="#3-2018-02-02" title="Permanent link"></a></h3>
+<ol>
+<li>provocative:adj,causing annoyance, anger, or another strong reaction, especially deliberately.
+- a provocative question</li>
+<li>sift
+- The police sifted the evidence in hopes of finding a clue.</li>
+<li>wisdom:n,the quality of having experience, knowledge, and good judgment; the quality of being wise.
+- a young person of great wisdom</li>
+<li>dumb:adj ① (of a person) unable to speak, most typically because of congenital deafness. ②  stupid</li>
+<li>intent extraction</li>
+<li>entrepreneur</li>
+<li>appendage
+- The court system acts as an appendage to the government.</li>
+<li>glaring</li>
+<li>mediate
+- has a black-and-white view of human nature, believing that there is no mediate state between good and evil(adj)
+- He has been appointed to mediate the dispute.</li>
+<li>taxonomy
+- the taxonomies of various plant groups</li>
+<li>rationalism
+- But rationalism has provided a new spin on this old debate.</li>
+<li>wallet
+- He pulled a few bills out of his wallet.</li>
+<li>slap
+- I&rsquo;m tired of getting slapped for it.
+- She slapped him across the face.
+- He slapped me on the back and said “Good job!”.</li>
+<li>transcend
+- music that transcends cultural boundaries</li>
+<li>ain&rsquo;t,contraction,am not; are not; is not.
+- It ain&rsquo;t’ perfect but it’s better than what&rsquo;s out there</li>
+<li>disembody</li>
+<li>antiquated
+- adj,old-fashioned or outdated.过时的,Downloading an app will be antiquated.</li>
+<li>neuron:n,可数,神经元.a specialized cell transmitting nerve impulses; a nerve cell.</li>
+<li>tether
+- the horse had been tethered to a pos</li>
+<li>leverage
+- The player&rsquo;s popularity has given him a great deal of leverage with the owners of the team.
+- How to leverage all the cool features of viscose.</li>
+<li>lever:n,杠杆.</li>
+<li>fallacy:the notion that the camera never lies is a fallacy谬论.
+- The fallacy of their ideas about medicine soon became apparent.</li>
+<li>toilet paper:卫生纸.</li>
+<li>paper towels:纸巾.</li>
+<li>enthusiast n,可数,发烧友.a person who is highly interested in a particular activity or subject.</li>
+<li>hone: v, ① sharpen (a blade). ② refine or perfect (something) over a period of time.
+- In general, early debates largely serve as a helpful dress rehearsal for candidates to hone their skills before voters really start to tune into the upcoming elections.</li>
+<li>dork:a dull, slow-witted, or socially inept person. 白痴.
+- I look like a complete dork in these clothes.</li>
+<li>procrastination ,n,拖延.the action of delaying or postponing something.
+- He procrastinated and missed the submission deadline.</li>
+<li>cliffhanger,n,可数,悬念.an ending to an episode of a serial drama that leaves the audience in suspense.</li>
+</ol>
+<h3 id="2">第2组<a class="headerlink" href="#2" title="Permanent link"></a></h3>
+<ol>
+<li>patrol</li>
+<li>Not eligible for traffic school.</li>
+<li>pavilion:n,a building or similar structure used for a specific purpose, in particular.</li>
+<li>miscellaneous:(of items or people gathered or considered together) of various types or from different sources.杂项
+- a miscellaneous collection of tools</li>
+<li>calibrate
+- v,mark (a gauge or instrument) with a standard scale of readings.</li>
+<li>“When was the last time you calibrate your radar gun？”（你上一次校准你的雷达是什么时候？）</li>
+<li>&ldquo;Were you moving when you clocked my speed?&rdquo; （当你记录我速度的时候你有在移动吗？）</li>
+<li>odometer reading:里程表</li>
+<li>现场(On-site),场外(Off-site)</li>
+<li>Enforcement Hours执法时间.</li>
+<li>Intersession:a short period between university terms, sometimes used by students to engage in projects outside the normal academic program.</li>
+<li>Payroll Deduction:工资扣除</li>
+<li>delinquent:adj,(typically of a young person or that person&rsquo;s behavior) showing or characterized by a tendency to commit crime, particularly minor crime.
+- His delinquent behavior could lead to more serious problems.</li>
+<li>Notice of Delinquent 发出欠款通知</li>
+<li>forge:v,produce a copy or imitation of (a document, signature, banknote, or work or art) for the purpose of deception.
+- forge a document forge a signature</li>
+<li>allotted time period:</li>
+<li>paying or contesting the tickets.</li>
+<li>immobilize:prevent (something or someone) from moving or operating as normal.
+- I was immobilized by fear.</li>
+<li>license plate:牌照.</li>
+<li>biographical information (e.g. full name, address, country of birth, etc.)</li>
+<li>reinstate:restore (someone or something) to their former position or condition.
+- After his name was cleared, he was reinstated as committee chairperson.
+- The school board voted to reinstate the school&rsquo;s uniform policy.</li>
+<li>premium:
+- Car insurance premiums
+- Health insurance premiums went up again this year.
+- lavish feasts at which premium wines flowed freely</li>
+<li>counterfeit:adj made in exact imitation of something valuable or important with the intention to deceive or defraud. n :a fraudulent imitation of something else; a forgery.
+- The concert ticket is counterfeit.
+- counterfeit currency that had been passed all over town</li>
+<li>arboretum:a botanical garden devoted to trees.植物园
+- Hundreds of bee-friendly plants will be available at the arboretum&rsquo;s spring sales.</li>
+<li>testimonial,n,可数,a formal statement testifying to someone&rsquo;s character and qualifications.推荐.
+- He received a glowing testimonial from his former employer.</li>
+<li>testify:v,give evidence as a witness in a law court. 作证.
+- She refused to testify about who had given her the information.</li>
+<li>Downtime:time during which a machine, especially a computer, is out of action or unavailable for use.</li>
+<li>stipend:a fixed regular sum paid as a salary or allowance.助学金.
+- He receives a small stipend for his work as a research fellow.</li>
+<li>parenthesis pl:parentheses</li>
+<li>fumble
+- They fumbled a good opportunity to take control of the market.
+- How Apple Fumbled The Voice First Future?</li>
+</ol>
+<h3 id="1">第1组<a class="headerlink" href="#1" title="Permanent link"></a></h3>
+<ol>
+<li>tow: 拖车。</li>
+<li>honk: v按喇叭。（make or cause to make a honk.）
+- I honked at the car in front of me.</li>
+<li>horn: n 喇叭。</li>
+<li>brother in law: 姐夫。</li>
+<li>Manuel transmission vehicle 手动挡汽车。</li>
+<li>rear-view mirror.后车镜。</li>
+<li>He pulled out into the street. 他把车开到了街上。</li>
+<li>rear-end collisions追尾碰撞</li>
+<li>jerky:adj characterized by abrupt stops and starts..  ② contemptibly foolish.</li>
+<li>parking lot driving:停车场驾驶</li>
+<li>destination trip:目的地之旅</li>
+<li>do it with conviction.</li>
+<li>tailgate<img align="absmiddle" alt=":v:" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/270c.png" title=":v:" width="20px" />drive too closely behind another vehicle.
+- He hit the car in front of him because he was tailgating.</li>
+<li>speedometer:车速表</li>
+<li>gas pedal:油门踏板</li>
+<li>upper torso:上部躯干</li>
+<li>amenable:adj:(of a person) open and responsive to suggestion; easily persuaded or controlled.
+- whatever you decide to do, I&rsquo;m amenable—just let me know</li>
+<li>On the benefits side，On the costs side。</li>
+<li>benefit to cost ratio</li>
+<li>straddle:跨</li>
+<li>blink</li>
+<li>blinker:a device that blinks, especially a vehicle&rsquo;s turn signal.(信号灯)</li>
+<li>emergency brake:手刹</li>
+<li>outage:n,a period when a power supply or other service is not available or when equipment is closed down.</li>
+<li>manpower:the number of people working or available for work or service. eg:the police had only limited manpower</li>
+<li>tentative schedule:暂定时间表</li>
+<li>faucet:a device by which a flow of liquid or gas from a pipe or container can be controlled; a tap.
+水龙头</li>
+<li>approachable:① friendly and easy to talk to. ② (of a place) able to be reached from a particular direction or by a particular means.</li>
+<li>infraction:a violation or infringement of a law, agreement, or set of rules.
+- speeding is only a minor infraction, but vehicular homicide is a serious felony</li>
+<li>misdemeanor:a minor wrongdoing.
+- But that same month, Avelica’s lawyers contested his misdemeanor convictions, arguing that he hadn’t been adequately advised about the immigration consequences.</li>
+<li>plead:v,make an emotional appeal.
+- Plead Guilty and Pay the Fine：认罪并付钱了事
+- He begged and pleaded, but she would not change her mind.</li>
+<li>a traffic citation:a summons.</li>
+</ol></article></body></html>
