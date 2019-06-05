@@ -165,7 +165,8 @@
 - I met this guy at corporate last week, and we were just digging each other's vibe.
 5. essence
 - time is of the essence. 时间至关重要.
-6.           
+6. impropriety
+- sexual impropriety
 7. composure
 - She never loses her composure.
 - regain my composure
@@ -177,3 +178,72 @@
 - take revenge show that you have the audacity and the boldness to take revenge on their interviewer.
 12. debut
 11. mural
+
+
+
+7. gunk
+- Hey! Make sure to clean off all the gunk off the front bumper, ok.
+9. incidence
+- Our annual individual performance reviews showed a 20 percent incidence of sub-standard work.So essentially , one out of every five Hooli team members deserve to be fired.
+- a disease with an incidence of one in 100,000.
+- an increased incidence of cancer near nuclear power stations
+8. coincidence
+10. shocker
+17. workaround
+- The software still has a few glitches but we've come up with a workaround.
+20. backstabbing
+- He accused his boss of dirty tricks and backstabbing.(U)
+- backstabbing colleagues
+21. oversight
+- It was just an oversight.
+23. iconoclast/iconoclastic(adj)
+- Besides, I'm wearing sandals so I am iconoclasting a little bit.
+12. overheard
+29. countertop
+5. fountains
+- Are there any water fountains in your office?
+7. sweat
+- It's not magic, it's talent and sweat.
+10. camaraderie
+- The camaraderie is quite apparent.
+15. grand
+- 600 grand a year.
+19. rollout
+20. paradigm
+- Video compression is a completely different paradigm.
+23. atrocity
+- These people are guilty of acts of appalling atrocity.
+29. tremor
+- There was a slight tremor in her voice.
+1. ritual
+- shutdown ritual
+7. cradle
+- Silicon Valley is the cradle of innovation.
+12. prophecy
+- Thinking small is a self-fulfilling prophecy.
+19. quin tes sence/quintessential(perfect example)
+26. sketch
+5. triplet
+- I think this might be more efficient solution than checking every triplet of numbers in disarray.
+6. disarray
+7. oxymoron
+- The phrase “cruel kindness” is an oxymoron.
+15. playoff
+3. heist
+4. bomb
+15. squad
+- a rescue squad
+24. cadaver
+6. custody
+9. ordeal
+- This lawsuit is going to be a protracted and time-consuming ordeal.
+26. sideshow
+- Their disagreement is just a political sideshow when compared to the real issues at hand.
+30. checkmate
+- The challenger checkmated the champion and won the tournament.
+31. stalemate
+- The budget debate ended in a stalemate.
+1. tidings(news)
+- good/glad tidings
+1. scourge
+- With these bottles, We eliminate the need for plastic water bottles, Which are the scourge of the environment.

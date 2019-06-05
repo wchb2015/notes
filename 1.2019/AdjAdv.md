@@ -187,3 +187,113 @@
 4. accommodating
 5. gratuitous
 - There were too many gratuitous personal insults throughout the debate.
+6. barely
+- And I barely have any responsibilities.
+7. infectious
+- That laugh is so infectious.
+8. monetary
+- this should be accompanied by a monetary prize
+
+
+12. incendiary
+13. raunchy(dirty,smelly)
+14. chipped
+- I threw Frisbee and it chipped my tooth.
+15. contagious
+- Failure is contagious.
+25. preliminary/preliminaries(n)
+27. unsubstantiated
+29. impending
+- impending crash of Hooli's stock
+30. lascivious
+2. fascinating
+- I found the whole movie fascinating.
+3. formidable
+- a formidable obstacle
+6. ajar
+- We left the door ajar so that we could hear what they were saying.
+14. convertible
+15. lossless
+19. aesthetic
+- share a similar aesthetic.
+24. shameful
+25. numb
+- Give it a week or two, you'll get, like, numb to it.
+1. significant
+2. erotic
+- The first fiction ever published on a printing press was an  erotic tale.
+4. airtight
+- Biscuits will stay crisp if you keep them in an airtight container.
+11. pointless
+- It seemed pointless to continue.
+13. assertive
+- I, uh, don't wanna be too assertive here but I could use your input on a few things for the business plan.
+17. statutory
+- statutory obligations
+18. appellate
+24. primal
+26. irate
+- We have received some irate phone calls from customers.
+27. irony
+3. managerial
+4. incomprehensible/comprehensible
+5. rad(cool)
+- I got to warn you , though ,It's pretty rad. 我可提醒你,真的很赞.
+- The Google of music, which is a really rad way to pitch something.
+10. dubious
+- He was pursuing a number of extremely dubious positions.
+- privide dubious value.
+11. intangible
+- The true value of college education is intangible.
+14. congenital
+- congenital diseases.
+15. beneficent/beneficence
+- a beneficent aunt
+16. commutative
+17. proportional
+- proportional to
+- The number that do hit the cache is proportional to the number of coins (the branching factor).
+20. susceptible
+23. rife
+- The office was rife with rumours.
+- Dysentery and malaria are rife in the refugee camps.
+25. rusty
+- My tennis skills are a little rusty.
+8. pathological/pathologic
+- He is a pathological liar.
+9. pejorative
+13. henceforth
+20. crisp
+- crisp answer
+21. cautionary
+- The story is a cautionary tale of what can happen when greed takes over.
+5. diabolical
+- I know about your diabolical plan.
+11. doctoral
+25. ingrained
+- These attitudes are very deeply ingrained in the culture.
+27. doable
+- It will be difficult, but it's still doable.
+28. literally/figuratively
+29. canonical
+- Another canonical example where an ordering on the nodes of the graph matters is for program build dependencies.
+1. secluded
+- a secluded beach
+1. forensic
+- forensic medicine
+16. sadistic/sadist(虐待狂)
+20. competent
+- You eventually end up in big trouble as every other company want that new skill and you are incompetent.
+21. deceptive
+1. scented
+- What'd he get? - He got scented candles.
+1. petulant
+- Hurt, petulant jesus.
+1. compatible
+- I would like an xbox and A tv that's compatible with an xbox.
+1. slippery
+- It's a little slippery out here.
+1. nonsensical
+- So you've been shown a nonsensical video.
+
+

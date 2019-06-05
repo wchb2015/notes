@@ -245,3 +245,88 @@
 - Are you saying John never penetrated my network?
 - Sunscreens can help reduce the penetration of ultraviolet rays into the skin.
 22. masturbate
+23. tinker
+- In the north pole, I spend many nights alone Tinkering with toys.
+- The car wouldn't start, but my brother tinkered with the engine a little and got it going again.
+21. emasculate/emasculating
+22. concede
+- I concede defeat.
+11. ingest
+12. reincarnate
+- I've been reincarnated during the same time period in which I exist.
+26. forgo
+- I shall have to forgo the pleasure of seeing you this week.
+- It is! Ten percent of Pied Piper! For which I forewent, yes, that's a real word, - one million dollars.
+27. retract
+- And now you're just gonna give me a seat on the board, only to retract that offer?!
+28. renege
+- If you renege on the deal now, I'll fight you in the courts.
+- You offering me a position on this board and reneging it is a perfect example of you having no vision, no balls and no game.
+30. swirl
+- All I see is stars and swirls.
+- the rumors swirling about your leadership.
+3. entice
+- entice them to download the app.
+- One of the enticements of the job is the company car.
+8. puke
+- puked out a bunch of tech specs.
+- vomit
+15. pervert/perverted
+- She told him he had a sick and perverted mind.
+16. revenge
+21. tuck
+- tucked inside  this midtown manhattan high rise is an amazon prime warehouse.
+25. ejaculate
+8. perpetrate/perpetrator
+- Officers, I reveal to you the perpetrator.
+9. spew
+- spewing ignorance!
+13. tingle/tingling
+21. topple
+- The tree toppled and fell.
+22. mimic
+27. regurgitate
+- regurgitating knowledge
+- Many students simply regurgitate what they hear in lectures.
+28. convey/conveyor
+- The singer was conveyed from her hotel to the airport by limousine.
+1. recur
+- The same problem keeps recurring.
+5. triple v
+- He tripled his winnings at the track.
+14. belabor
+- I don’t want to belabour the point, but it’s vital you understand how important this is.
+16. disguise
+- He tried to disguise his voice on the phone but I could tell it was him.
+1. captivate
+- We were captivated by her beauty.
+2. flop
+8. ramble/rambling
+- I'm just totally ramble. 我只是在瞎扯.
+12. handcuff
+16. demean/demeanor
+- Is your ego so fragile that if someone disagrees with you,you have to demean them?贬低他们.
+17. zoom
+19. scramble
+23. corrupt
+2. scuff(v,n)
+- reduce scuff .减少磨损
+- I scuffed (up) my new shoes the very first time I wore them.
+3. ensue/ensuing(adj)
+- When the news broke, a long period of chaos ensued. [=followed]
+- In the ensuing weeks, [=in the weeks afterward] her health gradually improved.
+7. behead
+14. abduct
+- He was abducted [=kidnapped] from his home.
+28. detonate/detonation
+- They knew that the bomb could detonate [=blow up] at any time.
+29. elevate
+- The doctor told her to elevate [=raise] her leg.
+1. usurp
+- Some people have accused city council members of trying to usurp the mayor's power.
+1. hop
+- He hopped over the hot sand.
+1. heckle
+- You heckled santa for an hour and a half.
+
+
