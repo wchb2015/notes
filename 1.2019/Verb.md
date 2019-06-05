@@ -23,129 +23,225 @@
 - why are you limping? I don't know.
 13. unionize
 - It doesn't pay much and you can't unionize.
-15. remiss
+14. remiss
 - I was remiss in paying my bills.
 - I would be remiss if i did not ask the pretty young lady out on a date for this weekend.
-16. startle
+15. startle
 - You startled me!
-17. revolt
+16. revolt
 - People are starting to notice how terrible jim is.It's great.Eventually, they'll rise up and revolt.
-18. braid
+17. braid
 - why don't you braid my hair?
-19. enfranchise/disenfranchise
-
-
-
-8. misquote
-2. rescind
+18. enfranchise/disenfranchise
+19. lob
+- I was hoping to lob michael a soft ball question early.
+20. rally
+- a political rally
+- I've always been the guy who can rally other people to rebel.
+21. whack
+22. misquote
+23. rescind
 - I will rescind the offer.
-4. poach
+24. poach
 - Our own investor poached him.
 - Poaching my tenants.
-5. wet
+25. wet
 - I'm not wetting the bed.
-10. endure
+26. endure
 - I'll endure for your sake.
-11. forgo
+27. forgo
 - Thanks to everybody for forgoing your salary this week.
 - I'll be forced to forgo those opportunities because of your mediocrity.
-14. insist
+28. insist
 - I'm going to have to insist that John be removed if I continue here.
-20. ruin
+29. ruin
 - That gentleman next door has the power to ruin us.
-24. resign/resignation
+30. resign/resignation
 - I'm going to resign.
 - Today I have accepted the resignation of John.
+
+
+### 2
 1. emphasize/emphasis(n)
 - Their father always emphasized the importance of discipline.
 - emphasis on "independent".
-6. counsel(to give advice to)
+2. counsel(to give advice to)
 - I counsel any young founder today to pursue your dream not for profit or valuation.
-7. vilify
-12. shove(a strong push.)
-13. entice/enticing(adj)
+3. vilify
+4. shove(a strong push.)
+5. entice/enticing(adj)
 - That's a very enticing offer.
-19. diffuse
+6. diffuse
 - No, I'm totally kidding.I'm diffusing the tension with humor.
-21. subtract
+7. subtract
 - If you subtract 5 from 9, we get 4.
-25. grant
+8. grant
 - permission granted
 - I grant you.我同意你.
 - I will grant you one wish.
-29. rattle
+9. rattle
 - you try to rattle somebody to see if they freak out or not.
-4. condescend/condescending(adj)
+10. condescend/condescending(adj)
 - You were arrogant,condescending and offensive.
-5. hamstring
+11. hamstring
 - Hooli has the unlimited resources to hamstring you.
-7. pledge(n)
+12. pledge(n)
 - can't collect your pledge.
 - Jan called this morning and pledged $500.
-15. decipher
+13. decipher
 - Mrs.John tried to decipher the sloppy handwriting.
 - they were able to decipher the difference between yours and the others.
-16. resonate
+14. resonate
 - Which Amazon leadership principle do you resonate most with?
-18. energize
+15. energize
 - I felt very energized after my holiday.
-25. cultivate
+16. cultivate
 - skills that can be measured and cultivated in people.
-30.  enchant
-4. rivet
-27. judder
+17. enchant
+18. rivet
+19. judder
 - you see that frame judder as the camera pans?
-22. clench/unclench.收紧,放松.
+20. clench/unclench.收紧,放松.
 - I think the eagles could clench the X.
-19. seizure
+21. seizure
 - fines, or even seizure and impounding of our equipment.罚款,甚至扣押或者没收我们的设备.
-15. welsh
+22. welsh
 - We had a contract ,He promised to give us 5 million, and he's welshing.
-18. spite
+23. spite
 - And then Gavin promoted me just to spite you.只是为了报复你.
-20. stake(risk,to risk an amount of money)
+24. stake(risk,to risk an amount of money)
 - we've staked substantial resources on its performance.
 - I'm willing to stake my entire reputation on it.
-22. taunt
+25. taunt
 - Gilfoyle kept taunting me and taunting me.
-23. intervene/intervention(n)
+26. intervene/intervention(n)
 - anti-smoking intervention 戒烟教育.
-25. vent
+27. vent
 - I guess I just needed to vent.
 - I didn't mean to upset anyone, I just needed to vent.
 - (to express a negative emotion in a forceful and often unfair way)
-30. agonize
+28. agonize
 - It wasn't a rash decision.I agonized over it.
-1. intoxicate/intoxicating(adj)
-2. obliterate.
+29. intoxicate/intoxicating(adj)
+30. obliterate.
 - The entire platform is obliterated.
-11. spoon:(of two people) behave in an amorous way; kiss and cuddle.
+
+### 3
+1. spoon:(of two people) behave in an amorous way; kiss and cuddle.
 - I saw them spooning on the beach
 - John, I'm not asking you to spoon with the guy or even fork him.
-15. swallow
+2. swallow
 - swallow your pride, or soon you'll be eating something far worse than shit.
-16. disparage
+3. disparage
 - non-disparagement clause禁止恶言条款.
-17. conjoin
+4. conjoin
 - The two rivers eventually conjoin.
-22. outrank
+5. outrank
 - Promote other websites to outrank the bad Nucleus news.
-8. loathe
+6. loathe
 - Ordinarily, I loathe coming to China.
-2. spur
+7. spur
 - What spurrd the sudden uptick.什么刺激了用户量突然增长.Well, I notice something.
-9. budge
+8. budge
 - I won't budge on that.我绝不退让.
-11. flatter
+9. flatter
 - I'm flattered.
-12. remedy
+10. remedy
 - This mistake must be remedied immediately.
 - It's a syntactical error that I could've remedied.
-13. bifurcate
+11. bifurcate
 - We have to bifurcate our relationship.
 - From this node(tree) they bifurcate.
-19. anonymize
+12. anonymize
 - We anonymize the data so researchers cannot identify any individual subjects.
-20. salvage
+13. salvage
 - salvage an interview and bring it back on track.
 - After the fraud scandal he had to make great efforts to salvage his reputation.
+14. juggle
+- Juggling tasks makes everything take longer.
+- I was juggling existing freelance work, holiday plans with my partner, as well as assignments and exam study for my last two subjects of my university degree
+15. whisk
+- David whisked me away to the kitchen for a beverage, and before long, the interviewing began.
+16. oust
+- He threw it to oust her.是为了排挤他.
+17. absolve
+- You're on the hook for that. And even declaring bankruptcy isn't going to absolve you of these debts.
+18. earmark
+- To put money aside for a specific future purpose. To mark the ear of an animal.
+- Ten thousand dollars of this year’s budget is earmarked for the renovation of the building.
+19. prevail
+- do prevail 获胜.
+- And did reason prevail over (= become a more powerful influence than) emotion?
+- A friendly atmosphere prevailed among members of the team.
+20. prosecute
+- or I assure you,that,I will prosecute.
+21. invade
+- Before we invade people's privacy, there is a conversation about ethics. 道德问题.
+22. slip
+- once you slip it on,everything will change.一旦你穿上这个衣服.
+23. usher
+- He will be ushering you out.
+- It is my absolute pleasure to welcome you home as we usher in the 2018-19 academic year.
+24. terrify
+- I terrify you, as I should.
+25. tank(fail completely, especially at great financial cost.)
+- So we're tanking, and it's because we're too good. That's one way of looking at it.
+- just tanked the whole project.
+26. banish
+- banished from my own company?
+27. proclaim
+- You publicly proclaimed.
+28. harvest
+- harvested from dead people in India.
+29. adamant
+- She was pretty adamant. 她非常坚定
+30. dismantle
+- I dismantled all the racks.
+
+### 4
+1. drench
+- just pick a day and just drench it in  hawk urine.
+2. beset
+- It's funny, we're named Pied Piper , but we're beset with rats.
+3. shutter
+- shuttering Nucleus.
+4. reconvene
+- We will be reconvening tomorrow.
+5. slander
+- She's slandering my tech.
+6. scrub
+- Did you just say John scrubbed the Internet? 删帖
+- scrubbing
+7. bounce
+- Why are our checks bouncing?咱们的支票怎么无效了.
+8. pivot
+- I'm pivoting.
+9. sway
+10. spook
+11. fart
+- Does he fart a lot and smell like onions?
+12. propel
+13. exude
+- exude confidence.
+14. overthink
+- I overthink everything and worry too much.
+15. retaliate
+- If someone insults you, don't retaliate as it only makes the situation worse.
+16. breach
+- That is a serious breach of protocol.
+- breach of contract. 违约
+- unjust enrichment 不当得利.
+- We're in breach. 我们违约了.
+17. abet
+- aiding and abetting.协助和教唆.
+18. scurry
+- If i scurry to the restroom,do you imagine he would...
+19. displease
+- I wouldn't want to do anything to displease him.
+20. incense/incensed
+- I have never seen him so incensed.
+- It is either an incense dispenser or a ceremonial sarcophagus.
+21. penetrate/penetration
+- Are you saying John never penetrated my network?
+- Sunscreens can help reduce the penetration of ultraviolet rays into the skin.
+22. masturbate
