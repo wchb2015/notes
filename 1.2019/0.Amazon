@@ -1,0 +1,134 @@
+mandatory
+caveats
+temporary
+permanent
+license  plate
+These fields are all of dubious value
+polyglot
+Potluck
+explicit
+We'll replenish your account again the next time your balance falls below $5.00.
+git repository
+No related music utterances. Assigning to Bluetooth and raising severity to 2.5 as there is an imminent threat to the Amazon brand.
+How do both Gradually Roll Out and Cut Over plan work? What are the Pros/Cons?
+curl
+Gradual Roll out
+
+the migration steps
+list of APIs being migrated
+If your prod issue can be mitigated with a deployment rollback or weblab dialdown, we will require you to pursue that option first, before resorting to patching prod.
+differentiate
+expedite
+mitigate/migrate/migration
+propagate
+cadence
+severity
+specify
+transitive
+escalate
+optional
+retrofit
+LPT Synthesis
+RDE or Rapid Dev Environment
+It tarnishes customer trust.
+How does this CM attempt to mitigate this risk?
+Rollback Procedure
+electric company
+curl
+urge
+regardless
+outage
+subscribe
+Gradual
+done
+european
+scaling
+User’s auth token expired and get logged out?
+To ensure our customer experience is stellar, we have a company expectation that all system owners provide round the clock support for critical issues.
+ if we do not explicitly throw an error, but say zero sent-count, it means we had nowhere to send to
+ if the auth token expires, the user has to open the app (DMPS registers endpoints and would refresh auth token on app startup)
+Registration Manager handles de-duplication -- just register
+significant customer impact
+flaky
+resolves-conflict-dependencies
+degradation mode
+### 10/29
+Prerequisites
+kinetic
+AutoOnboarding has been deprecated
+CR triage
+itinerary
+accolade
+transient
+persistent
+directives
+Due to the inherent transient connectivity of mobile devices, the Alexa Mobile applications for iOS and Android cannot maintain persistent connections to Alexa Service. 
+payload 
+Alexa Excellence
+Are there any related, prerequisite changes upon which this CM hinges?
+However when the transactions start taking longer, it will need to spawn more threads (concurrent connections) to honor the TPS you've asked for:
+This allows you to have a potentially heterogeneous fleet where some workers are beefier than others. 
+We saw a 3x increase from normal traffic to Q4 peak traffic last year.  Other than a very small blip to RegisterMobileEndpoints on the 19th we didn't see any significant increase from Prime Day.
+Muffin device
+This wiki contains details from the earliest gamedays for posterity's sake. 
+High Severity Event
+SLA - Service Level Agreement 
+Will this CM be in any way intrusive, and if so, how will you know?
+cumbersome
+suppress
+This ticket was cut because https://tt.amazon.com/0170358895 was resolved prematurely. 
+Altitude
+If naming is important to you then create a clone for clarity.
+The SDE community has patched ConsoleLord to work seamlessly with the security bastion hosts in order to connect to prod environments. 
+Success Criteria
+subscriber
+When in Rome do as the Romans do
+extrapolate
+Companion
+Do I need to register developer desktops in AAA?
+Imminent or ongoing failure of data-center cooling or power
+projection
+
+------11-11
+remediate
+No. For your convenience, we let your one-click child environment impersonate its parent environment (getting its identity, permissions, secret keys, etc.), provided that all of the following conditions are met:
+DMS team used historic data to project the TPS requirement.
+the colossal information to be transferred ranges across 37 
+Backlog items that can get escalated or cause big impacting issues should be addressed on priority.
+threshold
+During the execution phase, we will start loading at 20% load and will increment with 20% for every twenty mins until we reach 120% of the projected traffic, after a successful 120% load we will come back to 100% load and at 100% load we will execute a AZ Outage scenario.
+If this CM is intrusive, what services will be affected?
+ I haven't resolved that yet.
+ However, many of our customers conduct gamedays where the load steps are non-deterministic.
+ Per specs, ports 1-65535 are available, and ports in range 1-1023 are the privileged ones
+ Bootstrap signal to the queue
+hardware resources such as network bandwidth
+Sync your workers from
+requiring you to run through the lengthy bootstrap process again.
+Don't swallow exceptions!
+we abort the run
+at this point we know we passed the saturation point, so we proceed to oscillate back and forth until we identify the number of concurrent connections that gives the highest possible tps.
+how latency degrades as you approach your maximum number of transactions per second 
+what's an acceptable tradeoff between throughput and latency.
+Combine interactive mode with an initial ramp up
+Corp Fabric
+The Android and iOS clients registers with DeeMobilePushService via the DeeWebsiteCoralService fascade/facade:
+Scripts run in alphabetical order.
+Gets Device Id with hyphens stripped.
+
+That takes up a lot of bandwidth
+So, as a corollary, we have no way to know if a device can receive cloud-initiated directives.
+Unified Preference Service
+It's only a marginal increase in "putting things in the wrong place". It's essentially a minor expansion of an existing workaround.
+Clowning
+WAKE + Crypto on iOS/Android
+Critical Path
+the operation is idempotent
+get accounts in bulk
+perpetual
+The descaling program aims to recoup the infrastructure costs (IMR) as quickly as possible.
+Since approval steps are tied to your pipeline
+And you can also act on this data: using pass/fail heuristics that will decide whether to allow the pipeline to continue deploying or block it. Fail a deployment...
+Sampling quantum
+Rate exceeded
+There is currently no ETA for resolution. As soon as we see a resolution come through, we will send an update out.
