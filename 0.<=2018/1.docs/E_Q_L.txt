@@ -1,0 +1,111 @@
+========================①  Experiment===================================
+1. docker redis
+2. docker mysql
+3. docker zookeeper
+4. docker tomcat nginx
+5. docker 集群
+6. docker springboot
+
+
+
+
+
+
+========================②  Question=====================================
+--dns-search=DOMAIN...——指定DNS搜索域
+cluster_name 集群名, 用于区分 IDC (ezone), 集群或泳道
+2. nohup  systemctl systemd exec
+1. docker restart containerId 日志还在.
+
+logback wran
+尾递归
+
+网段  http://weibo.com/ttarticle/p/show?id=2309404079841686247162
+前后端彻底分离 对SEO的影响
+nmap -v -sT 10.12.68.0/24      --open
+IntStream避免自动拆箱
+predicate true,false 自实现.
+SimpleDateFormat
+FastDateFormat线程安全问题
+redis test ssh
+
+布隆过滤器 bloomFilter
+Hystrix(Java线程隔离工作)
+
+ReentrantLock,Condition,CyclicBarrier,Semaphore
+
+while (Thread.activeCount() > 1) {
+            Thread.yield();
+}
+在sleep不起作用
+bitmap
+getAddINrcre实现.
+重试3次 骑手.
+wait()用着循环体中.JDK API虚假唤醒问题.
+生产者,消费者,唤醒问题.
+lock(Condition)版的生产消费
+test_servlet, LockTest 问题.
+FutureTask Callable使用场景
+CopyOnWriteArrayList使用场景.
+sync 和ReentrantLock区别.
+线程池 execute 和 submit
+Semapore
+SimpleDateFormat 线程安全问题.
+合法的IP格式.
+AtomicInteger,AtomicLong
+ip 段 子网掩码
+fping-4.0 /readme install.
+netstat -luntp |grep java
+mysql escape
+搜索框放入<script>alert(1)</script>模仿XSS
+spring boot 请求方法.
+spring  boot  gc LOG指定.
+spring  boot  log  分环境
+Spring boot trackingID
+- 将request,response串起来.
+- form-data, x-www-form-urlencoded,raw
+sso和auth2的关系.
+iframe提交URL.
+同域,部分同域,完全跨域SSO
+http://www.importnew.com/24689.html轻量级分布式RPC
+http://weibo.com/ttarticle/p/show?id=2309404079841686247162
+RestController和controller区别.为啥换了就访问不到了.
+Spring只有在抛出runtimeexception才会进行事务回滚.
+CountDownLatch,CyclicBarrierAPI
+<goal>jar-no-fork</goal>
+jarsigner-verify
+6.JavaMethodAreaOOM执行
+7.DirectMemoryOOMQuestion.
+http://www.importnew.com/24896.html
+RequestMappingHandlerMapping注解映射器
+RequestMappingHandlerAdapter注解适配器
+用泛型和用Object的区别.
+tcp和tcp6区别
+
+
+
+
+
+
+
+========================③  Link=========================================
+https://raft.github.io/
+http://daxue.qq.com/content/content/id/2495 video 28mins
+https://github.com/jpetazzo/nsenter
+http://ookamiantd.top/2017/java-call-by-value/
+http://ookamiantd.top/2017/jvm-knowledge-collect-01/
+http://ookamiantd.top/2017/jvm-knowledge-collect-02/
+https://bugs.mysql.com/bug.php?id=77209
+http://coolshell.cn/articles/9606.html
+http://coolshell.cn/articles/9169.html
+http://coolshell.cn/articles/6010.html
+http://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns-in-javas-core-libraries
+http://www.cnblogs.com/luxiaoxun/p/5272384.html一个轻量级分布式RPC框架--NettyRpc
+jdeps
+http://ifeve.com/java8-adopting-streams/
+http://ifeve.com/stream/
+http://ifeve.com/lambda/
+http://ifeve.com/java-8-tutorial-2/
+https://www.ibm.com/developerworks/cn/java/j-lo-java8streamapi/
+http://www.codeceo.com/article/java-stream-usage.html
+
