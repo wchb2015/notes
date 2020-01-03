@@ -1,61 +1,10 @@
-european
-scaling
-User’s auth token expired and get logged out?
-To ensure our customer experience is stellar, we have a company expectation that all system owners provide round the clock support for critical issues.
- if we do not explicitly throw an error, but say zero sent-count, it means we had nowhere to send to
- if the auth token expires, the user has to open the app (DMPS registers endpoints and would refresh auth token on app startup)
-Registration Manager handles de-duplication -- just register
-significant customer impact
-flaky
-resolves-conflict-dependencies
-degradation mode
-### 10/29
-Prerequisites
-kinetic
-AutoOnboarding has been deprecated
-CR triage
-itinerary
-accolade
-transient
-persistent
-directives
-Due to the inherent transient connectivity of mobile devices, the Alexa Mobile applications for iOS and Android cannot maintain persistent connections to Alexa Service. 
-payload 
-Alexa Excellence
-Are there any related, prerequisite changes upon which this CM hinges?
-However when the transactions start taking longer, it will need to spawn more threads (concurrent connections) to honor the TPS you've asked for:
-This allows you to have a potentially heterogeneous fleet where some workers are beefier than others. 
-We saw a 3x increase from normal traffic to Q4 peak traffic last year.  Other than a very small blip to RegisterMobileEndpoints on the 19th we didn't see any significant increase from Prime Day.
-Muffin device
-This wiki contains details from the earliest gamedays for posterity's sake. 
-High Severity Event
-SLA - Service Level Agreement 
-Will this CM be in any way intrusive, and if so, how will you know?
-cumbersome
-suppress
-This ticket was cut because https://tt.amazon.com/0170358895 was resolved prematurely. 
-Altitude
-If naming is important to you then create a clone for clarity.
-The SDE community has patched ConsoleLord to work seamlessly with the security bastion hosts in order to connect to prod environments. 
-Success Criteria
-subscriber
-When in Rome do as the Romans do
-extrapolate
-Companion
-Do I need to register developer desktops in AAA?
-Imminent or ongoing failure of data-center cooling or power
-projection
+When in Rome do as the Romans do.
 
-------11-11
-remediate
-No. For your convenience, we let your one-click child environment impersonate its parent environment (getting its identity, permissions, secret keys, etc.), provided that all of the following conditions are met:
-DMS team used historic data to project the TPS requirement.
-the colossal information to be transferred ranges across 37 
-Backlog items that can get escalated or cause big impacting issues should be addressed on priority.
-threshold
-During the execution phase, we will start loading at 20% load and will increment with 20% for every twenty mins until we reach 120% of the projected traffic, after a successful 120% load we will come back to 100% load and at 100% load we will execute a AZ Outage scenario.
-If this CM is intrusive, what services will be affected?
- I haven't resolved that yet.
+Do I need to register developer desktops in AAA?
+I haven't resolved that yet.
+
+
+
  However, many of our customers conduct gamedays where the load steps are non-deterministic.
  Per specs, ports 1-65535 are available, and ports in range 1-1023 are the privileged ones
  Bootstrap signal to the queue
