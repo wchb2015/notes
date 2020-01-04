@@ -2,39 +2,11 @@ When in Rome do as the Romans do.
 
 Do I need to register developer desktops in AAA?
 I haven't resolved that yet.
-
-
-
- However, many of our customers conduct gamedays where the load steps are non-deterministic.
- Per specs, ports 1-65535 are available, and ports in range 1-1023 are the privileged ones
- Bootstrap signal to the queue
-hardware resources such as network bandwidth
-Sync your workers from
-requiring you to run through the lengthy bootstrap process again.
-Don't swallow exceptions!
-we abort the run
-at this point we know we passed the saturation point, so we proceed to oscillate back and forth until we identify the number of concurrent connections that gives the highest possible tps.
-how latency degrades as you approach your maximum number of transactions per second 
 what's an acceptable tradeoff between throughput and latency.
 Combine interactive mode with an initial ramp up
 Corp Fabric
-The Android and iOS clients registers with DeeMobilePushService via the DeeWebsiteCoralService fascade/facade:
-Scripts run in alphabetical order.
 Gets Device Id with hyphens stripped.
 
-That takes up a lot of bandwidth
-So, as a corollary, we have no way to know if a device can receive cloud-initiated directives.
-Unified Preference Service
-It's only a marginal increase in "putting things in the wrong place". It's essentially a minor expansion of an existing workaround.
-Clowning
-WAKE + Crypto on iOS/Android
+
 Critical Path
-the operation is idempotent
 get accounts in bulk
-perpetual
-The descaling program aims to recoup the infrastructure costs (IMR) as quickly as possible.
-Since approval steps are tied to your pipeline
-And you can also act on this data: using pass/fail heuristics that will decide whether to allow the pipeline to continue deploying or block it. Fail a deployment...
-Sampling quantum
-Rate exceeded
-There is currently no ETA for resolution. As soon as we see a resolution come through, we will send an update out.
