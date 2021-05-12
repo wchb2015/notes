@@ -1,0 +1,129 @@
+Day 1
+---发音
+analysis
+snapshots
+testing suite is robust
+--- 表达
+really good = exceptional,phenomenal.
+very bad = awful, horrible.
+very dirty = filthy
+really clean = spotless
+very funny = hilarious
+very pretty = gorgeous
+very ugly = hideous
+really important = critical crucial
+really interesting = intriguing compelling
+very big = massive tremendous
+really hot = stifling
+very cold = freezing
+very mad = furious livid
+really tired = exhausted/worn out
+very busy = slammed
+We're slammed this week at work.
+I'm completely exhausted
+He's totally worn out.
+I'm fortunate to be part of such a foward thinking team.
+Do you oversee the Firebase product?
+What's the biggest technical challenge that you're working on right now?
+How often can CI fails happen?
+So the underlying problem here is that it's really hard to reproduce what the CI is doing on your local machine.
+We all know there is some kind of variance. 
+We're blurring the lines between cloud and on-prem
+As the company grew, what were the kinds of challenges you ran into in terms of engineering management?
+I worked at Google prior to working at Yelp.
+you should be constantly looking at as a team to continuously improve and find where the bottlenecks are and unblock your team so that you can increase both the quality and velocity of the work you're doing.
+get those roadblocks out of the way.
+We have the concept of Maker Time in the product, which is how many uninterrupted two-hour block chunks do you have on the calendar for your engineering team
+Tell me about the data sources that you can draw on to understand how engineers are performing.
+So Augur has a token associated with it. What is the purpose of the Augur token?
+What are the problems that remain unsolved in the Kubernetes ecosystem?
+What programming language was used to build Kubedirector?
+What are the potential solutions for that?
+Take me inside the product development. What has been the strategy for organizing your engineering team and what are you focused on right now?
+​I've spent time in both academia and industry, and I think that's definitely been kind of a privilege and a great benefit to have that.
+What are the tradeoffs in using serverless?
+So in what ways does serverless change architecture of applications?
+What were the deficiencies of the HTML5-based approach to Facebook mobile?
+Solar can replicate an arbitrary number of times in the same way that MySQL can have arbitrary number of read replicas.
+You were at both of those companies for four years respectively. 
+--- 短语
+de facto standard
+go overboard:to do something in a way that is excessive or extreme : to do too much of something
+- Don't go overboard on/with the spices. [=do not add too many spices]
+
+--- new word
+cogent discussion
+rebroadcast
+vertigo
+ominous music
+sidekick
+invincible
+bigotry
+animosity
+bummed:disappointed/sad
+bummed:to cause (someone) to feel sad or disappointed — usually + out
+The news really bummed me out. = I was really bummed (out) by the news.
+
+Well, here I have a bunch of, you know, a federation of systems, and I want to shield them from an onslaught of a DOS,
+You have preponderance of evidence.
+spurious facts
+Wikipedia is essentially an encyclopedia of celebrities
+Our thesis here is if we can make that pretty turnkey
+
+wharf is getting mobbed
+crotch is itchy
+crematorium
+
+03/13/21
+Can I place an order for takeout?
+Can I have/get (something) to go, please?
+How long will it take?
+Can I get half pound(lb) of turkey, please?
+
+First Listen and then pick up the content words.
+Comedian:Louis CK 
+
+03/14/21
+I beg to differ. 恐怕我难以苟同.
+It's your call. 你决定.
+Whatever works for you.
+These's no rush.不急.
+Take your time. 慢慢来.
+That's a bummer.
+I don't recall. 我忘了.
+Just chill out. 冷静下来.
+Don't get burned out.不要累坏了.
+Don's stress yoruself out. 不要给自己太大压力.
+Why would you do that? 你为什么要这么做?
+This is unreal.这简直太离谱了.
+Not a chance. 没门.
+
+Black coffee纯咖啡.
+Sandwich  d silent.
+Hash browns:马铃薯煎饼.
+Condiments: 调味品.
+Ketchup 番茄酱
+Mustard 芥末
+Dipping sauce. 蘸酱
+Pickles 泡黄瓜
+
+03/15/21
+one order of fries
+Can I have extra spread?
+Republican: Conservative(思想保守) Democrat: Liberal(思想开放).
+You are too liberal with the word legendary.你用legendary这个词太随意.
+Caruosel: 机场行李转运带/旋转木马
+How long have you been doing this?
+
+03/18/21
+Barista 咖啡师.
+Tall 中杯 Grande 大杯 Venti 超大杯
+Drink carrier
+Could I have a tall iced latte with 2% milk and extra foam please?
+a long shot: When something has little chance of succeeding.
+get the ball rolling: to make something begin or happen.
+look at the big picture: looking at situation as a whole, not the tiny details.
+a gray area: an area of uncertainty, an undefined position.
+bring to the table: to provide or offer something useful
+
+very happy = thrilled,delighted
