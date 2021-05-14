@@ -24,19 +24,15 @@ I'm completely exhausted
 He's totally worn out.
 I'm fortunate to be part of such a foward thinking team.
 Do you oversee the Firebase product?
-What's the biggest technical challenge that you're working on right now?
-How often can CI fails happen?
 So the underlying problem here is that it's really hard to reproduce what the CI is doing on your local machine.
 We all know there is some kind of variance. 
 We're blurring the lines between cloud and on-prem
-As the company grew, what were the kinds of challenges you ran into in terms of engineering management?
 I worked at Google prior to working at Yelp.
 you should be constantly looking at as a team to continuously improve and find where the bottlenecks are and unblock your team so that you can increase both the quality and velocity of the work you're doing.
-get those roadblocks out of the way.
+Get those roadblocks out of the way.
 We have the concept of Maker Time in the product, which is how many uninterrupted two-hour block chunks do you have on the calendar for your engineering team
 Tell me about the data sources that you can draw on to understand how engineers are performing.
 So Augur has a token associated with it. What is the purpose of the Augur token?
-What are the problems that remain unsolved in the Kubernetes ecosystem?
 What programming language was used to build Kubedirector?
 What are the potential solutions for that?
 Take me inside the product development. What has been the strategy for organizing your engineering team and what are you focused on right now?
@@ -47,16 +43,65 @@ What were the deficiencies of the HTML5-based approach to Facebook mobile?
 Solar can replicate an arbitrary number of times in the same way that MySQL can have arbitrary number of read replicas.
 You were at both of those companies for four years respectively. 
 --- 短语
-de facto standard
-go overboard:to do something in a way that is excessive or extreme : to do too much of something
+De facto standard:A de facto standard is something that is used so widely that it is considered a standard for a given application although it has no official status.
+Go overboard:to do something in a way that is excessive or extreme : to do too much of something
 - Don't go overboard on/with the spices. [=do not add too many spices]
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 --- new word
-cogent discussion
-rebroadcast
-vertigo
-ominous music
 sidekick
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 invincible
 bigotry
 animosity
