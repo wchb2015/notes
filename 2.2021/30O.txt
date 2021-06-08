@@ -101,3 +101,6 @@ When you're building Flutter applications, are there any other challenges that y
 
 
 Stage fright
+It's not instantaneous.
+It's 3 blocks down.
+He lives two blocks up the street.
