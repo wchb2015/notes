@@ -112,3 +112,5 @@ When was it last updated?
 And there's work happening to support an RDS for it.
 Switch places with someone: To exchange or swap sitting positions with someone.
 I'll get right on that.Expression used to say that you will do something immediately.
+Have there been any particularly difficult engineering problems that you've encountered while taking Amundsen to becoming a cloud product?
+How about we toast your newfound freedom?
